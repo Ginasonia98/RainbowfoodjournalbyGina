@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+.box-container1 {
+    padding: 120px 80px 120px 80px;
+    height: 80%;
+    background: white;
+}
+
+.text-descc {
+    margin-left: 1rem;
+}
+
+.img-fluid-new {
+    height: 30vh !important;
+    width: 10vw;
+}
+
+.card-titlee {
+    color: #FD841F;
+    margin-left: 0.3rem;
+}
+
+.card-newe {
+    width: 30vw !important;
+    height: 56vh !important;
+}
+
+
+.desc {
+    color: #FD841F;
+    margin-left: 0.3rem;
+}
+
+.star-rate {
+    margin-top: -1rem;
+    margin-left: 0rem;
+}
+
+.description {
+    font-weight: bold;
+    color: #FD841F;
+    margin-left: 0.3rem;
+    margin-top: 1rem;
+}
+
+.ingredient {
+    color: #FD841F;
+    margin-left: -9.6rem;
+}
+
+.created-updatedd {}
+
+
+@media (width < 768px) {
+    .img-fluid-new {
+        height: 30vh !important;
+        width: 80vw;
+        margin-left: 3.9rem;
+        margin-right: -1rem;
+    }
+
+    .card-titlee {
+        color: #FD841F;
+        margin-left: 8rem;
+        margin-top: -1rem;
+    }
+
+    .card-newe {
+        width: 80vw !important;
+        height: 90vh !important;
+        margin-top: 0.5rem;
+        margin-left: -3rem !important;
+    }
+
+
+    .desc {
+        color: #FD841F;
+        margin-left: 5rem;
+        margin-top: -1rem;
+    }
+
+    .star-rate {
+        margin-left: 20rem;
+    }
+
+    .description {
+        font-weight: bold;
+        color: #FD841F;
+        margin-left: 0.3rem;
+        margin-top: 1rem;
+    }
+
+    .ingredient {
+        color: #FD841F;
+        margin-left: -5rem;
+    }
+
+    .created-updatedf {
+        color: #FD841F;
+        margin-left: 4rem;
+    }
+
+    .fa-heart {
+        margin-left: -4rem !important;
+        margin-right: 1rem;
+        justify-content: space-around;
+    }
+
+    .update{
+        margin-left: 4rem !important;
+    }
+}

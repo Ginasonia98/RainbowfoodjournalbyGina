@@ -1,0 +1,132 @@
+footer {
+    background-color: #DC5F00;
+    font-size: 12px;
+    color: #fff;
+}
+
+.inner-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 3em;
+}
+
+.about-us {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 10rem;
+}
+
+.contact-us {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 10rem;
+}
+
+.contact-us-new {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 10rem;
+}
+
+.d-flex {
+    margin-left: 10rem;
+    font-size: 15px;
+}
+
+.detail-rainbow {
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: -7rem;
+    margin-top: 2rem;
+}
+
+.text-about-us {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10rem;
+    font-size: 15px;
+}
+
+.copyright {
+    background-color: #E14D2A;
+    ;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 0px;
+}
+
+
+.button-footer {
+    display: block !important;
+    margin: 20px 0px;
+    padding: 10px;
+    width: 260px;
+    border-radius: 20px;
+    /* background-color: #ccc; */
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #fff;
+    ;
+    border: 1px solid #fff;
+    color: #0d6efd;
+    ;
+}
+
+.button-footer:hover {
+    background-color: #0d6efd;
+    ;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.text-email {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media (width < 768px) {
+    .detail-rainbow {
+        font-weight: bolder;
+        font-size: 18px;
+        margin-left: -10rem;
+        margin-top: 2rem;
+    }
+
+    .about-us {
+        font-weight: bolder;
+        font-size: 15px;
+        margin-left: -14rem;
+        margin-top: 8rem;
+    }
+
+    .text-about-us {
+        margin-top: 20px;
+        margin-left: -14rem;
+        font-size: 15px;
+    }
+
+    .contact-us {
+        margin-top: 20px;
+        margin-left: -11rem !important;
+        font-size: 15px;
+    }
+
+    .contact-us1 {
+        margin-top: 20px;
+        margin-left: -11rem !important;
+        font-size: 15px;
+    }
+
+    .contact-us-new {
+        font-weight: bolder;
+        font-size: 15px;
+        margin-left: -10.9rem !important;
+        margin-top: 8rem;
+    }
+
+}

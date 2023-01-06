@@ -1,0 +1,5 @@
+export const BASE_URL = "https://api-bootcamp.do.dibimbing.id"
+export const API_KEY = "w05KkI9AWhKxzvPFtXotUva-"
+export const JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pZnRhaGZhcmhhbkBnbWFpbC5jb20iLCJ1c2VySWQiOiI4NDg2ZmQ1YS0xOWRkLTQ1NGEtYWUxMy02Y2Y2ZWM2OTE0NDgiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjY3NzY2ODF9.kS-0o6wL1Egt-UhpHY3ZO1qIdSeZuqsLh5ivMt47OLM"
+export const FOOD_ID = "efdd307b-1d9c-4a47-9d40-d3720708711f"
+export const USER_ID = "5e885002-4b0a-430d-b59d-d91a2d204e17"

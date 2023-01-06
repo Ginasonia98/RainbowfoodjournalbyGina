@@ -1,0 +1,84 @@
+.navbar-container {
+    width: 100%;
+    padding: 0.625em 3.75rem;
+    background-color: #FF7000 !important;
+}
+
+li .nav-link:hover {
+    background-color: #FF7000 !important;
+    border-radius: 10px;
+}
+
+.nav-link-link {
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.box-nav {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.button-warningnnew {
+    background-color: #FF7000;
+    width: 11vw;
+    height: 9vh;
+    border: none;
+    margin-top: -7px !important;
+    margin-left: -15rem !important;
+}
+
+.button-warningnnew:hover {
+    background-color: #FFC93C !important;
+}
+
+.name1 {
+    color: white !important;
+}
+
+.name2 {
+    color: #fff !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown a {
+    color: white !important;
+}
+
+.dropdown a:hover {
+    color: white !important;
+}
+
+.dropdown.show a {
+    color: white !important;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+    color: white !important;
+}
+
+@media (width < 768px) {
+    .nav-link {
+        margin-top: 1rem;
+        font-size: 1rem !important;
+    }
+
+    .nav-link-link {
+        margin-left: 6rem;
+        margin-top: -1.9rem;
+    }
+
+    .button-warningnnew {
+        width: 40vw;
+        border: none;
+        margin-top: 1rem !important;
+        margin-left: -20rem !important;
+    }
+
+    .button-warningnnew:hover {
+        background-color: #FFC93C !important;
+    }
+}

@@ -1,0 +1,246 @@
+.home-sectionnew {
+    background-color: #FD841F;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-sectionnew .content {
+    flex: 1 1 40rem;
+    margin-left: 0rem;
+}
+
+.home-sectionnew .content h3 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.home-sectionnew .content p {
+    font-size: 1rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.add-inputm {
+    width: 20vw !important;
+    border: 1px solid #FD841F;
+}
+
+.add-inputmx {
+    width: 100vw !important;
+    border: 1px solid #FD841F;
+    margin-left: -10rem;
+}
+
+.btn-create {
+    padding: 0.4rem 1rem;
+    border: 1px solid #FD841F;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: .5rem;
+    z-index: 0;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: #fff;
+    margin-left: -25rem;
+    height: 10vh;
+    width: 8vw;
+}
+
+
+.bg-foods {
+    background-color: #FD841F;
+    margin-left: 25rem;
+    width: 50vw;
+    height: 100% !important;
+    margin-bottom: -3rem;
+}
+
+.names {
+    color: #FD841F;
+    margin-left: 0.5rem;
+    font-weight: bolder;
+    font-size: 10px;
+    margin-top: 1rem;
+}
+
+.Food-wrappernew {
+    background-color: white;
+    height: 80%;
+    overflow: scroll;
+    width: 20vw;
+}
+
+.Food-wrappernew::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome browsers */
+}
+
+.Food-wrappernew {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* mozilla */
+}
+
+
+.button-food {
+    margin-left: -9rem;
+    margin-top: -2rem;
+}
+
+.food-image {
+    width: 30% !important;
+}
+
+.ingredients {
+    color: #FD841F !important;
+    margin-left: 0.5rem;
+    font-weight: bolder;
+    font-size: 10px !important;
+    margin-top: -2rem;
+}
+
+.btn-create:hover {
+    background-color: #FFC93C !important;
+}
+
+.create-foods {
+    color: #FD841F;
+    margin-left: 0.9rem;
+}
+
+
+.title-all {
+    color: #fff;
+    font-size: 35px;
+    margin-left: 11rem;
+    font-weight: bolder;
+}
+
+
+.set-rating {
+    text-decoration: none;
+}
+
+.btn-info {
+    color: white;
+}
+
+.btn-info:hover {
+    color: white !important;
+}
+
+.button-warnings {
+    background-color: #FD841F;
+    border: none;
+    color: #fff;
+    width: 6vw;
+    height: 8vh;
+}
+
+.carde {
+    width: 40vw !important;
+    height: 20vh !important;
+}
+
+@media (width < 768px) {
+    .btn-create {
+        background-color: #fff;
+        height: 8vh;
+        margin-left: 1rem;
+        width: 35vw;
+    }
+
+    .bg-foods {
+        margin-left: 2rem;
+        width: 30vw !important;
+    }
+
+    .Food-wrapper::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome browsers */
+    }
+
+
+    .Food-wrapper {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* mozilla */
+    }
+
+    .button-food {
+        margin-left: -9rem;
+        margin-top: -2rem;
+    }
+
+    .food-image {
+        width: 40% !important;
+    }
+
+    .ingredients {
+        color: #FD841F !important;
+        margin-left: 0.5rem;
+        font-weight: bolder;
+        font-size: 10px !important;
+        margin-top: -2rem;
+    }
+
+    .btn-create:hover {
+        background-color: #FFC93C !important;
+    }
+
+    .create-foods {
+        color: #FD841F;
+        margin-left: 1.2rem !important;
+    }
+
+
+    .title-all {
+        color: #fff;
+        font-size: 25px;
+        margin-left: 7rem;
+        font-weight: bolder;
+    }
+
+
+    .grid-img {
+        margin-left: 13rem !important;
+        margin-right: 0rem;
+    }
+
+    .add-inputm {
+        width: 75vw !important;
+        border: 1px solid #FD841F;
+        margin-left: 1rem;
+    }
+
+    .add-inputmx {
+        width: 40vw !important;
+        border: 1px solid #FD841F;
+        margin-left: -9rem;
+    }
+
+    .add-inputnew {
+        margin-left: 1rem !important;
+    }
+
+    .button-upload {
+        width: 15vw !important;
+        height: 4vh !important;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .modal-content {
+        height: 60vh !important;
+    }
+
+    .button-warnings {
+        width: 20vw;
+        height: 6vh;
+        font-size: 15px;
+        margin-left: 1rem;
+    }
+}
