@@ -29,9 +29,9 @@
 
 .food-wrapper {
     background-color: white;
-    height: 80%;
+    height: auto;
     overflow: scroll;
-    width: 15vw;
+    width: 20vw;
 }
 
 .food-wrapper::-webkit-scrollbar {
@@ -244,10 +244,9 @@
     }
 
     .food-wrapper {
-        height: 14vh;
+        height: auto;
         overflow: scroll;
-        width: 100%;
-        margin-left: 4rem !important;
+        width: 20vw;
     }
 
     .food-wrapper::-webkit-scrollbar {
@@ -272,7 +271,10 @@
 
     .row {
         width: 1vw !important;
-        margin-left: -4rem;
+        margin-left: 0rem !important;
     }
 
+    .img-fluid-new{
+        margin-left: 0rem !important;
+    }
 }

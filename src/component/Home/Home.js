@@ -93,7 +93,7 @@ const Home = () => {
           </div>
         </div>
         <div className=" bg-food">
-          <div className="title-foods px-2 py-4">All Foods</div>
+          <div className="title-foods px-2 py-4">Food</div>
           <div className="row">
             <div className="img-center">
               <div className="grid-img">

@@ -15,6 +15,12 @@
     font-size: 15px !important;
 }
 
+.adds {
+    color: #FD841F !important;
+    font-size: 30px !important;
+    font-weight: bolder;
+}
+
 .input-fieldinput {
     margin-left: 0.2rem;
 }
@@ -52,7 +58,7 @@
     border: none;
 }
 
-.button-warningnew {
+.button-warningneww {
     background-color: #FD841F;
     margin-left: 0.6rem;
     width: 6vw !important;
@@ -64,7 +70,7 @@
     border-radius: 24px;
     padding: 10px;
     height: 45px;
-    width: 380px;
+    width: 15vw !important;
     border: 1px solid #FD841F;
 }
 
@@ -101,6 +107,14 @@
     width: 80vw !important;
 }
 
+.input-uploads {
+    margin-left: 10rem !important;
+}
+
+.input-uploadseee {
+    margin-left: 0.5rem !important;
+}
+
 @media (width < 768px) {
     .iframe-wrapper {
         width: 100vw !important;
@@ -118,16 +132,16 @@
 
     .add-input2 {
         height: 45px;
-        width: 35vw !important;
+        width: 54vw !important;
         border: 1px solid #FD841F;
-        margin-left: -11rem !important;
+        margin-left: -13rem !important;
     }
 
     .add-input {
         height: 45px;
-        width: 69vw !important;
+        width: 90vw !important;
         border: 1px solid #FD841F;
-        margin-left: -1rem !important;
+        margin-left: -3rem !important;
     }
 
     .input-field {
@@ -138,8 +152,8 @@
     .bg-addFoods {
         background-color: #fff;
         padding: 80px;
-        width: 112vw;
-        margin-left: -3rem;
+        width: 200vw !important;
+        margin-left: -6rem;
     }
 
     .input-file {
@@ -161,10 +175,7 @@
         margin-right: 1rem !important;
     }
 
-    .input-upload{
-        margin-left: -3rem !important;
-    } 
-    
+
     .button-upload {
         background-color: #FD841F;
         margin-left: 0.6rem;
@@ -185,12 +196,31 @@
         border: none;
     }
 
-    .button-warningnew {
-        background-color: #FD841F;
-        margin-left: 0rem;
+    .button-warningneww {
+        margin-left: -3rem;
         width: 20vw !important;
         height: 6vh !important;
-        border: none;
     }
 
+    .input-uploadseee {
+        margin-left: -5rem !important;
+    }
+
+    .adds {
+        color: #FD841F !important;
+        font-size: 30px !important;
+        font-weight: bolder;
+        margin-left: -2rem;
+    }
+
+    .add-inputm {
+        width: 10vw !important;
+    }
+
+    .box-addFoods {
+        display: flex;
+        flex-direction: column;
+        /* gap: 20px; */
+        align-items: flex-start;
+    }
 }

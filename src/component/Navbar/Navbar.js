@@ -29,7 +29,7 @@ const Navbar = () => {
       };
       return (
         <>
-          <div className="box-nav d-flex justify-content-end col-sm-6 col-4">
+          <div className="box-nav d-flex  col-sm-6 col-4">
             <div className="d-flex">
               <li class="nav-item "></li>
               {localStorage.getItem("role") === "admin" ? (
@@ -43,12 +43,12 @@ const Navbar = () => {
                       left: "10vw",
                     }}
                   >
-                    Foods
+                    Update Food
                   </Link>
                 </li>
               ) : null}
             </div>
-            <div  >
+            <div>
               <button
                 type="button"
                 class="button-warningnnew dropdown-toggle"
@@ -62,16 +62,16 @@ const Navbar = () => {
                   <Link
                     to="/profile-user"
                     className="nav-link btn-profile"
-                    style={{ color: "#000", paddingLeft: "10px" }}
+                    style={{ color: "#000" }}
                   >
-                    My Profile
+                    <div className="my-profile">My Profile</div>
                   </Link>
                 </li>
                 {localStorage.getItem("role") === "admin" ? (
                   <li>
                     <Link
                       to="/all-users"
-                      class="nav-link btn-profile"
+                      class="nav-link bi bi-person-fill"
                       style={{ color: "#000", paddingLeft: "10px" }}
                     >
                       All Users
@@ -80,7 +80,7 @@ const Navbar = () => {
                 ) : null}
                 <li className="nav-item">
                   <Link
-                    className="nav-link btn-profile"
+                    className="nav-link bi bi-person-fill"
                     href="#"
                     onClick={handleLogout}
                     style={{ color: "#000", paddingLeft: "10px" }}
@@ -118,7 +118,6 @@ const Navbar = () => {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item ">

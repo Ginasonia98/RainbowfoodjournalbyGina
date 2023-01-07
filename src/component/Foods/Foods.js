@@ -59,7 +59,7 @@ export const Foods = () => {
   }, []);
 
   const handleDelete = (id) => {
-    if (window.confirm("are you sure you want to delete?")) {
+    if (window.confirm("apakah kamu ingin menghapus data ini?")) {
       axios({
         method: "delete",
         url: `${BASE_URL}/api/v1/delete-food/${id}`,
@@ -283,9 +283,11 @@ export const Foods = () => {
                                               Food Image Upload
                                             </label>
                                             <UploadImage
+                                              clasName="upload"
                                               style={{ width: "380px" }}
                                               onChange={(value) =>
                                                 setSavePicture(value)
+                                              
                                               }
                                             />
                                           </div>
@@ -323,7 +325,9 @@ export const Foods = () => {
                                                         fontSize: "12px",
                                                       }}
                                                     >
-                                                      Add
+                                                      <div className="delete-text">
+                                                        Add
+                                                      </div>
                                                     </button>
                                                     <button
                                                       className="btn btn-danger"
@@ -337,7 +341,9 @@ export const Foods = () => {
                                                       }
                                                       type="button"
                                                     >
-                                                      Delete
+                                                      <div className="delete-text">
+                                                        Delete
+                                                      </div>
                                                     </button>
                                                   </div>
                                                   {formik.touched.ingredients &&

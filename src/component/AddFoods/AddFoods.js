@@ -68,7 +68,7 @@ export const AddFoods = () => {
     <>
       <div className="bg-addFoods">
         <form onSubmit={formAddFoods.handleSubmit} className="box-addFoods">
-          <div className="add">Add Foods</div>
+          <div className="adds">Add Foods</div>
           <div class="">
             <input
               id="name"
@@ -136,12 +136,12 @@ export const AddFoods = () => {
           </div>
           <div className="input-upload">
             <div className="input-file">
-              <div>
+              <div className="input-uploadseee">
                 <UploadImage onChange={(value) => setSavePicture(value)} />
               </div>
             </div>
           </div>
-          <button type="submit" class="button-warningnew">
+          <button type="submit" class="button-warningneww">
             <div className="submit">Submit</div>
           </button>
         </form>

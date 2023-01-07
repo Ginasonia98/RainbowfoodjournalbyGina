@@ -11,12 +11,33 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
-.container-form {
-  position: relative;
-  width: 100%;
-  background-color: #fff;
-  min-height: 100vh;
-  overflow: hidden;
+.input-uploadd {
+  margin-top: 1rem !important;
+  margin-left: -10rem !important;
+}
+
+
+.input-box-news {
+  width: 18vw !important;
+  height: 5vh;
+}
+
+.input-box-newss {
+  width: 20vw !important;
+  height: 4vh;
+}
+
+
+.sign-in-form {
+  margin-top: -1rem !important;
+}
+
+.container-form:before {
+  height: 250vh !important;
+  width: 100% !important;
+  right: 50% !important;
+  background-color: #FF7000 !important;
+  border-radius: 0% !important;
 }
 
 .forms-container {
@@ -60,10 +81,26 @@ form.sign-in-form {
   z-index: 2;
 }
 
-.title {
+.titles {
   font-size: 2.2rem;
   color: #FF7000;
-  margin-bottom: 10px;
+  margin-left: -12rem;
+}
+
+.input-field-new {
+  max-width: 380px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #FF7000;
+  height: 45px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .input-field {
@@ -86,7 +123,16 @@ form.sign-in-form {
   border-radius: 55px;
 }
 
-select {
+.input-box-newsss {
+  width: 20vw !important;
+  border: none;
+}
+
+*.input-box-newsss:focus {
+  outline: none;
+}
+
+.select {
   margin-right: 10px;
 }
 
@@ -100,7 +146,7 @@ select {
 
 }
 
-.input-field i {
+.input-field-new i {
   text-align: center;
   line-height: 55px;
   color: #acacac;
@@ -109,7 +155,7 @@ select {
   margin-left: 20px;
 }
 
-.input-field input {
+.input-field-new input {
   background: none;
   outline: none;
   border: none;
@@ -120,7 +166,7 @@ select {
 
 }
 
-.input-field input::placeholder {
+.input-field-new input::placeholder {
   color: #aaa;
   font-weight: 500;
 }
@@ -176,7 +222,7 @@ select {
 
 .button-login {
   width: 10vw;
-  background-color: #FF6E31;
+  background-color: #FF6E31 !important;
   border: none;
   outline: none;
   height: 8vh;
@@ -187,6 +233,7 @@ select {
   margin: 10px 0;
   cursor: pointer;
   transition: 0.5s;
+  margin-left: -10rem;
 }
 
 .button-login:hover {
@@ -211,7 +258,7 @@ select {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #FF7000 90%, #FF6E31 10% );
+  background-image: linear-gradient(-45deg, #FF7000 90%, #FF6E31 10%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -313,7 +360,7 @@ select {
   pointer-events: all;
 }
 
-@media (max-width: 870px) {
+@media (width < 768px) {
   .container-form {
     min-height: 800px;
     height: 100vh;
@@ -321,7 +368,7 @@ select {
 
   .signin-signup {
     width: 100%;
-    top: 95%;
+    top: 80%;
     transform: translate(-50%, -100%);
     transition: 1s 0.8s ease-in-out;
   }
@@ -340,7 +387,7 @@ select {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 2.5rem 8%;
+    padding: 2rem 8%;
     grid-column: 1 / 2;
   }
 
@@ -371,6 +418,11 @@ select {
   .panel p {
     font-size: 0.7rem;
     padding: 0.5rem 0;
+  }
+
+  .button-login {
+    width: 30vw;
+    margin-left: 1rem;
   }
 
   .button-login.transparent {
@@ -415,10 +467,8 @@ select {
     top: 5%;
     transform: translate(-50%, 0);
   }
-}
 
-@media (max-width: 570px) {
-  form {
+  .form {
     padding: 0 1.5rem;
   }
 
@@ -442,5 +492,60 @@ select {
   .container.sign-up-mode:before {
     bottom: 28%;
     left: 50%;
+  }
+
+  .titles {
+    font-size: 20px;
+    color: #FF7000;
+    margin-left: 0.5rem;
+    margin-top: 1rem !important;
+  }
+
+  .input-box-news {
+    width: 49vw !important;
+    height: 5vh;
+  }
+
+  .sign-in-form {
+    margin-top: 2rem !important;
+    margin-left: -3rem !important;
+  }
+
+  .input-field {
+    width: 100%;
+    height: 5.8vh !important;
+    margin-top: 0.3rem !important;
+    margin-left: 1rem !important;
+    margin-bottom: 0.2rem;
+  }
+
+  .input-box-newsss {
+    width: 38vw !important;
+    border: none;
+  }
+
+  .input-box-newss {
+    width: 60vw !important;
+    height: 3vh;
+  }
+
+  .add-inputnew {
+    margin-left: 200px !important;
+  }
+
+  .input-uploadd {
+    margin-top: 0rem !important;
+    margin-left: -2rem !important;
+  }
+
+  .forms-container {
+    top: -2%;
+    bottom: 5% !important;
+  }
+
+  .input-field-new {
+    width: 110%;
+    height: 45px;
+    margin-left: 4rem !important;
   }
 }

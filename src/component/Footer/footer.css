@@ -11,6 +11,14 @@ footer {
     padding: 2em 3em;
 }
 
+.detail-rainbows {
+    color: #2DCDDF;
+}
+
+.detail-rainbow {
+    color: #A31ACB;
+}
+
 .about-us {
     color: #fff;
     font-weight: bolder;
@@ -51,13 +59,6 @@ footer {
     font-size: 15px;
 }
 
-.copyright {
-    background-color: #E14D2A;
-    ;
-    text-align: center;
-    padding: 1em;
-    margin-bottom: 0px;
-}
 
 
 .button-footer {

@@ -100,18 +100,18 @@ const Rating = () => {
                 <div className="image-rate">
                   <img
                     src={foods && foods.imageUrl}
-                    className="img-fluid  shadow"
+                    className="img-fluids  shadow"
                     alt={foods && foods.name}
                   />
                 </div>
               </div>
               <div className="col-md-8">
                 <div className="card-body">
-                  <h5 className="card-titles" style={{ fontSize: "26px" }}>
+                  <div className="card-titless" style={{ fontSize: "26px" }}>
                     {foods && foods.name}
-                  </h5>
+                  </div>
                   <p className="text-desc" style={{ fontSize: "16px" }}>
-                    <div className="descnew">
+                    <div className="descnews">
                       Desc:{foods && foods.description}
                     </div>
                   </p>
@@ -194,7 +194,7 @@ const Rating = () => {
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
                           type="number"
-                          className="add-inputx "
+                          className="add-inputc "
                           id="rating"
                         />
                       </div>
@@ -207,12 +207,12 @@ const Rating = () => {
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
                           type="text"
-                          className="add-inputx"
+                          className="add-inputc"
                           id="review"
                         />
                       </div>
                       <div className="col-12">
-                        <button type="submit" className="button button-warning">
+                        <button type="submit" className="button button-warningg">
                           <div className="create-text">Create</div>
                         </button>
                       </div>

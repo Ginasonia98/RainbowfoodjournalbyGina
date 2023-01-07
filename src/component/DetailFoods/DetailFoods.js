@@ -32,7 +32,7 @@ const DetailFoods = () => {
     <>
       <div className="box-container1">
         <div>
-          <div className="card-newe  mx-auto  shadow">
+          <div className="card-newee  mx-auto  shadow">
             <div className="row g-0">
               <div className="col-md-4">
                 <img
@@ -83,7 +83,7 @@ const DetailFoods = () => {
                           style={{ color: `gold` }}
                         ></i>
                       </Link>
-                      {AllFoods.rating}
+                      <div className="all-rating">{AllFoods.rating}</div>
                     </small>
                   </div>
                 </div>

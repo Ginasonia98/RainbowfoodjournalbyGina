@@ -74,6 +74,7 @@ const UploadImage = ({onChange}) => {
         <div className="upload">Upload</div>
       </button>
     </div>
+
   );
 };
 

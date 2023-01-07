@@ -6,7 +6,9 @@ const Footer = () => {
     <footer>
       <div className="container inner-footer">
         <div className="d-flex">
-          <div className="detail-rainbow">Rainbow Food Journal</div>
+          <div className="detail-rainbow">
+            Rainbow <span className="detail-rainbows">Food Journal</span>
+          </div>
           <div className="col-4">
             <div className="about-us">About Us</div>
             <div className="text-about-us">
@@ -36,9 +38,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="copyright">
-        Copyright &copy;2023 Chiko Company | All Rights are reserved.
-      </p>
     </footer>
   );
 };

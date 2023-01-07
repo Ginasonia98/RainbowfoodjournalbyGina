@@ -52,7 +52,6 @@
     background-color: #FD841F;
     margin-left: 25rem;
     width: 50vw;
-    height: 100% !important;
     margin-bottom: -3rem;
 }
 
@@ -66,9 +65,10 @@
 
 .Food-wrappernew {
     background-color: white;
-    height: 80%;
+    height: auto;
     overflow: scroll;
     width: 20vw;
+    margin-bottom: 5rem;
 }
 
 .Food-wrappernew::-webkit-scrollbar {
@@ -142,6 +142,10 @@
 .carde {
     width: 40vw !important;
     height: 20vh !important;
+}
+
+.delete-text {
+    font-size: 10px !important;
 }
 
 @media (width < 768px) {
@@ -242,5 +246,9 @@
         height: 6vh;
         font-size: 15px;
         margin-left: 1rem;
+    }
+
+    .upload{
+        font-size: 10px !important;
     }
 }

@@ -19,13 +19,18 @@ li .nav-link:hover {
     justify-content: space-between !important;
 }
 
+.dropdown-menu {
+    margin-left: 84rem;
+    margin-top: -1rem;
+}
+
 .button-warningnnew {
     background-color: #FF7000;
     width: 11vw;
     height: 9vh;
     border: none;
     margin-top: -7px !important;
-    margin-left: -15rem !important;
+    margin-left: 55rem !important;
 }
 
 .button-warningnnew:hover {
@@ -80,5 +85,15 @@ li .nav-link:hover {
 
     .button-warningnnew:hover {
         background-color: #FFC93C !important;
+    }
+
+    .dropdown-menu {
+        margin-left: -20rem !important;
+        margin-top: -1rem;
+        width: 15vw;
+    }
+
+    .my-profile{
+        margin-left: 1rem;
     }
 }

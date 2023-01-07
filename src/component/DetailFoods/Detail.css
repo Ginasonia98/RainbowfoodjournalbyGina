@@ -15,14 +15,19 @@
     width: 10vw;
 }
 
+.all-rating {
+    margin-left: 5rem;
+    margin-top: -1.4rem;
+}
+
 .card-titlee {
     color: #FD841F;
     margin-left: 0.3rem;
 }
 
-.card-newe {
+.card-newee {
     width: 30vw !important;
-    height: 56vh !important;
+    height: 58vh !important;
 }
 
 
@@ -48,14 +53,12 @@
     margin-left: -9.6rem;
 }
 
-.created-updatedd {}
-
 
 @media (width < 768px) {
     .img-fluid-new {
         height: 30vh !important;
-        width: 80vw;
-        margin-left: 3.9rem;
+        width: 90vw;
+        margin-left: 3.8rem;
         margin-right: -1rem;
     }
 
@@ -65,11 +68,11 @@
         margin-top: -1rem;
     }
 
-    .card-newe {
-        width: 80vw !important;
-        height: 90vh !important;
+    .card-newee {
+        width: 90vw !important;
+        height: auto !important;
         margin-top: 0.5rem;
-        margin-left: -3rem !important;
+        margin-left: -3.8rem !important;
     }
 
 
@@ -80,7 +83,7 @@
     }
 
     .star-rate {
-        margin-left: 20rem;
+        margin-left: 19rem;
     }
 
     .description {
@@ -106,7 +109,17 @@
         justify-content: space-around;
     }
 
-    .update{
+    .update {
         margin-left: 4rem !important;
+    }
+
+    .all-rating {
+        margin-left: 0rem;
+        margin-top: -1.4rem;
+    }
+
+    .modal-content{
+        margin-left: -1rem !important;
+        width: 102vw !important;
     }
 }
