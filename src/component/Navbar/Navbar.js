@@ -61,31 +61,30 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/profile-user"
-                    className="nav-link btn-profile"
-                    style={{ color: "#000" }}
+                    className="nav-link bi-person-fill"
                   >
-                    <div className="my-profile">My Profile</div>
+                    <div className="my-profile">Profile Saya</div>
                   </Link>
                 </li>
                 {localStorage.getItem("role") === "admin" ? (
                   <li>
                     <Link
                       to="/all-users"
-                      class="nav-link bi bi-person-fill"
-                      style={{ color: "#000", paddingLeft: "10px" }}
+                      class="nav-link bi bi-people"
+                      style={{ paddingLeft: "10px" }}
                     >
-                      All Users
+                      <div className="user-all">User</div>
                     </Link>
                   </li>
                 ) : null}
                 <li className="nav-item">
                   <Link
-                    className="nav-link bi bi-person-fill"
+                    className="nav-link bi bi-box-arrow-right"
                     href="#"
                     onClick={handleLogout}
-                    style={{ color: "#000", paddingLeft: "10px" }}
+                    style={{ paddingLeft: "10px" }}
                   >
-                    Logout
+                    <div className="log-out">Keluar</div>
                   </Link>
                 </li>
               </ul>

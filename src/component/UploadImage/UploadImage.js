@@ -17,7 +17,7 @@ const UploadImage = ({onChange}) => {
 
   function uploadImage() {
     if(!savePicture) {
-      alert('please upload a image first')
+      alert('Silahkan Upload Ulang')
     } else {
       console.log(fileUpload.current.files[0]
         )
@@ -45,10 +45,10 @@ const UploadImage = ({onChange}) => {
   
     .then((response) => {
       console.log(response)
-      alert('Upload Picture successful !!')
+      alert('Upload Gambar Berhasil !!')
     }).catch((error) => {
       console.error(error)
-      alert('Upload Picture Failed !!')
+      alert('Upload Gambar Gagal!!')
     })
     }
   }

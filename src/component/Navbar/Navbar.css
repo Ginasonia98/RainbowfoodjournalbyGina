@@ -65,6 +65,21 @@ li .nav-link:hover {
     color: white !important;
 }
 
+.my-profile {
+    margin-top: -1.4rem;
+    margin-left: 1.3rem;
+}
+
+.user-all {
+    margin-top: -1.4rem;
+    margin-left: 1.3rem;
+}
+
+.log-out {
+    margin-top: -1.4rem;
+    margin-left: 1.3rem;
+}
+
 @media (width < 768px) {
     .nav-link {
         margin-top: 1rem;
@@ -93,7 +108,22 @@ li .nav-link:hover {
         width: 15vw;
     }
 
-    .my-profile{
-        margin-left: 1rem;
+    .my-profile {
+        margin-top: -1.4rem;
+        margin-left: 1.5rem;
+    }
+
+    .user-all {
+        margin-top: -1.4rem;
+        margin-left: 1.3rem;
+    }
+
+    .log-out {
+        margin-top: -1.4rem;
+        margin-left: 1.5rem;
+    }
+
+    .bi-person-fill {
+        margin-left: 0.5rem !important;
     }
 }

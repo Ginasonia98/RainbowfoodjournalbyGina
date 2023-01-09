@@ -64,103 +64,109 @@ const AllUsers = () => {
 
   return (
     <>
-      <div className="bg-food box-all-users" style={{backgroundColor: '#e3f2fd'}}>
-        <h3 className="title-h3">All Users</h3>
-        <div className="img-center">
-          <div className="grid-img">
-            {AllUsers &&
-              AllUsers.map((users) => {
-                return (
-                  <>
-                    {/* Data-All-Users */}
-                    <div className="box-foods" >
-                      <div className="box">
-                        <img
-                          className="img-all-foods"
-                          src={users.profilePictureUrl}
-                          alt="All Foods"
-                        />
-                        <div className="content" style={{paddingTop:'.4rem'}}>
-                          <p style={{ color: "rgb(157, 172, 24)" }}>
-                            id: {users.id}
-                          </p>
-                          <h3 style={{ fontSize: "24px" }}>{users.name}</h3>
-                          <p>{users.email}</p>
-                          <p>Role: {users.role}</p>
-                          <p>Phone: {users.phoneNumber}</p>
-                          <button
-                            type="button"
-                            className="btn btn-success"
-                            data-bs-toggle="modal"
-                            data-bs-target={`#userRole${users.id}`}
-                          >
-                            Update
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    {/* End-Data-All-users */}
-
-                    {/* edit-role-users  */}
-                    <div
-                      class="modal fade"
-                      id={`userRole${users.id}`}
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div
-                            class="modal-body"
-                            style={{ position: "relative", left: "-40px" }}
-                          >
-                            <form
-                              className="box-addFoods"
-                              onSubmit={(e) => handleSubmit(e, users.id)}
-                            >
-                              <div className="col-md-6">
-                                <label for="inputAge" className="form-label">
-                                  Role
-                                </label>                           
-                                  <select
-                                    label="Role"
-                                    name="role"
-                                    className="add-input"
-                                    onChange={formik.handleChange}
-                                    onBlur={formik.handleBlur}
-                                    value={formik.values.role}
-                                  >
-                                    <option value="">Select a Role</option>
-                                    <option value="admin">Admin</option>
-                                    <option value="user">User</option>
-                                  </select>           
+      <div className="bg-food box-user" style={{ backgroundColor: "#fff" }}>
+        <div className="title-user">User</div>
+        <div className="container">
+          <div className="card-e">
+            <div className="img-center">
+              <div className="grid-img">
+                {AllUsers &&
+                  AllUsers.map((users) => {
+                    return (
+                      <>
+                        <div className="box-foods">
+                          <div className="box">
+                            <img
+                              className="img-all-foods"
+                              src={users.profilePictureUrl}
+                              alt="All Foods"
+                            />
+                            <div className="contentt">
+                              <div className="user-id">User Id: {users.id}</div>
+                              <div className="user-name">{users.name}</div>
+                              <div className="user-email">
+                                Email :{users.email}
                               </div>
-                              <div className="col-12">
+                              <div className="user-email">
+                                Peran: {users.role}
+                              </div>
+                              <div className="user-email">
+                                Phone: {users.phoneNumber}
+                              </div>
+                              <button
+                                type="button"
+                                className="button-success"
+                                data-bs-toggle="modal"
+                                data-bs-target={`#userRole${users.id}`}
+                              >
+                                <div className="update-button">Update</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="modal fade"
+                          id={`userRole${users.id}`}
+                          tabindex="-1"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
                                 <button
-                                  type="submit"
-                                  className="btn btn-success"
-                                >
-                                  Edit Role
-                                </button>
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
                               </div>
-                            </form>
+                              <div
+                                class="modal-body"
+                                style={{ position: "relative", left: "-40px" }}
+                              >
+                                <form
+                                  className="box-addFood"
+                                  onSubmit={(e) => handleSubmit(e, users.id)}
+                                >
+                                  <div className="col-md-6">
+                                    <label
+                                      for="inputAge"
+                                      className="form-label"
+                                    >
+                                      Role
+                                    </label>
+                                    <select
+                                      label="Role"
+                                      name="role"
+                                      className="add-input"
+                                      onChange={formik.handleChange}
+                                      onBlur={formik.handleBlur}
+                                      value={formik.values.role}
+                                    >
+                                      <option value="">Select a Role</option>
+                                      <option value="admin">Admin</option>
+                                      <option value="user">User</option>
+                                    </select>
+                                  </div>
+                                  <div className="col-12">
+                                    <button
+                                      type="submit"
+                                      className="btn btn-success"
+                                    >
+                                      Edit Role
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    {/* end-edit-role-users  */}
-                  </>
-                );
-              })}
+                      </>
+                    );
+                  })}
+              </div>
+            </div>
           </div>
         </div>
       </div>

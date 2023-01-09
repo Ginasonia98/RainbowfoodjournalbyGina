@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import UploadImage from "../UploadImage/UploadImage";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import "../Profile/Profile.css";
 
 const Profile = () => {
   const [Profile, setProfile] = useState("");
@@ -26,7 +27,7 @@ const Profile = () => {
       })
       .catch((error) => {
         console.error(error);
-        alert("Error, try reloading the page");
+        alert("Error, Silahkan Refresh ");
       });
   };
   useEffect(() => {
@@ -69,8 +70,8 @@ const Profile = () => {
           .then((response) => {
             console.log(response);
             localStorage.setItem("role", values.role);
-            alert("Update Profile Successful !!");
-            window.location.reload()
+            alert("Profil Berhasil Update!!");
+            window.location.reload();
           })
           .catch((error) => {
             console.log(error);
@@ -97,60 +98,37 @@ const Profile = () => {
 
   return (
     <>
-      <div className="box-container">
+      <div className="box-containerr">
         <div>
-          <div
-            className="card mb-3 mx-auto  shadow"
-            style={{ maxWidth: `540px` }}
-          >
+          <div className="carddd mx-auto  shadow">
             <div className="row g-0">
               <div className="col-md-4">
                 <img
                   src={Profile.profilePictureUrl}
-                  className="img-fluid m-2 shadow"
-                  style={{ height: "250px" }}
+                  className="img-fluidr  shadow"
                   alt={Profile.name}
                 />
               </div>
               <div className="col-md-8">
                 <div className="card-body">
-                  <h5 className="card-title" style={{ fontSize: "26px" }}>
+                  <div className="card-titler" style={{ fontSize: "26px" }}>
                     {Profile.name}
-                  </h5>
+                  </div>
                   <div className="d-flex gap-2 mt-4">
-                    <i
-                      class="bi bi-card-list"
-                      style={{ color: "#0d6efd", fontSize: "16px" }}
-                    ></i>
                     <p className="text-desc" style={{ fontSize: "16px" }}>
-                      <span style={{ fontWeight: "bold", fontSize: "16px" }}>
-                        Email:
-                      </span>{" "}
-                      {Profile.email}
+                      <div className="emaile">Email : {Profile.email}</div>{" "}
                     </p>
                   </div>
                   <div className="d-flex gap-2" style={{ marginTop: "-20px" }}>
-                    <i
-                      class="bi bi-card-list"
-                      style={{ color: "#0d6efd", fontSize: "16px" }}
-                    ></i>
                     <p className="text-desc" style={{ fontSize: "16px" }}>
-                      <span style={{ fontWeight: "bold", fontSize: "16px" }}>
-                        Role:
-                      </span>{" "}
-                      {Profile.role}
+                      <div className="roless">Role : {Profile.role}</div>{" "}
                     </p>
                   </div>
                   <div className="d-flex gap-2" style={{ marginTop: "-20px" }}>
-                    <i
-                      class="bi bi-card-list"
-                      style={{ color: "#0d6efd", fontSize: "16px" }}
-                    ></i>
                     <p className="text-desc" style={{ fontSize: "16px" }}>
-                      <span style={{ fontWeight: "bold", fontSize: "16px" }}>
-                        Phone Number :
-                      </span>{" "}
-                      {Profile.phoneNumber}
+                      <div className="phone-number">
+                        Phone Number : {Profile.phoneNumber}
+                      </div>{" "}
                     </p>
                   </div>
                 </div>
@@ -179,7 +157,9 @@ const Profile = () => {
       >
         <div class="modal-dialog">
           <div class="modal-content">
-            <h3 className="mt-2 text-center" style={{color:'#0d6efd'}}>Edit Profile</h3>
+            <h3 className="mt-2 text-center" style={{ color: "#0d6efd" }}>
+              Edit Profile
+            </h3>
             <div
               class="modal-body"
               style={{ position: "relative", left: "-40px" }}

@@ -1,0 +1,47 @@
+.box-containerr {
+  background-color: #fff !important;
+  width: 10vw;
+  height: auto !important;
+}
+
+.carddd {
+  width: 40vw !important;
+  height: auto;
+  margin-left: 32rem !important;
+  margin-top: 5rem !important;
+  margin-bottom: 10rem !important;
+  background-color: #FFD4B2;
+  border-radius: 5%;
+}
+
+.img-fluidr {
+  width: 15vw !important;
+}
+
+.card-titler {
+  color: #fff;
+  margin-left: 4rem;
+}
+
+.emaile {
+  color: #fff;
+  font-size: 18px;
+  margin-left: -7rem;
+}
+
+.roless {
+  color: #fff;
+  font-size: 18px;
+  margin-left: -7rem;
+}
+
+.phone-number {
+  color: #fff;
+  font-size: 18px;
+  margin-left: -7rem;
+}
+
+.btn-success {
+  margin-left: 2rem !important;
+  width: 5vw;
+}
