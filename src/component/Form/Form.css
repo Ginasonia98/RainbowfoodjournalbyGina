@@ -502,8 +502,8 @@ form.sign-in-form {
   }
 
   .input-box-news {
-    width: 49vw !important;
-    height: 5vh;
+    width: 40vw !important;
+    height: 2vh;
   }
 
   .sign-in-form {
@@ -547,5 +547,10 @@ form.sign-in-form {
     width: 110%;
     height: 45px;
     margin-left: 4rem !important;
+  }
+
+  .input-box-newss {
+    width: 51.3vw !important;
+    height: 4vh;
   }
 }

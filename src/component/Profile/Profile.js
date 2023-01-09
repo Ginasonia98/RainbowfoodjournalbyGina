@@ -157,9 +157,9 @@ const Profile = () => {
       >
         <div class="modal-dialog">
           <div class="modal-content">
-            <h3 className="mt-2 text-center" style={{ color: "#0d6efd" }}>
+            <div className="text-center edit-profiletext" >
               Edit Profile
-            </h3>
+            </div>
             <div
               class="modal-body"
               style={{ position: "relative", left: "-40px" }}
@@ -177,7 +177,7 @@ const Profile = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     type="text"
-                    className="add-input"
+                    className="add-input-t"
                     id="name"
                   />
                 </div>
@@ -194,7 +194,7 @@ const Profile = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     type="text"
-                    className="add-input"
+                    className="add-input-t"
                     id="email"
                   />
                 </div>
@@ -212,14 +212,14 @@ const Profile = () => {
 
                 <div className="col-md-6">
                   <label for="inputAge" className="form-label">
-                    phone Number
+                    Phone Number
                   </label>
                   <input
                     value={formik.values.phoneNumber}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     type="text"
-                    className="add-input"
+                    className="add-input-t"
                     id="phoneNumber"
                   />
                 </div>

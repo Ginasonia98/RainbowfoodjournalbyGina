@@ -25,9 +25,9 @@
     margin-left: 0.3rem;
 }
 
-.card-newee {
+.card-neweeee {
     width: 30vw !important;
-    height: 58vh !important;
+    height: 70vh !important;
 }
 
 
@@ -68,7 +68,7 @@
         margin-top: -1rem;
     }
 
-    .card-newee {
+    .card-neweeee {
         width: 90vw !important;
         height: auto !important;
         margin-top: 0.5rem;
@@ -118,7 +118,7 @@
         margin-top: -1.4rem;
     }
 
-    .modal-content{
+    .modal-content {
         margin-left: -1rem !important;
         width: 102vw !important;
     }

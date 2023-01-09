@@ -93,7 +93,7 @@ const Home = () => {
           </div>
         </div>
         <div className=" bg-food">
-          <div className="title-foods px-2 py-4">Food</div>
+          <div className="title-foods px-2 py-4">Makanan</div>
           <div className="row">
             <div className="img-center">
               <div className="grid-img">
@@ -109,11 +109,11 @@ const Home = () => {
                               alt="All Foods"
                             />
                             <div className="content">
-                              <h2 style={{ marginBottom: "30px" }}>
+                              <div style={{ marginBottom: "30px" }}>
                                 <div className="name pb-2 fs-5">
                                   {foods.name}
                                 </div>
-                              </h2>
+                              </div>
                               <div className="d-flex justify-content-center heart">
                                 <i
                                   className="fa-solid fa-heart"

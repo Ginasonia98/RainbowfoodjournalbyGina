@@ -9,7 +9,6 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import DetailFoods from './component/DetailFoods/DetailFoods';
 import { AddFoods } from './component/AddFoods/AddFoods';
 import Footer from './component/Footer/Footer';
-import { MyFavorite } from './component/MyFavorite/MyFavorite';
 import { Foods } from './component/Foods/Foods';
 import AllUsers from './component/AllUsers/AllUsers';
 import Profile from './component/Profile/Profile';
@@ -30,10 +29,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-      },
-      {
-        path: "/my-favorite",
-        element: <MyFavorite />,
       },
       {
         path: "/foods",

@@ -25,7 +25,7 @@ const AllUsers = () => {
       })
       .catch((error) => {
         console.error(error);
-        alert("Error, try reloading the page");
+        alert("Error, silahkan reload kembali");
       });
   }, []);
 
@@ -45,7 +45,7 @@ const AllUsers = () => {
     })   
     .then((response) => {
       console.log(response);
-      alert("Update Role users Successful !!")
+      alert("Update Peran User Berhasil!!")
       window.location.reload();
     })
     .catch((error) => {
@@ -66,7 +66,7 @@ const AllUsers = () => {
     <>
       <div className="bg-food box-user" style={{ backgroundColor: "#fff" }}>
         <div className="title-user">User</div>
-        <div className="container">
+        <div className="container-rs">
           <div className="card-e">
             <div className="img-center">
               <div className="grid-img">

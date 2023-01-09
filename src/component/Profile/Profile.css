@@ -45,3 +45,79 @@
   margin-left: 2rem !important;
   width: 5vw;
 }
+
+.add-input-t {
+  width: 25vw !important;
+  border: 2px solid #FD841F;
+}
+
+*.add-input-t:focus {
+  outline: none;
+}
+
+.edit-profiletext {
+  color: #FD841F;
+  font-size: 30px !important;
+}
+
+
+@media (width < 768px) {
+  .box-containerr {
+    background-color: #fff !important;
+    width: 10vw;
+    height: auto !important;
+  }
+
+  .carddd {
+    width: 80vw !important;
+    height: auto;
+    margin-left: 1.5rem !important;
+    margin-top: 5rem !important;
+  }
+
+  .card-titler {
+    font-size: 20px !important;
+    text-decoration: underline;
+    margin-left: 8rem;
+    margin-top: 1rem !important;
+  }
+
+  .emaile {
+    color: #fff;
+    font-size: 18px;
+    margin-left: -7rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .roless {
+    color: #fff;
+    font-size: 18px;
+    margin-left: -7rem;
+    margin-bottom: 1rem;
+  }
+
+  .phone-number {
+    color: #fff;
+    font-size: 18px;
+    margin-left: -7rem;
+  }
+
+  .btn-success {
+    margin-left: 6rem !important;
+    width: 18vw;
+    margin-bottom: 1rem;
+  }
+
+  .add-input-t {
+    width: 60vw !important;
+    border: 2px solid #FD841F;
+  }
+
+  *.add-input-t:focus {
+    outline: none;
+  }
+
+  .modal-content {
+    margin-top: 1rem !important;
+  }
+}

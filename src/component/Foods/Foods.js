@@ -50,7 +50,7 @@ export const Foods = () => {
       })
       .catch((error) => {
         console.error(error);
-        alert("Error Silahkan Refresh Ulang !!");
+        alert("Error, try reloading the page");
       });
   };
 
@@ -138,7 +138,7 @@ export const Foods = () => {
                             return (
                               <>
                                 {/* Data-All-Foods */}
-                                <div className="Food-wrappernew rounded-0"></div>
+                                <div className="Food-wrappernew rounded-0">
                                   <div className="col-sm-12 col-md-6 col-lg-3 mb-4">
                                     <img
                                       className="food-image rounded-0 "
@@ -202,6 +202,7 @@ export const Foods = () => {
                                         </div>
                                       </div>
                                     </div>
+                                  </div>
                                 </div>
                                 <div
                                   class="modal fade"

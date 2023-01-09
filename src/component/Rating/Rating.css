@@ -302,4 +302,12 @@
     .fa-star:before {
         margin-left: 3rem;
     }
+
+    .card1 {
+        width: 75vw;
+        height: 0vh !important;
+        margin-left: -8rem !important;
+        margin-bottom: 10rem !important;
+    }
+
 }
