@@ -17,27 +17,42 @@ footer {
 
 .detail-rainbow {
     color: #A31ACB;
+    margin-left: 5px !important;
 }
 
 .about-us {
     color: #fff;
     font-weight: bolder;
     font-size: 30px;
-    margin-left: 10rem;
+    margin-left: 100px !important
 }
+
+.text-about-us {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 100px !important;
+    font-size: 15px;
+}
+
 
 .contact-us {
     color: #fff;
     font-weight: bolder;
     font-size: 30px;
-    margin-left: 10rem;
+    margin-left: 130px !important;
 }
 
 .contact-us-new {
     color: #fff;
     font-weight: bolder;
     font-size: 30px;
-    margin-left: 10rem;
+    margin-left: 130px;
+}
+
+.contact-us1 {
+    margin-left: 130px;
+    font-weight: bolder;
+    font-size: 30px;
 }
 
 .detail-rainbow {
@@ -47,37 +62,6 @@ footer {
     margin-top: 2rem;
 }
 
-.text-about-us {
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 10rem;
-    font-size: 15px;
-}
-
-
-
-.button-footer {
-    display: block !important;
-    margin: 20px 0px;
-    padding: 10px;
-    width: 260px;
-    border-radius: 20px;
-    /* background-color: #ccc; */
-    font-size: 12px;
-    font-weight: bold;
-    background-color: #fff;
-    ;
-    border: 1px solid #fff;
-    color: #0d6efd;
-    ;
-}
-
-.button-footer:hover {
-    background-color: #0d6efd;
-    ;
-    color: #fff;
-    transition: all 0.5s ease-in-out;
-}
 
 .text-email {
     margin-top: 10px;
@@ -86,43 +70,57 @@ footer {
 }
 
 @media (width < 768px) {
+    .detail-rainbows {
+        color: #2DCDDF;
+    }
+
     .detail-rainbow {
-        font-weight: bolder;
-        font-size: 18px;
-        margin-left: -10rem;
-        margin-top: 2rem;
+        color: #A31ACB;
+        margin-left: -10px !important;
     }
 
     .about-us {
+        color: #fff;
         font-weight: bolder;
-        font-size: 15px;
-        margin-left: -14rem;
-        margin-top: 8rem;
+        font-size: 20px;
+        margin-left: -140px !important;
+        margin-top: 200px !important;
     }
 
     .text-about-us {
-        margin-top: 20px;
-        margin-left: -14rem;
+        width: 80%;
+        margin-top: 30px;
+        margin-left: -140px !important;
         font-size: 15px;
     }
+
 
     .contact-us {
-        margin-top: 20px;
-        margin-left: -11rem !important;
-        font-size: 15px;
-    }
-
-    .contact-us1 {
-        margin-top: 20px;
-        margin-left: -11rem !important;
-        font-size: 15px;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 10px;
+        margin-left: -150px !important;
     }
 
     .contact-us-new {
+        color: #fff;
         font-weight: bolder;
-        font-size: 15px;
-        margin-left: -10.9rem !important;
-        margin-top: 8rem;
+        font-size: 20px;
+        margin-left: -135px;
+        margin-top: 200px !important;
+
     }
 
+    .contact-us1 {
+        margin-left: -150px !important;
+        font-weight: bolder;
+        font-size: 10px;
+    }
+
+    .detail-rainbow {
+        font-weight: bolder;
+        font-size: 30px;
+        margin-left: -7rem;
+        margin-top: 2rem;
+    }
 }

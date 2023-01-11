@@ -4,10 +4,13 @@
     background-color: #FF7000 !important;
 }
 
+
 .dropdown-menu {
-    margin-left: 1268px;
-    justify-content: end;
+    margin-left: 85% !important;
+    width: 10vw;
+    position: relative;
 }
+
 
 
 .button-warningnnew {
@@ -87,6 +90,7 @@
     }
 
     .dropdown-menu {
-        margin-left: -30px !important;
+        margin-left: 170px !important;
+        width: 10vw;
     }
 }

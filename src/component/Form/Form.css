@@ -11,11 +11,6 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
-.input-box-newsss {
-  width: 20vw !important;
-  height: 4vh;
-}
-
 .container-form:before {
   height: 250vh !important;
   width: 100% !important;
@@ -104,20 +99,6 @@ form.sign-in-form {
   gap: 2rem;
 }
 
-/* .input-field-i{
-  margin-left: 1rem !important;
-} */
-
-
-
-.input-uploadd {
-  margin-left: 12rem !important;
-  margin-bottom: 1rem !important;
-}
-
-.input-box {
-  border-radius: 55px;
-}
 
 .input-box-newsss {
   width: 20vw !important;
@@ -139,9 +120,9 @@ form.sign-in-form {
   border-radius: 55px;
   cursor: pointer;
   color: #aaa;
-
 }
 
+/* login */
 .input-field-new i {
   text-align: center;
   line-height: 55px;
@@ -159,7 +140,6 @@ form.sign-in-form {
   font-weight: 600;
   font-size: 1.1rem;
   color: #333;
-
 }
 
 .input-field-new input::placeholder {
@@ -176,43 +156,11 @@ form.sign-in-form {
   left: 20px;
 }
 
-.btn-upload {
-  height: 40px;
-  width: 60px;
-  font-size: 12px;
-  position: relative;
-  top: 15px;
-  right: -20px;
-  background-color: #FF7000;
-  border-radius: 8px;
-  color: #fff;
-  border: 1px solid #FF6E31;
-}
+/* lastlogin */
 
 .social-text {
   padding: 0.7rem 0;
   font-size: 1rem;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-}
-
-.social-icon {
-  height: 46px;
-  width: 46px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0.45rem;
-  color: #333;
-  border-radius: 50%;
-  border: 1px solid #333;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: 0.3s;
-  cursor: pointer;
 }
 
 
@@ -490,7 +438,71 @@ form.sign-in-form {
     left: 50%;
   }
 
-  .sign-up-form{
-    margin-bottom: 1px !important;
+  .input-field {
+    max-width: 380px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #FF7000;
+    height: 45px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 1px !important;
+    margin-bottom: 5px !important;
+    margin-top: 1px !important;
+  }
+
+  .add-inputnew {
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 7px !important;
+    margin-left: 45px !important;
+  }
+
+  .input-box-newsss {
+    width: 60vw !important;
+    border: none;
+  }
+
+  .button-login {
+    width: 25vw;
+    background-color: #FF6E31 !important;
+    border: none;
+    outline: none;
+    height: 8vh;
+    border-radius: 9px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 1rem;
+    margin-top: -22px;
+  }
+
+  .input-field-new {
+    max-width: 380px;
+    width: 140%;
+    margin: 10px 0;
+    border: 1px solid #FF7000;
+    height: 45px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: -20px !important;
+    margin-bottom: 35px !important;
+    margin-top: -2px !important;
   }
 }

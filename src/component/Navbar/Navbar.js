@@ -29,7 +29,7 @@ const Navbar = () => {
       };
       return (
         <>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-center">
             <div className="ms-5 ">
               <button
                 type="button"
@@ -39,7 +39,7 @@ const Navbar = () => {
               >
                 <div className="name2">{name}</div>
               </button>
-              <ul class="dropdown-menu d-flex position-absolute   ">
+              <ul class="dropdown-menu position-absolute ">
                 <li>
                   <Link to="/profile-user" className="nav-link bi-person-fill">
                     <div className="my-profile">Profile Saya</div>
