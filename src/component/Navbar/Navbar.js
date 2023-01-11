@@ -29,26 +29,8 @@ const Navbar = () => {
       };
       return (
         <>
-          <div className="box-nav d-flex  col-sm-6 col-4">
-            <div className="d-flex">
-              <li class="nav-item "></li>
-              {localStorage.getItem("role") === "admin" ? (
-                <li class="nav-item ">
-                  <Link
-                    to="/foods"
-                    class="nav-link-link"
-                    style={{
-                      color: "#fff ",
-                      position: "absolute",
-                      left: "10vw",
-                    }}
-                  >
-                    Update Food
-                  </Link>
-                </li>
-              ) : null}
-            </div>
-            <div>
+          <div className="d-flex justify-content-between">
+            <div className="ms-5 ">
               <button
                 type="button"
                 class="button-warningnnew dropdown-toggle"
@@ -57,22 +39,15 @@ const Navbar = () => {
               >
                 <div className="name2">{name}</div>
               </button>
-              <ul class="dropdown-menu ">
+              <ul class="dropdown-menu d-flex position-absolute   ">
                 <li>
-                  <Link
-                    to="/profile-user"
-                    className="nav-link bi-person-fill"
-                  >
+                  <Link to="/profile-user" className="nav-link bi-person-fill">
                     <div className="my-profile">Profile Saya</div>
                   </Link>
                 </li>
                 {localStorage.getItem("role") === "admin" ? (
                   <li>
-                    <Link
-                      to="/all-users"
-                      class="nav-link bi bi-people"
-                      style={{ paddingLeft: "10px" }}
-                    >
+                    <Link to="/all-users" class="nav-link bi bi-people">
                       <div className="user-all">User</div>
                     </Link>
                   </li>
@@ -82,7 +57,6 @@ const Navbar = () => {
                     className="nav-link bi bi-box-arrow-right"
                     href="#"
                     onClick={handleLogout}
-                    style={{ paddingLeft: "10px" }}
                   >
                     <div className="log-out">Keluar</div>
                   </Link>
@@ -95,7 +69,7 @@ const Navbar = () => {
     }
     return (
       <li className="nav-item">
-        <a className="nav-link" href="/Form" style={{ color: "#fff" }}>
+        <a className="nav-link" href="/Form">
           Login
         </a>
       </li>
@@ -117,12 +91,27 @@ const Navbar = () => {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item ">
-                <Link to="/" class="nav-link" style={{ color: "#fff" }}>
-                  Home
-                </Link>
+          <div
+            class="collapse navbar-collapse text-white "
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav w-100 justify-content-between">
+              <li class="d-flex line">
+                <div className="d-flex flex-column justify-content-center">
+                  <Link to="/" class="text-white text-decoration-none">
+                    Home
+                  </Link>
+                </div>
+                {localStorage.getItem("role") === "admin" ? (
+                  <div className="d-flex flex-column justify-content-center ms-4">
+                    <Link
+                      to="/foods"
+                      className="text-white text-decoration-none"
+                    >
+                      Update Food
+                    </Link>
+                  </div>
+                ) : null}
               </li>
               <li class="nav-item">{renderLoginLogout()}</li>
             </ul>

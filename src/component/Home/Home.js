@@ -78,7 +78,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container1">
+      <div>
         <div className="home-section1">
           <div className="content1">
             <div className="welcome">Welcome To Rainbow Food Journal</div>
@@ -92,29 +92,29 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className=" bg-food">
-          <div className="title-foods px-2 py-4">Makanan</div>
-          <div className="row">
-            <div className="img-center">
-              <div className="grid-img">
-                {AllFoods &&
-                  AllFoods.map((foods) => {
-                    return (
-                      <>
-                        <div className="food-wrapper rounded-0">
-                          <div className="col-sm-12 col-md-6 col-lg-3 mb-4">
-                            <img
-                              className="food-image rounded-0 w-200 "
-                              src={foods.imageUrl}
-                              alt="All Foods"
-                            />
-                            <div className="content">
-                              <div style={{ marginBottom: "30px" }}>
-                                <div className="name pb-2 fs-5">
-                                  {foods.name}
-                                </div>
-                              </div>
-                              <div className="d-flex justify-content-center heart">
+        <div className="bg-food">
+          <div className="container">
+            <div className="text-white fs-1 font-weight-bold py-3">Makanan</div>
+            <div className="row">
+              {AllFoods &&
+                AllFoods.map((foods) => {
+                  return (
+                    <div className="col-sm-12 col-md-6 col-lg-3 mb-4">
+                      <div className="bg-white">
+                        <div className="image-card">
+                          <img
+                            className="w-100"
+                            src={foods.imageUrl}
+                            alt="All Foods"
+                          />
+                        </div>
+                        <div className="content p-4">
+                          <div className="mb-5">
+                            <div className="name fs-5">{foods.name}</div>
+                          </div>
+                          <div className="d-flex justify-content-between">
+                            <div className="d-flex justify-content-center">
+                              <div className="d-flex flex-column justify-content-center">
                                 <i
                                   className="fa-solid fa-heart"
                                   onClick={() =>
@@ -127,19 +127,21 @@ const Home = () => {
                                     fontSize: "25px",
                                   }}
                                 ></i>
-                                <p
-                                  style={{
-                                    position: "relative",
-                                    bottom: "2px",
-                                    fontSize: "20px",
-                                  }}
-                                >
-                                  {foods.totalLikes}
-                                </p>
-                                <Link
-                                  className="d-flex rating set-rating"
-                                  to={`/rating/${foods.id}`}
-                                >
+                              </div>
+                              <div
+                                style={{
+                                  position: "relative",
+                                  fontSize: "20px",
+                                }}
+                                className="d-flex flex-column justify-content-center ms-1"
+                              >
+                                {foods.totalLikes}
+                              </div>
+                              <Link
+                                className="d-flex rating set-rating"
+                                to={`/rating/${foods.id}`}
+                              >
+                                <div className="d-flex flex-column justify-content-center">
                                   <i
                                     class="fa-solid fa-star"
                                     style={{
@@ -147,34 +149,34 @@ const Home = () => {
                                       fontSize: "25px",
                                     }}
                                   ></i>
-                                  <p
-                                    style={{
-                                      position: "relative",
-                                      bottom: "2px",
-                                      fontSize: "20px",
-                                    }}
-                                  >
-                                    {foods.rating}
-                                  </p>
-                                </Link>
-                              </div>
-                              <div className="d-flex justify-content-center gap-2 mt-2">
-                                <div key={foods.id}>
-                                  <Link
-                                    className="btn-detail"
-                                    to={`/detail-foods/${foods.id}`}
-                                  >
-                                    Detail
-                                  </Link>
                                 </div>
+                                <div
+                                  style={{
+                                    position: "relative",
+                                    fontSize: "20px",
+                                  }}
+                                  className="d-flex flex-column justify-content-center ms-1"
+                                >
+                                  {foods.rating}
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="d-flex justify-content-center gap-2">
+                              <div key={foods.id}>
+                                <Link
+                                  className="btn-detail"
+                                  to={`/detail-foods/${foods.id}`}
+                                >
+                                  Detail
+                                </Link>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </>
-                    );
-                  })}
-              </div>
+                      </div>
+                    </div>
+                  );
+                })}
             </div>
           </div>
         </div>

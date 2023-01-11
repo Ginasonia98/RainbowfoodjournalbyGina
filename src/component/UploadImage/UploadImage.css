@@ -1,0 +1,24 @@
+
+
+.uploads {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.button-upload {
+  background-color: #FF7000;
+  border: 1px solid #FF7000;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 12px;
+  height: 40px;
+  position: relative;
+  left:400px;
+  top: -50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (width < 768px) {}

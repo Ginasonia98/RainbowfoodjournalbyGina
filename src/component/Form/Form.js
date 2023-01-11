@@ -101,7 +101,7 @@ const Form = () => {
           <div class="signin-signup">
             {/* sign-in  */}
             <form onSubmit={formLogin.handleSubmit} class="sign-in-form">
-              <div class="titles">Masuk</div>
+              <div class="titles d-flex justify-content-center">Masuk</div>
               <div class="input-field-new">
                 <i class="fas fa-envelope"></i>
                 <input
@@ -139,8 +139,8 @@ const Form = () => {
 
             {/* sign-up  */}
             <form onSubmit={formik.handleSubmit} class="sign-up-form">
-              <div class="titles">Daftar</div>
-              <div class="input-field">
+              <div class="titles d-flex justify-content-center">Daftar</div>
+              <div class="input-field d-flex justify-content-center align-items-center">
                 <i class="fas fa-user"></i>
                 <input
                   id="name"
@@ -150,14 +150,13 @@ const Form = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.name}
-                  className="input-box-newss"
+                  className="input-box-newsss"
                 />
-
                 {formik.touched.username && formik.errors.username ? (
                   <div>{formik.errors.username}</div>
                 ) : null}
               </div>
-              <div class="input-field">
+              <div class="input-field d-flex justify-content-center align-items-center">
                 <i class="fas fa-envelope"></i>
                 <input
                   id="email"
@@ -175,7 +174,7 @@ const Form = () => {
                 ) : null}
               </div>
 
-              <div class="input-field">
+              <div class="input-field d-flex justify-content-center align-items-center">
                 <i class="fas fa-lock"></i>
                 <input
                   id="password"
@@ -185,7 +184,7 @@ const Form = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.password}
-                  className="input-box-newss"
+                  className="input-box-newsss"
                 />
 
                 {formik.touched.password && formik.errors.password ? (
@@ -193,7 +192,7 @@ const Form = () => {
                 ) : null}
               </div>
 
-              <div class="input-field">
+              <div class="input-field d-flex justify-content-center align-items-center">
                 <i class="fas fa-lock"></i>
                 <input
                   id="passwordRepeat"
@@ -211,7 +210,7 @@ const Form = () => {
                   <div>{formik.errors.passwordRepeat}</div>
                 ) : null}
               </div>
-              <div class="input-field">
+              <div class="input-field ">
                 <i class="fas fa-user"></i>
                 <select
                   onChange={formik.handleChange}
@@ -228,7 +227,7 @@ const Form = () => {
                   <option value="user">User</option>
                 </select>
               </div>
-              <div class="input-field">
+              <div class="input-field d-flex justify-content-center align-items-center">
                 <i class="fa fa-phone"></i>
                 <input
                   id="phoneNumber"
@@ -245,9 +244,7 @@ const Form = () => {
                   <div>{formik.errors.phoneNumber}</div>
                 ) : null}
               </div>
-              <div
-                className="input-uploadd"
-              >
+              <div className="input-field-i  ">
                 <UploadImage onChange={(value) => setUploadFile(value)} />
               </div>
               <button type="submit" class="button-login btn-primary">

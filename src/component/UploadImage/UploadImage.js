@@ -2,6 +2,7 @@ import axios from "axios";
 import { useRef, useState } from "react";
 import { BASE_URL, API_KEY } from "../../Environment";
 import "../Form/Form.css";
+import "../UploadImage/UploadImage.css";
 
 const UploadImage = ({onChange}) => {
  const [savePicture, setSavePicture] = useState("");
@@ -54,8 +55,8 @@ const UploadImage = ({onChange}) => {
   }
 
   return (
-    <div className="d-flex top-100">
-      <div className="input-fieldinput">
+    <div className="upload ">
+      <div className="input-field ">
         <input
           type="file"
           ref={fileUpload}
@@ -66,15 +67,14 @@ const UploadImage = ({onChange}) => {
         />
       </div>
       <button
-        className="button-upload"
+        className="button-upload d-flex "
         type="button"
         id="inputGroupFileAddon04"
         onClick={uploadImage}
       >
-        <div className="upload">Upload</div>
+        <div className="uploads">Upload</div>
       </button>
     </div>
-
   );
 };
 
