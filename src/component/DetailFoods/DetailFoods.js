@@ -30,89 +30,71 @@ const DetailFoods = () => {
 
   return (
     <>
-      <div className="box-container1">
-        <div>
-          <div className="card-neweeee  mx-auto  shadow">
-            <div className="row g-0">
-              <div className="col-md-4">
-                <img
-                  src={AllFoods.imageUrl}
-                  className="img-fluid-new shadow"
-                  alt={AllFoods.name}
-                />
-              </div>
-              <div className="col-md-8">
-                <div className="card-body">
-                  <br />
-                  <div className="card-titlee" style={{ fontSize: "26px" }}>
-                    {AllFoods.name}
+      <div>
+        <div className="bg-food">
+          <div className="container">
+            <div className="row">
+              <div className="car col-sm-12 col-md-6 col-lg-3 mb-4 w-50">
+                <div className="bg-white">
+                  <div className="image-card">
+                    <img
+                      className="w-100"
+                      src={AllFoods.imageUrl}
+                      alt={AllFoods.name}
+                    />
                   </div>
-                  <br />
-                  <p className="text-desc" style={{ fontSize: "16px" }}>
-                    <div className="desc">Desc:{AllFoods.description}</div>
-                  </p>
-                  <div className="d-flex " style={{ marginTop: "-20px" }}>
-                    <div className="ingredient">
-                      Ingredients:
-                      {AllFoods &&
-                        AllFoods.ingredients.map((m, index) => {
-                          return (
-                            <span
-                              style={{ fontWeight: "normal", fontSize: "16px" }}
-                              key={index}
-                            >
-                              {(index ? ", " : " ") + m}
-                            </span>
-                          );
-                        })}
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <br />
+                      <div className="named">{AllFoods.name}</div>
+                      <br />
+                      <div className="descr">
+                        Deskripsi :{AllFoods.description}
+                      </div>
+                      <div className="ingred">
+                        Bahan :
+                        {AllFoods &&
+                          AllFoods.ingredients.map((m, index) => {
+                            return (
+                              <span className="i" key={index}>
+                                {(index ? ", " : " ") + m}
+                              </span>
+                            );
+                          })}
+                      </div>
+                      <br />
+                      <div className="star-rate d-flex justify-content-start ms-3">
+                        <small className="text-muted">
+                          <i
+                            className="fa-solid fa-heart m-1"
+                            style={{ color: `red` }}
+                          ></i>
+                          {AllFoods.totalLikes}
+                        </small>
+                        <small className="text-muted">
+                          <Link to={`/rating/${AllFoods.id}`}>
+                            <i
+                              className="fa-solid fa-star m-1"
+                              style={{ color: `gold` }}
+                            ></i>
+                          </Link>
+                          {AllFoods.rating}
+                        </small>
+                      </div>
                     </div>
                   </div>
-                  <br />
-                  <div className="star-rate">
-                    <small className="text-muted">
-                      <i
-                        className="fa-solid fa-heart m-1"
-                        style={{ color: `red` }}
-                      ></i>
-                      {AllFoods.totalLikes}
-                    </small>
-                    <small className="text-muted">
-                      <Link to={`/rating/${AllFoods.id}`}>
-                        <i
-                          className="fa-solid fa-star m-1"
-                          style={{ color: `gold` }}
-                        ></i>
-                      </Link>
-                      <div className="all-rating">{AllFoods.rating}</div>
-                    </small>
+                  <hr class="shortLine" />
+                  <div className="d-flex justify-content-center">
+                    <div className="created">
+                      {" "}
+                      Created At: {AllFoods.createdAt}
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="card-footer">
-                <div
-                  className="d-flex gap-2"
-                  style={{
-                    marginTop: "0.2rem",
-                    marginLeft: "0.1rem",
-                    color: "#FD841F",
-                  }}
-                >
-                  <div className="text-descc" style={{ fontSize: "16px" }}>
-                    <div className="created-updatedf">Created At:</div>{" "}
-                    <div className="update">{AllFoods.createdAt}</div>
-                  </div>
-                </div>
-                <div
-                  className="d-flex "
-                  style={{
-                    marginTop: "0.5rem",
-                    marginLeft: "0rem",
-                    color: "#FD841F",
-                  }}
-                >
-                  <div className="text-descc" style={{ fontSize: "16px" }}>
-                    <div className="created-updatedf">Updated At:</div>{" "}
-                    <div className="update">{AllFoods.createdAt}</div>
+                  <div className="d-flex justify-content-center">
+                    <div className="updated">
+                      {" "}
+                      Update At: {AllFoods.createdAt}
+                    </div>
                   </div>
                 </div>
               </div>

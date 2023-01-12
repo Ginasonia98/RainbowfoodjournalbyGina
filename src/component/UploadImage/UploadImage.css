@@ -27,8 +27,7 @@
     font-size: 12px;
     height: 40px;
     position: relative;
-    left: 20px;
-    top: 2px;
+    left: 210px !important;
     width: 60px;
     display: flex;
     justify-content: center;

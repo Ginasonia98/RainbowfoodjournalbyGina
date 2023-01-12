@@ -440,8 +440,7 @@ form.sign-in-form {
 
   .input-field {
     max-width: 380px;
-    width: 100%;
-    margin: 10px 0;
+    width: 120% !important;
     border: 1px solid #FF7000;
     height: 45px;
     border-radius: 55px;
@@ -452,7 +451,7 @@ form.sign-in-form {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-left: 1px !important;
+    margin-left: -50px !important;
     margin-bottom: 5px !important;
     margin-top: 1px !important;
   }
@@ -489,7 +488,7 @@ form.sign-in-form {
 
   .input-field-new {
     max-width: 380px;
-    width: 140%;
+    width: 152%;
     margin: 10px 0;
     border: 1px solid #FF7000;
     height: 45px;
@@ -504,5 +503,9 @@ form.sign-in-form {
     margin-left: -20px !important;
     margin-bottom: 35px !important;
     margin-top: -2px !important;
+  }
+
+  .sign-up-form{
+    margin-top: -45px !important;
   }
 }

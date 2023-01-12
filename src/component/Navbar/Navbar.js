@@ -41,20 +41,20 @@ const Navbar = () => {
               </button>
               <ul class="dropdown-menu position-absolute ">
                 <li>
-                  <Link to="/profile-user" className="nav-link bi-person-fill">
+                  <Link to="/profile-user" className="nav-link-k bi-person-fill">
                     <div className="my-profile">Profile Saya</div>
                   </Link>
                 </li>
                 {localStorage.getItem("role") === "admin" ? (
                   <li>
-                    <Link to="/all-users" class="nav-link bi bi-people">
+                    <Link to="/all-users" class="nav-link-k bi bi-people">
                       <div className="user-all">User</div>
                     </Link>
                   </li>
                 ) : null}
                 <li className="nav-item">
                   <Link
-                    className="nav-link bi bi-box-arrow-right"
+                    className="nav-link-k bi bi-box-arrow-right"
                     href="#"
                     onClick={handleLogout}
                   >

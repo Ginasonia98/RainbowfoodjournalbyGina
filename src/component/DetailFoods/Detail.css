@@ -6,120 +6,69 @@
     background: white;
 }
 
-.text-descc {
-    margin-left: 1rem;
+.car {
+    margin-left: 20%;
+    margin-top: 1%;
 }
 
-.img-fluid-new {
-    height: 30vh !important;
-    width: 10vw;
-}
-
-.all-rating {
-    margin-left: 5rem;
-    margin-top: -1.4rem;
-}
-
-.card-titlee {
+.ingred {
+    margin-left: 5%;
+    font-size: 20px;
     color: #FD841F;
-    margin-left: 0.3rem;
 }
 
-.card-neweeee {
-    width: 30vw !important;
-    height: 70vh !important;
-}
-
-
-.desc {
+.named {
     color: #FD841F;
-    margin-left: 0.3rem;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 45%;
 }
 
-.star-rate {
-    margin-top: -1rem;
-    margin-left: 0rem;
-}
-
-.description {
-    font-weight: bold;
+.descr {
     color: #FD841F;
-    margin-left: 0.3rem;
-    margin-top: 1rem;
+    margin-left: 5%;
+    font-size: 20px;
 }
 
-.ingredient {
+.created {
     color: #FD841F;
-    margin-left: -9.6rem;
+    font-size: 20px;
 }
 
+.updated {
+    color: #FD841F;
+    font-size: 20px;
+}
 
 @media (width < 768px) {
-    .img-fluid-new {
-        height: 30vh !important;
-        width: 90vw;
-        margin-left: 3.8rem;
-        margin-right: -1rem;
+    .car {
+        margin-left: 15%;
+        margin-top: 3%;
     }
 
-    .card-titlee {
-        color: #FD841F;
-        margin-left: 8rem;
-        margin-top: -1rem;
+    .named {
+        font-weight: bolder;
+        font-size: 20px !important;
+        text-align: center;
+        margin-left: 10%;
     }
 
-    .card-neweeee {
-        width: 90vw !important;
-        height: auto !important;
-        margin-top: 0.5rem;
-        margin-left: -3.8rem !important;
+    .descr {
+        margin-left: 10%;
+        font-size: 15px;
     }
 
-
-    .desc {
-        color: #FD841F;
-        margin-left: 5rem;
-        margin-top: -1rem;
+    .ingred {
+        margin-left: 10%;
+        font-size: 15px;
     }
 
-    .star-rate {
-        margin-left: 19rem;
+    .created {
+        font-size: 15px;
     }
 
-    .description {
-        font-weight: bold;
-        color: #FD841F;
-        margin-left: 0.3rem;
-        margin-top: 1rem;
-    }
-
-    .ingredient {
-        color: #FD841F;
-        margin-left: -5rem;
-    }
-
-    .created-updatedf {
-        color: #FD841F;
-        margin-left: 4rem;
-    }
-
-    .fa-heart {
-        margin-left: -4rem !important;
-        margin-right: 1rem;
-        justify-content: space-around;
-    }
-
-    .update {
-        margin-left: 4rem !important;
-    }
-
-    .all-rating {
-        margin-left: 0rem;
-        margin-top: -1.4rem;
-    }
-
-    .modal-content {
-        margin-left: -1rem !important;
-        width: 102vw !important;
+    .updated {
+        font-size: 15px;
     }
 }

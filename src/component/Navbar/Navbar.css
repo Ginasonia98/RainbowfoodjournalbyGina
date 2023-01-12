@@ -11,7 +11,48 @@
     position: relative;
 }
 
+.nav-link{
+    color: #fff !important;
+}
 
+.nav-link-k {
+    color: #FF7000;
+    text-decoration: none;
+}
+
+.nav-link-k:hover {
+    color: #FF7000;
+}
+
+.my-profile {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -24px !important;
+}
+
+.bi-person-fill {
+    margin-left: 15px !important;
+}
+
+
+.user-all {
+    margin-left: 35px !important;
+    margin-top: -22px !important;
+}
+
+.bi-people {
+    margin-left: 15px !important;
+}
+
+.log-out {
+    margin-left: 35px !important;
+    margin-top: -22px !important;
+}
+
+.bi-box-arrow-right {
+    margin-left: 15px !important;
+}
 
 .button-warningnnew {
     background-color: #FF7000;
@@ -50,43 +91,19 @@
     color: white !important;
 }
 
-.my-profile {
-    margin-top: -1.4rem;
-    margin-left: 1.3rem;
-}
-
-.user-all {
-    margin-top: -1.4rem;
-    margin-left: 1.3rem;
-}
-
-.log-out {
-    margin-top: -1.4rem;
-    margin-left: 1.3rem;
-}
 
 @media (width < 768px) {
     .button-warningnnew {
         margin-left: -40px;
     }
 
-    .my-profile {
-        margin-top: -1.4rem;
-        margin-left: 1.5rem;
-    }
-
     .user-all {
-        margin-top: -1.4rem;
-        margin-left: 1.3rem;
+        margin-left: 35px !important;
+        margin-top: -22px !important;
     }
 
-    .log-out {
-        margin-top: -1.4rem;
-        margin-left: 1.5rem;
-    }
-
-    .bi-person-fill {
-        margin-left: 0.5rem !important;
+    .bi-people {
+        margin-left: 15px !important;
     }
 
     .dropdown-menu {
