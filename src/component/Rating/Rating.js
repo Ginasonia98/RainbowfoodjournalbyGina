@@ -7,7 +7,6 @@ import { BASE_URL, API_KEY } from "../../Environment";
 import "../Foods/foods.css";
 import "../Rating/Rating.css";
 
-
 const Rating = () => {
   let { foodsID } = useParams();
 
@@ -24,7 +23,7 @@ const Rating = () => {
       },
     })
       .then((res) => {
-        console.log('cek data:', res)
+        console.log("cek data:", res);
         setFoods(res.data.data);
       })
       .catch((error) => {
@@ -41,7 +40,7 @@ const Rating = () => {
       },
     })
       .then((res) => {
-        console.log('cek rating:',res)
+        console.log("cek rating:", res);
         setRating(res.data.data);
       })
       .catch((error) => {
@@ -51,7 +50,7 @@ const Rating = () => {
 
   useEffect(() => {
     getRating();
-  }, [foodsID]);
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -71,7 +70,7 @@ const Rating = () => {
       .then((res) => {
         console.log(res);
         getRating();
-        window.location.reload()
+        window.location.reload();
       })
       .catch((error) => {
         console.log(error);
@@ -90,173 +89,227 @@ const Rating = () => {
   });
   return (
     <>
-      <div className="box-container">
-        <div
-          style={{ padding: "120px", backgroundColor: "white", width: "20%" }}
-        >
-          <div className="card-new mb-5 mx-auto  shadow">
-            <div className="row g-0">
-              <div className="col-md-4">
-                <div className="image-rate">
-                  <img
-                    src={foods && foods.imageUrl}
-                    className="img-fluids  shadow"
-                    alt={foods && foods.name}
-                  />
-                </div>
-              </div>
-              <div className="col-md-8">
-                <div className="card-body">
-                  <div className="card-titless" style={{ fontSize: "26px" }}>
-                    {foods && foods.name}
-                  </div>
-                  <p className="text-desc" style={{ fontSize: "16px" }}>
-                    <div className="descnews">
-                      Desc:{foods && foods.description}
-                    </div>
-                  </p>
-                  <div className="d-flex gap-2" style={{ marginTop: "-20px" }}>
-                    <div className="ing-new">
-                      Ingredients:
-                      {foods &&
-                        foods.ingredients.map((i, index) => {
-                          return (
-                            <span
-                              style={{ fontWeight: "normal", fontSize: "16px" }}
-                              key={index}
-                            >
-                              {(index ? ", " : " ") + i}
-                            </span>
-                          );
-                        })}
-                    </div>
-                  </div>
-                  <div className="rate">
-                    <p className="card-text">
-                      <i
-                        className="fa-solid fa-star m-1"
-                        style={{ color: `gold` }}
-                      ></i>
-                      <div className="rates">{foods && foods.rating}</div>
-                    </p>
-                  </div>
-                </div>
-              </div>
+      <div>
+        <div className="card-r mt-5 mx-auto  shadow w-50">
+          <div className="row g-0">
+            <div className="col-md-4">
+              <img
+                src={foods && foods.imageUrl}
+                className="img-fluid  shadow"
+                alt={foods && foods.name}
+              />
             </div>
-          </div>
-          <div className="create-ratingbutton">
-            <div className="text-center">
-              <button
-                type="button"
-                className="btn btn-warning  shadow "
-                data-bs-toggle="modal"
-                data-bs-target={`#rating${foods && foods.id}`}
-              >
-                <div className="create">Create Rating</div>
-              </button>
-            </div>
-          </div>
-          <div
-            className="modal fade"
-            id={`rating${foods && foods.id}`}
-            tabIndex="-1"
-            aria-labelledby="modal-title"
-            aria-hidden="true"
-          >
-            <div className="modal-dialog modal-md">
-              <div className="modal-content">
-                <div className="modal-body">
-                  <form
-                    className="box-addFoods"
-                    onSubmit={(e) => handleSubmit(e, foods.id)}
+            <div className="col-md-8">
+              <div className="card-body">
+                <div className="card-name">{foods && foods.name}</div>
+                <div className="d-flex gap-2 mt-4">
+                  <i
+                    class="bi bi-list"
+                    style={{
+                      color: "#FD841F",
+                      fontSize: "20px",
+                      marginLeft: "15px",
+                    }}
+                  ></i>
+                  <div
+                    className="text-desc"
+                    style={{ fontSize: "16px", color: "#FD841F" }}
                   >
-                    <div className="text-center">
-                      <h2
+                    <span style={{ fontWeight: "bold", fontSize: "16px" }}>
+                      Deskripsi:
+                    </span>{" "}
+                    {foods && foods.description}
+                  </div>
+                </div>
+                <div className="d-flex gap-2">
+                  <i
+                    className="bi bi-info-square"
+                    style={{
+                      fontSize: "20px",
+                      color: "#FD841F",
+                      marginLeft: "15px",
+                    }}
+                  ></i>
+                  <span
+                    style={{
+                      fontSize: "16px",
+                      fontWeight: "bold",
+                      color: "#FD841F",
+                    }}
+                  >
+                    Bahan:
+                    {foods &&
+                      foods.ingredients.map((i, index) => {
+                        return (
+                          <span
+                            style={{ fontWeight: "normal", fontSize: "16px" }}
+                            key={index}
+                          >
+                            {(index ? ", " : " ") + i}
+                          </span>
+                        );
+                      })}
+                  </span>
+                </div>
+                <br />
+                <p className="card-text">
+                  <i
+                    className="fa-solid fa-star ms-3"
+                    style={{ color: `orange` }}
+                  ></i>
+                  {foods && foods.rating}.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center">
+          <button
+            type="button"
+            className="btn-create shadow fw-bold ms-5 "
+            data-bs-toggle="modal"
+            data-bs-target={`#rating${foods && foods.id}`}
+          >
+            <div
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+                color: "#fff",
+              }}
+            >
+              Create Rating
+            </div>
+          </button>
+        </div>
+        <div
+          className="modal fade h-50"
+          id={`rating${foods && foods.id}`}
+          tabIndex="-1"
+          aria-labelledby="modal-title"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-md">
+            <div className="modal-content">
+              <div className="modal-body">
+                <form
+                  className="box-addFoods"
+                  onSubmit={(e) => handleSubmit(e, foods.id)}
+                >
+                  <div
+                    style={{
+                      fontSize: "16px",
+                      fontWeight: "bold",
+                      color: "#FD841F",
+                    }}
+                  >
+                    Create Rating
+                  </div>
+                  <div className="row gap-4">
+                    <div className="col-md-6">
+                      <label
+                        for="inputName"
+                        className="form-label"
                         style={{
-                          color: "orange",
-                          position: "relative",
-                          right: "-30px",
+                          fontSize: "16px",
+                          fontWeight: "bold",
+                          color: "#FD841F",
                         }}
                       >
-                        Create Rating
-                      </h2>
+                        Rating
+                      </label>
+                      <input
+                        value={formik.values.rating}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        type="number"
+                        className="add-input-t"
+                        id="rating"
+                      />
                     </div>
-                    <div
-                      style={{ position: "relative", right: "40px" }}
-                      className="row gap-4"
-                    >
-                      <div className="col-md-6">
-                        <label for="inputNames" className="form-label">
-                          <div className="rating-reviewtext">Rating</div>
-                        </label>
-                        <input
-                          value={formik.values.rating}
-                          onChange={formik.handleChange}
-                          onBlur={formik.handleBlur}
-                          type="number"
-                          className="add-inputc "
-                          id="rating"
-                        />
-                      </div>
-                      <div className="col-md-6">
-                        <label for="inputName" className="form-label">
-                          <div className="rating-reviewtext">Review</div>
-                        </label>
-                        <input
-                          value={formik.values.review}
-                          onChange={formik.handleChange}
-                          onBlur={formik.handleBlur}
-                          type="text"
-                          className="add-inputc"
-                          id="review"
-                        />
-                      </div>
-                      <div className="col-12">
-                        <button type="submit" className="button button-warningg">
-                          <div className="create-text">Create</div>
-                        </button>
-                      </div>
+                    <div className="col-md-6">
+                      <label
+                        for="inputName"
+                        className="form-label"
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "bold",
+                          color: "#FD841F",
+                        }}
+                      >
+                        Review
+                      </label>
+                      <input
+                        value={formik.values.review}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        type="text"
+                        className="add-input-t"
+                        id="review"
+                      />
                     </div>
-                  </form>
-                </div>
+                    <div className="col-12">
+                      <button className="create-rating">
+                        <div className="create-text ">Create</div>
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-
-          {rating &&
-            rating.map((rate) => {
-              return (
-                <div className="card1 container-md mt-3" key={rate.id}>
-                  <div className="col-6 list-group mx-auto  ">
-                    <li className="d-flex justify-content-between food-card shadow list-group-item">
-                      <div className="d-flex gap-3">
-                        <div className="image-user">
-                          <img
-                            src={rate.user.profilePictureUrl}
-                            className="set-img"
-                            alt={rate.user.name}
-                          />
-                        </div>
-                        <div className=" ">
-                          <div className="fw-bold username">
-                            {rate.user.name}
-                          </div>
-                          <div className="review">{rate.review}</div>
-                        </div>
-                      </div>
-                      <div className="rate1">
-                        <i
-                          className="fa-solid fa-star m-1"
-                          style={{ color: `gold` }}
-                        ></i>
-                        {rate.rating}
-                      </div>
-                    </li>
-                  </div>
-                </div>
-              );
-            })}
         </div>
+
+        {rating &&
+          rating.map((rate) => {
+            return (
+              <div key={rate.id}>
+                <div className="col-6 list-group mt-3 mx-auto mb-5 ">
+                  <li className="d-flex justify-content-between align-items-start food-card shadow list-group-item">
+                    <div className="d-flex gap-3">
+                      <img
+                        src={rate.user.profilePictureUrl}
+                        className="set-img"
+                        alt={rate.user.name}
+                      />
+                      <div className="namee">
+                        <div
+                          style={{
+                            fontSize: "20px",
+                            fontWeight: "bold",
+                            color: "#FD841F",
+                          }}
+                        >
+                          {rate.user.name}
+                        </div>
+                        <div
+                          style={{
+                            fontSize: "15px",
+                            fontWeight: "bold",
+                            color: "#FD841F",
+                          }}
+                        >
+                          {rate.review}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <i
+                        className="fa-solid fa-star m-1"
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "bold",
+                          color: "#FD841F",
+                        }}
+                      ></i>
+                      {rate.rating}
+                    </div>
+                  </li>
+                </div>
+              </div>
+            );
+          })}
       </div>
     </>
   );

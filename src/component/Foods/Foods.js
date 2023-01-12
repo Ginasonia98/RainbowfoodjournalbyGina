@@ -119,268 +119,248 @@ export const Foods = () => {
 
   return (
     <>
-      <div className="food-section">
-        <div className="home-sectionnew">
-          <div className="content">
-            <div className=" bg-foods">
-              <div className="title-all px-2 py-4">Create Foods</div>
-              <div className="container">
-                <div className="rows">
-                  <div className="d-flex justify-content-center">
-                    <Link className="btn-create fw-bold" to={`/add-foods`}>
-                      <div className="create-foods">Create Foods</div>
-                    </Link>
-                  </div>
-                    <div className="img-center">
-                      <div className="grid-img">
-                        {AllFoods &&
-                          AllFoods.map((foods) => {
-                            return (
-                              <>
-                                {/* Data-All-Foods */}
-                                <div className="Food-wrappernew rounded-0">
-                                  <div className="col-sm-12 col-md-6 col-lg-3 mb-4">
-                                    <img
-                                      className="food-image rounded-0 "
-                                      src={foods.imageUrl}
-                                      alt="All Foods"
-                                    />
-                                    <div
-                                      className="content"
-                                      style={{
-                                        display: "flex",
-                                        flexDirection: "column",
-                                        flexWrap: "wrap",
-                                        gap: "20px",
-                                      }}
-                                    >
-                                      <div className="names">
-                                        Nama Makanan: {foods.name}
-                                      </div>
-                                      <div className="ingredients ">
-                                        Bahan Pembuatan:{" "}
-                                        {foods.ingredients.join(", ")}
-                                      </div>
-                                      <div className="button-food">
-                                        <div className="d-flex gap-1 justify-content-center ">
-                                          <div>
-                                            <Link
-                                              onClick={() =>
-                                                handleDelete(foods.id)
-                                              }
-                                              className="btn btn-primary"
-                                              style={{
-                                                fontSize: "0.75rem",
-                                                backgroundColor: "blue",
-                                              }}
-                                            >
-                                              Delete
-                                            </Link>
-                                          </div>
-                                          <div key={foods.id}>
-                                            <Link
-                                              className="btn btn-info"
-                                              style={{
-                                                fontSize: "0.75rem",
-                                                Color: "white",
-                                              }}
-                                              to={`/detail-foods/${foods.id}`}
-                                            >
-                                              Detail
-                                            </Link>
-                                          </div>
-                                          <div>
-                                            <Link
-                                              className="btn btn-danger"
-                                              style={{ fontSize: "0.75rem" }}
-                                              data-bs-toggle="modal"
-                                              data-bs-target={`#exampleModal-${foods.id}`}
-                                            >
-                                              Edit
-                                            </Link>
-                                          </div>
+      <div className="bg-food">
+        <div className="container">
+          <div className="text-white fs-1 font-weight-bold text-align-center">Create Food</div>
+            <div className="row">
+              <div className="d-flex justify-content-center">
+                <Link className="button-creates fw-bold" to={`/add-foods`}>
+                  <div className="create-foods">Create Foods</div>
+                </Link>
+              </div>
+                  {AllFoods &&
+                    AllFoods.map((foods) => {
+                      return (
+                        <>
+                          {/* Data-All-Foods */}
+                          <div className="card col-sm-12 col-md-6 col-lg-3 mb-5 ms-5 ">
+                            <div className="bg-white">
+                              <div className="image-card">
+                                <img
+                                  className="w-100 "
+                                  src={foods.imageUrl}
+                                  alt="All Foods"
+                                />
+                                <div className="content p-4">
+                                  <div className="mb-5">
+                                    <div className="names">
+                                      Nama Makanan: {foods.name}
+                                    </div>
+                                    <div className="ingredients ">
+                                      Bahan Pembuatan:{" "}
+                                      {foods.ingredients.join(", ")}
+                                    </div>
+                                    <div className="button-food">
+                                      <div className="d-flex gap-1 justify-content-center ">
+                                        <div>
+                                          <Link
+                                            onClick={() =>
+                                              handleDelete(foods.id)
+                                            }
+                                            className="btn btn-primary"
+                                            style={{
+                                              fontSize: "0.75rem",
+                                              backgroundColor: "blue",
+                                            }}
+                                          >
+                                            Delete
+                                          </Link>
+                                        </div>
+                                        <div key={foods.id}>
+                                          <Link
+                                            className="btn btn-info"
+                                            style={{
+                                              fontSize: "0.75rem",
+                                              Color: "white",
+                                            }}
+                                            to={`/detail-foods/${foods.id}`}
+                                          >
+                                            Detail
+                                          </Link>
+                                        </div>
+                                        <div>
+                                          <Link
+                                            className="btn btn-danger"
+                                            style={{ fontSize: "0.75rem" }}
+                                            data-bs-toggle="modal"
+                                            data-bs-target={`#exampleModal-${foods.id}`}
+                                          >
+                                            Edit
+                                          </Link>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                                <div
-                                  class="modal fade"
-                                  id={`exampleModal-${foods.id}`}
-                                  tabindex="-1"
-                                  aria-labelledby="exampleModalLabel"
-                                  aria-hidden="true"
-                                >
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button
-                                          type="button"
-                                          class="btn-close"
-                                          data-bs-dismiss="modal"
-                                          aria-label="Close"
-                                        ></button>
-                                      </div>
-                                      <div
-                                        class="modal-body"
-                                        style={{
-                                          position: "relative",
-                                          left: "-40px",
-                                        }}
+                              </div>
+                              <div
+                                class="modal fade"
+                                id={`exampleModal-${foods.id}`}
+                                tabindex="-1"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div
+                                      class="modal-body"
+                                      style={{
+                                        position: "relative",
+                                        left: "-40px",
+                                      }}
+                                    >
+                                      <form
+                                        className="box-addFoods"
+                                        onSubmit={(e) =>
+                                          handleSubmit(e, foods.id)
+                                        }
                                       >
-                                        <form
-                                          className="box-addFoods"
-                                          onSubmit={(e) =>
-                                            handleSubmit(e, foods.id)
-                                          }
-                                        >
-                                          <div className="col-md-6">
-                                            <label
-                                              for="inputName"
-                                              className="form-label"
-                                            >
-                                              Food Name
-                                            </label>
-                                            <br/>
-                                            <input
-                                              value={formik.values.name}
-                                              onChange={formik.handleChange}
-                                              onBlur={formik.handleBlur}
-                                              type="text"
-                                              className="add-inputm"
-                                              id="name"
-                                            />
-                                          </div>
-                                          {formik.touched.name &&
-                                          formik.errors.name ? (
-                                            <div>{formik.errors.name}</div>
-                                          ) : null}
-                                          <div className="col-md-6">
-                                            <label
-                                              for="inputAge"
-                                              className="form-label"
-                                            >
-                                              Description
-                                            </label>
-                                            <br/>
-                                            <input
-                                              value={formik.values.description}
-                                              onChange={formik.handleChange}
-                                              onBlur={formik.handleBlur}
-                                              type="text"
-                                              className="add-inputm"
-                                              id="description"
-                                            />
-                                          </div>
-                                          {formik.touched.description &&
-                                          formik.errors.description ? (
-                                            <div>
-                                              {formik.errors.description}
-                                            </div>
-                                          ) : null}
-                                          <div className="col-md-12">
-                                            <label className="form-label">
-                                              Food Image Upload
-                                            </label>
-                                            <UploadImage
-                                              clasName="upload"
-                                              style={{ width: "380px" }}
-                                              onChange={(value) =>
-                                                setSavePicture(value)
-                                              
-                                              }
-                                            />
-                                          </div>
-                                          {ingredients.map(
-                                            (ingredient, index) => {
-                                              return (
-                                                <div className="col-md-6">
-                                                  <label
-                                                    for="inputIngredient"
-                                                    className="form-label"
-                                                  >
-                                                    Ingredients
-                                                  </label>
-                                                  <div className="d-flex gap-2">
-                                                    <input
-                                                      onBlur={formik.handleBlur}
-                                                      type="text"
-                                                      className="add-inputmx"
-                                                      id="ingredients"
-                                                      value={ingredient}
-                                                      onChange={(event) =>
-                                                        handleCHangeEditIngredients(
-                                                          index,
-                                                          event.target.value
-                                                        )
-                                                      }
-                                                    />
-                                                    <button
-                                                      className="btn btn-success"
-                                                      onClick={() =>
-                                                        handleAddEditIngredients()
-                                                      }
-                                                      type="button"
-                                                      style={{
-                                                        fontSize: "12px",
-                                                      }}
-                                                    >
-                                                      <div className="delete-text">
-                                                        Add
-                                                      </div>
-                                                    </button>
-                                                    <button
-                                                      className="btn btn-danger"
-                                                      style={{
-                                                        fontSize: "12px",
-                                                      }}
-                                                      onClick={() =>
-                                                        handleRemoveEditIngredients(
-                                                          index
-                                                        )
-                                                      }
-                                                      type="button"
-                                                    >
-                                                      <div className="delete-text">
-                                                        Delete
-                                                      </div>
-                                                    </button>
-                                                  </div>
-                                                  {formik.touched.ingredients &&
-                                                  formik.errors.ingredients ? (
-                                                    <div>
-                                                      {
-                                                        formik.errors
-                                                          .ingredients
-                                                      }
-                                                    </div>
-                                                  ) : null}
-                                                </div>
-                                              );
+                                        <div className="col-md-6">
+                                          <label
+                                            for="inputName"
+                                            className="form-label"
+                                          >
+                                            Food Name
+                                          </label>
+                                          <br />
+                                          <input
+                                            value={formik.values.name}
+                                            onChange={formik.handleChange}
+                                            onBlur={formik.handleBlur}
+                                            type="text"
+                                            className="add-inputm"
+                                            id="name"
+                                          />
+                                        </div>
+                                        {formik.touched.name &&
+                                        formik.errors.name ? (
+                                          <div>{formik.errors.name}</div>
+                                        ) : null}
+                                        <div className="col-md-6">
+                                          <label
+                                            for="inputAge"
+                                            className="form-label"
+                                          >
+                                            Description
+                                          </label>
+                                          <br />
+                                          <input
+                                            value={formik.values.description}
+                                            onChange={formik.handleChange}
+                                            onBlur={formik.handleBlur}
+                                            type="text"
+                                            className="add-inputm"
+                                            id="description"
+                                          />
+                                        </div>
+                                        {formik.touched.description &&
+                                        formik.errors.description ? (
+                                          <div>{formik.errors.description}</div>
+                                        ) : null}
+                                        <div className="col-md-12">
+                                          <label className="form-label">
+                                            Food Image Upload
+                                          </label>
+                                          <UploadImage
+                                            clasName="upload"
+                                            style={{ width: "380px" }}
+                                            onChange={(value) =>
+                                              setSavePicture(value)
                                             }
-                                          )}
-                                          <div className="col-12">
-                                            <button
-                                              type="submit"
-                                              className="button-warnings "
-                                            >
-                                              Edit Food
-                                            </button>
-                                          </div>
-                                        </form>
-                                      </div>
+                                          />
+                                        </div>
+                                        {ingredients.map(
+                                          (ingredient, index) => {
+                                            return (
+                                              <div className="col-md-6">
+                                                <label
+                                                  for="inputIngredient"
+                                                  className="form-label"
+                                                >
+                                                  Ingredients
+                                                </label>
+                                                <div className="d-flex gap-2">
+                                                  <input
+                                                    onBlur={formik.handleBlur}
+                                                    type="text"
+                                                    className="add-inputmx"
+                                                    id="ingredients"
+                                                    value={ingredient}
+                                                    onChange={(event) =>
+                                                      handleCHangeEditIngredients(
+                                                        index,
+                                                        event.target.value
+                                                      )
+                                                    }
+                                                  />
+                                                  <button
+                                                    className="btn btn-success"
+                                                    onClick={() =>
+                                                      handleAddEditIngredients()
+                                                    }
+                                                    type="button"
+                                                    style={{
+                                                      fontSize: "12px",
+                                                    }}
+                                                  >
+                                                    <div className="delete-text">
+                                                      Add
+                                                    </div>
+                                                  </button>
+                                                  <button
+                                                    className="btn btn-danger"
+                                                    style={{
+                                                      fontSize: "12px",
+                                                    }}
+                                                    onClick={() =>
+                                                      handleRemoveEditIngredients(
+                                                        index
+                                                      )
+                                                    }
+                                                    type="button"
+                                                  >
+                                                    <div className="delete-text">
+                                                      Delete
+                                                    </div>
+                                                  </button>
+                                                </div>
+                                                {formik.touched.ingredients &&
+                                                formik.errors.ingredients ? (
+                                                  <div>
+                                                    {formik.errors.ingredients}
+                                                  </div>
+                                                ) : null}
+                                              </div>
+                                            );
+                                          }
+                                        )}
+                                        <div className="col-12">
+                                          <button
+                                            type="submit"
+                                            className="button-warnings "
+                                          >
+                                            Edit Food
+                                          </button>
+                                        </div>
+                                      </form>
                                     </div>
                                   </div>
                                 </div>
-                              </>
-                            );
-                          })}
-                      </div>
-                    </div>
-                </div>
-              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </>
+                      );
+                    })}
             </div>
-          </div>
         </div>
       </div>
     </>

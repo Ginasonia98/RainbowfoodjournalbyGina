@@ -1,313 +1,51 @@
 .set-img {
-    border-radius: 20%;
-    width: 5vw;
-    border: 2px solid #FFC93C;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
-.rating-reviewtext {
+.card-name {
     color: #FD841F;
-}
-
-.rates {
-    margin-left: 3rem;
-    margin-top: -1.5rem;
-}
-
-.fa-star {
-    margin-left: 1.6rem !important;
-}
-
-.add-inputc {
-    width: 27vw;
-    height: 8vh;
-    border: 2px solid #FD841F;
-}
-
-.card-titless {
-    color: #FD841F;
-    margin-left: 9rem;
-}
-
-.descnews {
-    color: #FD841F;
-    margin-left: 2rem;
-}
-
-.ing-new {
-    color: #FD841F;
-    margin-left: -8rem;
-}
-
-.box-container {
-    padding: 120px 80px 120px 80px;
-    height: 100%;
-    background-color: white !important;
-}
-
-.button-warningg {
-    background-color: #FD841F;
-    margin-left: 0.2rem;
-    width: 10vw !important;
-    height: 7vh !important;
-    border: none;
-}
-
-.button-warningg:hover {
-    background-color: #FFC93C !important;
-}
-
-.food-card {
-    margin-left: 10rem !important;
-    width: 30vw !important;
-    margin-top: 2rem !important;
-}
-
-.form-label {
-    color: orange;
-}
-
-.mt-3 {
-    margin-top: 0.5rem !important;
-}
-
-.image-rate {
-    width: 10vw;
-}
-
-.img-fluids {
-    height: 45vh !important;
-    width: 40vh !important;
-}
-
-.create-ratingbutton {
-    margin-left: 20rem;
-    width: 10vw;
-}
-
-.add-inputy {
-    border-color: #FD841F;
-    height: 10vh;
-    width: 26vw;
-}
-
-.image-user {
-    margin-left: -10rem;
-}
-
-.desc1 {
-    color: #FD841F;
-    margin-left: 0.6rem;
-    margin-top: 1rem;
-}
-
-.desc2 {
-    color: #FD841F;
-    margin-left: -9.5rem;
-    margin-top: 0.5rem;
-}
-
-.rate-star {
-    margin-left: -2rem;
-}
-
-
-.btn-warning:hover {
-    background-color: #FFC93C !important;
-}
-
-.create {
-    color: #fff;
-    width: 8vw;
-    height: 6vh;
+    font-weight: bolder;
+    font-size: 25px;
     text-align: center;
-    display: flex;
-    justify-content: center;
+    margin-left: -10%;
+}
+
+.btn-create {
+    background-color: #FD841F;
+}
+
+.create-rating {
+    border: 1px solid rgba(255, 94, 0, 0.932);
+    color: rgba(255, 94, 0, 0.932);
+    background-color: #FD841F;
+    width: 20%;
+    height: 200% !important;
+    margin-top: -5px;
 }
 
 .create-text {
     color: #fff;
-}
-
-.card-new {
-    width: 48vw !important;
-    height: 50vh !important;
-    margin-left: 20rem !important;
-}
-
-.card1 {
-    width: 70vw;
-    height: 0vh !important;
-    margin-left: -7rem !important;
-    margin-bottom: 10rem !important;
-}
-
-
-.rate {
-    margin-top: 5rem !important;
-    margin-left: 0.2rem;
-}
-
-.username {
-    color: #FD841F;
-}
-
-.review {
-    color: #FD841F;
+    margin-top: -15px !important;
 }
 
 @media (width < 768px) {
-    .card-new {
-        width: 74vw !important;
-        height: 52vh !important;
-        margin-left: -5rem !important;
-        margin-top: -14rem;
-        margin-bottom: 1vw !important;
+    .btn-create {
+        margin-left: -5% !important;
+        width: 30%;
     }
 
-    .card-titless {
-        color: #FD841F;
-        margin-left: 10rem;
-        margin-top: 1rem;
-        font-size: 20px !important;
+    .box-addFoods {
+        margin-left: -10% !important;
     }
 
-    .img-fluids {
-        width: 74vw !important;
-        height: 18vh !important;
-        margin-left: 0rem;
-    }
-
-    .set-img {
-        border-radius: 20%;
-        width: 10vw;
-        border: 2px solid #FFC93C;
-    }
-
-    .rate {
-        margin-top: -1.5rem !important;
-        margin-left: 16rem !important;
-    }
-
-    .create-ratingbutton {
-        margin-left: -14rem;
-        margin-top: 4rem;
-    }
-
-    .image-rate {
-        width: 69vw;
-    }
-
-    .image-user {
-        margin-left: -10rem;
+    .create-rating {
+        width: 30%;
     }
 
     .food-card {
-        margin-left: -3rem !important;
-        width: 75vw !important;
-        margin-top: 2rem !important;
+        margin-left: -47%;
+        width: 195%;
     }
-
-    .box-container {
-        margin-left: -4rem;
-        height: auto;
-        margin-top: 5rem;
-        margin-bottom: 2em !important;
-    }
-
-    .create {
-        color: #fff;
-        width: 30vw;
-        height: 6vh;
-        text-align: center;
-    }
-
-    .modal-content {
-        width: 95vw;
-        height: 50vh;
-        display: flex;
-        justify-content: center;
-        margin-left: 0.1rem;
-    }
-
-    .add-input {
-        width: 85vw;
-        margin-left: 1rem;
-    }
-
-    .form-label {
-        margin-left: 1rem;
-    }
-
-    .btn-warning {
-        margin-left: 10rem !important;
-        margin-top: -1rem;
-    }
-
-    .button-warningg {
-        background-color: #FFC93C !important;
-        margin-left: -1rem !important;
-        width: 40vw !important;
-    }
-
-    .add-inputy {
-        border-color: #FD841F;
-        height: 5vh;
-        width: 85vw;
-        margin-left: 1rem;
-    }
-
-    .descnews {
-        color: #FD841F;
-        margin-left: 5rem;
-    }
-
-    .ing-new {
-        color: #FD841F;
-        margin-left: -5rem;
-    }
-
-    .add-inputc {
-        width: 75vw;
-        height: 8vh;
-        border: 2px solid #FD841F;
-        margin-left: -1rem !important;
-    }
-
-    .rating-reviewtext {
-        color: #FD841F;
-        margin-left: -2rem;
-    }
-
-    .rates {
-        margin-left: -1rem;
-        margin-top: -1.5rem;
-    }
-
-    .fa-star {
-        margin-left: -2.5rem !important;
-    }
-
-    .card-titless {
-        margin-left: 6rem;
-    }
-
-    .descnews {
-        margin-left: 2rem;
-    }
-
-    .ing-new {
-        margin-left: -8rem;
-    }
-
-    .fa-star:before {
-        margin-left: 3rem;
-    }
-
-    .card1 {
-        width: 75vw;
-        height: 0vh !important;
-        margin-left: -8rem !important;
-        margin-bottom: 10rem !important;
-    }
-
 }

@@ -99,7 +99,7 @@ const Home = () => {
               {AllFoods &&
                 AllFoods.map((foods) => {
                   return (
-                    <div className="col-sm-12 col-md-6 col-lg-3 mb-4">
+                    <div className="col-sm-12 col-md-6 col-lg-3 mb-4 d-flex align-self-stretch">
                       <div className="bg-white">
                         <div className="image-card">
                           <img
