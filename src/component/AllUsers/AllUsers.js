@@ -42,24 +42,22 @@ const AllUsers = () => {
       data: {
         role: values.role,
       },
-    })   
-    .then((response) => {
-      console.log(response);
-      alert("Update Peran User Berhasil!!")
-      window.location.reload();
     })
-    .catch((error) => {
-      console.log(error);
-    });
+      .then((response) => {
+        console.log(response);
+        alert("Update Peran User Berhasil!!");
+        window.location.reload();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   const formik = useFormik({
     initialValues: {
-      role: "",     
+      role: "",
     },
-    validationSchema: Yup.object({
-
-    }),
+    validationSchema: Yup.object({}),
   });
 
   return (

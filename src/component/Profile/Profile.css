@@ -6,12 +6,11 @@
 
 .carddd {
   width: 40vw !important;
-  height: auto;
-  margin-left: 32rem !important;
-  margin-top: 5rem !important;
-  margin-bottom: 10rem !important;
+  height: 300% !important;
   background-color: #FFD4B2;
-  border-radius: 5%;
+  margin-top: 50px !important;
+  margin-bottom: 100px !important;
+  margin-left: 500px !important;
 }
 
 .img-fluidr {
@@ -20,29 +19,31 @@
 
 .card-titler {
   color: #fff;
-  margin-left: 4rem;
+  font-size: 25px !important;
+  margin-left: 100px !important;
 }
 
 .emaile {
   color: #fff;
-  font-size: 18px;
-  margin-left: -7rem;
+  font-size: 15px !important;
+  margin-left: 70px !important;
 }
 
 .roless {
   color: #fff;
-  font-size: 18px;
-  margin-left: -7rem;
+  font-size: 15px !important;
+  margin-left: 70px !important;
+  margin-top: 5px !important;
 }
 
 .phone-number {
   color: #fff;
-  font-size: 18px;
-  margin-left: -7rem;
+  font-size: 15px !important;
+  margin-left: 70px !important;
+  margin-top: 5px !important;
 }
 
 .btn-success {
-  margin-left: 2rem !important;
   width: 5vw;
 }
 
@@ -60,6 +61,9 @@
   font-size: 30px !important;
 }
 
+.btn-success{
+  width: 35% !important;
+}
 
 @media (width < 768px) {
   .box-containerr {
@@ -71,41 +75,35 @@
   .carddd {
     width: 80vw !important;
     height: auto;
-    margin-left: 1.5rem !important;
-    margin-top: 5rem !important;
+
   }
 
   .card-titler {
     font-size: 20px !important;
     text-decoration: underline;
-    margin-left: 8rem;
-    margin-top: 1rem !important;
+
   }
 
   .emaile {
     color: #fff;
     font-size: 18px;
-    margin-left: -7rem !important;
-    margin-bottom: 1rem;
   }
 
   .roless {
     color: #fff;
     font-size: 18px;
-    margin-left: -7rem;
-    margin-bottom: 1rem;
   }
 
   .phone-number {
     color: #fff;
     font-size: 18px;
-    margin-left: -7rem;
+
   }
 
   .btn-success {
     margin-left: 6rem !important;
     width: 18vw;
-    margin-bottom: 1rem;
+
   }
 
   .add-input-t {
@@ -117,7 +115,5 @@
     outline: none;
   }
 
-  .modal-content {
-    margin-top: 1rem !important;
-  }
+  .modal-content {}
 }

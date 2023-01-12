@@ -74,7 +74,7 @@ export const AddFoods = () => {
               id="name"
               name="name"
               type="text"
-              className="add-input"
+              className="input"
               onChange={formAddFoods.handleChange}
               onBlur={formAddFoods.handleBlur}
               value={formAddFoods.values.name}
@@ -90,7 +90,7 @@ export const AddFoods = () => {
               id="description"
               name="description"
               type="text"
-              className="add-input"
+              className="input"
               onChange={formAddFoods.handleChange}
               onBlur={formAddFoods.handleBlur}
               value={formAddFoods.values.description}
@@ -106,7 +106,7 @@ export const AddFoods = () => {
                     id="ingredients"
                     name="ingredients"
                     type="text"
-                    className="add-input2"
+                    className="input"
                     onBlur={formAddFoods.handleBlur}
                     placeholder="bahan"
                     value={ingredient}
@@ -116,8 +116,7 @@ export const AddFoods = () => {
                   />
                   <button
                     type="button"
-                    className="button-warningnews"
-                    style={{ fontSize: "12px" }}
+                    className="button-warningnewss"
                     onClick={() => handleAddIngredients()}
                   >
                     <div className="add">Add</div>
@@ -125,7 +124,6 @@ export const AddFoods = () => {
                   <button
                     type="button"
                     className="button-warningnews"
-                    style={{ fontSize: "12px" }}
                     onClick={() => handleDeleteIngredients(index)}
                   >
                     <div className="add">Delete</div>
@@ -134,12 +132,8 @@ export const AddFoods = () => {
               );
             })}
           </div>
-          <div className="input-upload">
-            <div className="input-file">
-              <div className="input-uploadseee">
-                <UploadImage onChange={(value) => setSavePicture(value)} />
-              </div>
-            </div>
+          <div className="input-file">
+            <UploadImage onChange={(value) => setSavePicture(value)} />
           </div>
           <button type="submit" class="button-warningneww">
             <div className="submit">Submit</div>

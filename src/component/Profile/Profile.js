@@ -132,10 +132,9 @@ const Profile = () => {
                     </p>
                   </div>
                 </div>
-                <div style={{ marginLeft: "15px" }}>
+                <div >
                   <Link
                     className="btn btn-success"
-                    style={{ fontSize: "0.75rem" }}
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >
@@ -162,7 +161,6 @@ const Profile = () => {
             </div>
             <div
               class="modal-body"
-              style={{ position: "relative", left: "-40px" }}
             >
               <form
                 className="box-addFoods"
@@ -228,7 +226,7 @@ const Profile = () => {
                 ) : null}
 
                 <div className="col-12">
-                  <button type="submit" className="btn btn-success">
+                  <button type="submit" className="btn btn-success ">
                     Edit Profile
                   </button>
                 </div>

@@ -21,205 +21,68 @@
     font-weight: bolder;
 }
 
-.input-fieldinput {
-    margin-left: 0.2rem;
-}
-
-/* .add-inputnew {
-    height: 5vh;
-    width: 20vw !important;
-    border: 1px solid #FD841F;
-    margin-left: -10rem !important;
-    border-radius: 24px;
-    position: relative;
-} */
-
-/* .button-upload {
-    background-color: #FD841F;
-    margin-left: 0.6rem;
-    width: 4vw !important;
-    height: 6vh !important;
-    border: none;
-} */
-
-.button-upload:hover {
-    background-color: #FFC93C !important;
-}
-
-/* .upload {
-    color: #fff;
-} */
 
 .button-warningnews {
     background-color: #FD841F;
-    margin-left: 0.6rem;
-    width: 4vw !important;
+    width: 30% !important;
+    height: 8vh !important;
+    border: none;
+}
+
+.button-warningnewss {
+    background-color: #FD841F;
+    width: 30% !important;
     height: 8vh !important;
     border: none;
 }
 
 .button-warningneww {
     background-color: #FD841F;
-    margin-left: 0.6rem;
-    width: 6vw !important;
+    width: 10% !important;
     height: 8vh !important;
     border: none;
 }
 
-.add-input {
+.input {
     border-radius: 24px;
-    padding: 10px;
     height: 45px;
-    width: 15vw !important;
+    width: 300px !important;
     border: 1px solid #FD841F;
-}
-
-.add {
-    color: #FD841F;
-    font-size: 30px;
-    font-weight: bold;
 }
 
 .submit {
     color: #fff;
 }
 
-.add-input1 {
-    border-radius: 24px;
-    padding: 10px;
-    height: 45px;
-    width: 380px;
-    border: 1px solid #FD841F;
-}
-
-.add-input2 {
-    border-radius: 24px;
-    padding: 10px;
-    height: 45px;
-    width: 25vw !important;
-    border: 1px solid #FD841F;
-    margin-left: -10rem !important;
-}
-
-/* .input-field {
-    margin-left: -9px !important;
-    width: 80vw !important;
-} */
-
-.input-uploads {
-    margin-left: 10rem !important;
-}
-
-.input-uploadseee {
-    margin-left: 0.5rem !important;
-}
 
 @media (width < 768px) {
-    .iframe-wrapper {
-        width: 100vw !important;
-    }
-
-    .add {
-        color: #FD841F;
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .submit {
-        color: #fff;
-    }
-
-    .add-input2 {
-        height: 45px;
-        width: 54vw !important;
-        border: 1px solid #FD841F;
-        margin-left: -13rem !important;
-    }
-
-    .add-input {
-        height: 45px;
-        width: 90vw !important;
-        border: 1px solid #FD841F;
-        margin-left: -3rem !important;
-    }
-
-    .input-field {
-        margin-left: -12rem;
-        width: 65vw;
-    }
-
-    .bg-addFoods {
-        background-color: #fff;
-        padding: 80px;
-        width: 200vw !important;
-        margin-left: -6rem;
-    }
-
-    .input-file {
-        width: 1vw !important;
-        margin-left: 1rem;
-    }
-
-    .input-fieldinput {
-        margin-left: -10rem;
-        margin-top: 1rem;
-    }
-
-    .add-inputnew {
-        height: 4vh;
-        width: 47vw !important;
-        border: 1px solid #FD841F;
-        border-radius: 24px;
-        margin-top: -1rem;
-        margin-right: 1rem !important;
-    }
-
-
-    /* .button-upload {
-        background-color: #FD841F;
-        margin-left: 0.6rem;
-        width: 30vw !important;
-        height: 6vh !important;
-        border: none;
-    } */
-
-    .button-upload:hover {
-        background-color: #FFC93C !important;
+    .input {
+        width: 230px !important;
+        margin-left: -80px !important;
     }
 
     .button-warningnews {
-        background-color: #FD841F;
-        margin-left: 0rem;
         width: 15vw !important;
-        height: 6vh !important;
-        border: none;
+        margin-top: 60px !important;
+    }
+
+    .button-warningnewss {
+        width: 15vw !important;
+        margin-top: 60px !important;
+        margin-left: -230px !important;
+    }
+
+    .input-field {
+        margin-left: -78px !important;
+        width: 230px !important;
+    }
+
+    .button-upload {
+        margin-left: -290px !important;
+        margin-top: 60px !important;
     }
 
     .button-warningneww {
-        margin-left: -3rem;
-        width: 20vw !important;
-        height: 6vh !important;
-    }
-
-    .input-uploadseee {
-        margin-left: -5rem !important;
-    }
-
-    .adds {
-        color: #FD841F !important;
-        font-size: 30px !important;
-        font-weight: bolder;
-        margin-left: -2rem;
-    }
-
-    .add-inputm {
-        width: 10vw !important;
-    }
-
-    .box-addFoods {
-        display: flex;
-        flex-direction: column;
-        /* gap: 20px; */
-        align-items: flex-start;
+        width: 100px !important;
     }
 }
