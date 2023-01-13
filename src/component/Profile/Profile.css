@@ -1,81 +1,57 @@
-.box-containerr {
-  background-color: #fff !important;
-  width: 10vw;
-  height: auto !important;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spline Sans', sans-serif;
 }
 
-.carddd {
-  width: 40vw !important;
-  height: 300% !important;
-  background-color: #FFD4B2;
-  margin-top: 50px !important;
-  margin-bottom: 100px !important;
-  margin-left: 500px !important;
+.profile-detail {
+  max-width: 550px;
 }
 
-.img-fluidr {
-  width: 15vw !important;
+.img-profile-page {
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  border: 2px solid #FF7000;
+  object-fit: cover;
 }
 
-.card-titler {
-  color: #fff;
-  font-size: 25px !important;
-  margin-left: 100px !important;
+.form-labell {
+  color: #FF7000;
+  margin-left: -42px;
 }
 
-.emaile {
-  color: #fff;
-  font-size: 15px !important;
-  margin-left: 70px !important;
+.form-labelll {
+  color: #FF7000;
 }
 
-.roless {
-  color: #fff;
-  font-size: 15px !important;
-  margin-left: 70px !important;
-  margin-top: 5px !important;
+.add-input-mp {
+  border: 2px solid #FF7000;
+  margin-left: -50px;
 }
 
-.phone-number {
-  color: #fff;
-  font-size: 15px !important;
-  margin-left: 70px !important;
-  margin-top: 5px !important;
-}
-
-.btn-success {
-  width: 5vw;
-}
-
-.add-input-t {
-  width: 25vw !important;
-  border: 2px solid #FD841F;
-}
-
-*.add-input-t:focus {
-  outline: none;
-}
-
-.edit-profiletext {
-  color: #FD841F;
-  font-size: 30px !important;
-}
-
-.btn-primary {
-  width: 15% !important;
-  margin-left: 70px !important;
+.form-labelll {
+  color: #FF7000;
+  margin-left: 25px;
 }
 
 @media (width < 768px) {
-  .box-containerr {
-    background-color: #fff !important;
-    width: 10vw;
-    height: auto !important;
+  .form-labell {
+    color: #FF7000;
+    margin-left: 2px;
   }
 
-  .carddd {
-    width: 80vw !important;
-    height: auto;
+  .form-labelll {
+    color: #FF7000;
+  }
 
+  .add-input-mp {
+    border: 2px solid #FF7000;
+    margin-left: 4px !important;
+  }
+
+  .form-labelll {
+    color: #FF7000;
+    margin-left: 75px !important;
   }
 }

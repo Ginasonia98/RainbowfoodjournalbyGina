@@ -14,6 +14,10 @@ export const Foods = () => {
   const [savePicture, setSavePicture] = useState("");
   const [ingredients, setEditIngredients] = useState([""]);
 
+  const handleAddEditIngredients = () => {
+    setEditIngredients([...ingredients, ""]);
+  };
+
   const handleRemoveEditIngredients = (index) => {
     const values = [...ingredients];
     setEditIngredients(values);
@@ -200,7 +204,7 @@ export const Foods = () => {
                               onSubmit={(e) => handleSubmit(e, foods.id)}
                             >
                               <div className="col-md-6">
-                                <label for="inputName" className="form-label">
+                                <label for="inputName" className="form-labels">
                                   Food Name
                                 </label>
                                 <br />
@@ -217,7 +221,7 @@ export const Foods = () => {
                                 <div>{formik.errors.name}</div>
                               ) : null}
                               <div className="col-md-6">
-                                <label for="inputAge" className="form-label">
+                                <label for="inputAge" className="form-labels">
                                   Description
                                 </label>
                                 <br />
@@ -235,7 +239,7 @@ export const Foods = () => {
                                 <div>{formik.errors.description}</div>
                               ) : null}
                               <div className="col-md-12">
-                                <label className="form-label">
+                                <label className="form-labelss">
                                   Food Image Upload
                                 </label>
                                 <UploadImage
@@ -247,17 +251,16 @@ export const Foods = () => {
                               {ingredients.map((ingredient, index) => {
                                 return (
                                   <div className="col-md-6">
-                                    <label
-                                      for="inputIngredient"
-                                      className="form-label"
-                                    >
-                                      Ingredients
+                                    <label for="inputIngredient" className="">
+                                      <div className="form-labelst">
+                                        Ingredients
+                                      </div>
                                     </label>
                                     <div className="d-flex gap-2">
                                       <input
                                         onBlur={formik.handleBlur}
                                         type="text"
-                                        className="add-inputmx"
+                                        className="add-inputmc"
                                         id="ingredients"
                                         value={ingredient}
                                         onChange={(event) =>
@@ -268,7 +271,17 @@ export const Foods = () => {
                                         }
                                       />
                                       <button
-                                        className="btn btn-danger"
+                                        className="btn btn-success w-100"
+                                        onClick={() =>
+                                          handleAddEditIngredients()
+                                        }
+                                        type="button"
+                                        style={{ fontSize: "12px" }}
+                                      >
+                                        Add
+                                      </button>
+                                      <button
+                                        className="btn btn-danger w-50 me-4"
                                         style={{
                                           fontSize: "12px",
                                         }}
@@ -289,10 +302,11 @@ export const Foods = () => {
                                   </div>
                                 );
                               })}
-                              <div className="col-12">
+                              <br />
+                              <div className="col-12 ">
                                 <button
                                   type="submit"
-                                  className="button-warnings "
+                                  className="button-warnings w-25 "
                                 >
                                   Edit Food
                                 </button>

@@ -62,112 +62,105 @@ const AllUsers = () => {
 
   return (
     <>
-      <div className="bg-food " style={{ backgroundColor: "#fff" }}>
-        <div className="title-user">User</div>
-        <div className="container-rs">
-          <div className="card-e">
-            <div className="img-center">
-              <div className="grid-img">
-                {AllUsers &&
-                  AllUsers.map((users) => {
-                    return (
-                      <>
-                        <div className="box-foods">
-                          <div className="box">
-                            <img
-                              className="img-all-foods"
-                              src={users.profilePictureUrl}
-                              alt="All Foods"
-                            />
-                            <div className="contentt">
-                              <div className="user-id">User Id: {users.id}</div>
-                              <div className="user-name">{users.name}</div>
-                              <div className="user-email">
-                                Email :{users.email}
-                              </div>
-                              <div className="user-email">
-                                Peran: {users.role}
-                              </div>
-                              <div className="user-email">
-                                Phone: {users.phoneNumber}
-                              </div>
-                              <button
-                                type="button"
-                                className="button-success"
-                                data-bs-toggle="modal"
-                                data-bs-target={`#userRole${users.id}`}
-                              >
-                                <div className="update-button">Update</div>
-                              </button>
-                            </div>
+      <section className="container-fluid py-5 min-vh-100 ">
+        <div className="title text-center">User</div>
+          <div className="row row-cols row-cols-md-3 row-cols-lg-5 g-4 mt-3 mx-lg-5 mx-4 ">
+            {AllUsers &&
+              AllUsers.map((users) => {
+                return (
+                  <div className="card-group gy-0">
+                    <div className="card shadow mt-4">
+                      <div className="card-body d-flex flex-column p-2">
+                        <img
+                          className="img-card-profile mx-auto mb-2"
+                          src={users.profilePictureUrl}
+                          alt="All Foods"
+                        />
+                        <h5 className="card-title text-center fs-5 mb-3">
+                          {users.name}
+                        </h5>
+                        <div className="d-flex gap-2 d-flex align-items-center mt-auto">
+                          <div className="card-text font-12px text-truncate">
+                            Email :{users.email}
                           </div>
                         </div>
-                        <div
-                          class="modal fade"
-                          id={`userRole${users.id}`}
-                          tabindex="-1"
-                          aria-labelledby="exampleModalLabel"
-                          aria-hidden="true"
-                        >
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button
-                                  type="button"
-                                  class="btn-close"
-                                  data-bs-dismiss="modal"
-                                  aria-label="Close"
-                                ></button>
-                              </div>
-                              <div
-                                class="modal-body"
-                                style={{ position: "relative", left: "-40px" }}
-                              >
-                                <form
-                                  className="box-addFood"
-                                  onSubmit={(e) => handleSubmit(e, users.id)}
+                        <div>
+                          <div className="d-flex gap-2 align-items-center">
+                            Phone: {users.phoneNumber}
+                          </div>
+                        </div>
+                        <div className="d-flex gap-2 align-items-center">
+                          <div className="user-email">Peran: {users.role}</div>
+                        </div>
+                        <div className="card-footer d-flex align-items-center justify-content-center">
+                          <button
+                            type="button"
+                            className="button-success"
+                            data-bs-toggle="modal"
+                            data-bs-target={`#userRole${users.id}`}
+                          >
+                            <div className="update-button">Update</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="modal fade"
+                      id={`userRole${users.id}`}
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body p-4">
+                            <form
+                              className="box-addFood"
+                              onSubmit={(e) => handleSubmit(e, users.id)}
+                            >
+                              <div className="col-md-6">
+                                <label for="inputAge" className="form-label">
+                                  Role
+                                </label>
+                                <select
+                                  label="Role"
+                                  name="role"
+                                  className="add-input"
+                                  onChange={formik.handleChange}
+                                  onBlur={formik.handleBlur}
+                                  value={formik.values.role}
                                 >
-                                  <div className="col-md-6">
-                                    <label
-                                      for="inputAge"
-                                      className="form-label"
-                                    >
-                                      Role
-                                    </label>
-                                    <select
-                                      label="Role"
-                                      name="role"
-                                      className="add-input"
-                                      onChange={formik.handleChange}
-                                      onBlur={formik.handleBlur}
-                                      value={formik.values.role}
-                                    >
-                                      <option value="">Select a Role</option>
-                                      <option value="admin">Admin</option>
-                                      <option value="user">User</option>
-                                    </select>
-                                  </div>
-                                  <div className="col-12">
-                                    <button
-                                      type="submit"
-                                      className="btn btn-success"
-                                    >
-                                      Edit Role
-                                    </button>
-                                  </div>
-                                </form>
+                                  <option value="">Select a Role</option>
+                                  <option value="admin">Admin</option>
+                                  <option value="user">User</option>
+                                </select>
                               </div>
-                            </div>
+                              <div className="col-12">
+                                <button
+                                  type="submit"
+                                  className="btn btn-success"
+                                >
+                                  Edit Role
+                                </button>
+                              </div>
+                            </form>
                           </div>
                         </div>
-                      </>
-                    );
-                  })}
-              </div>
-            </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
           </div>
-        </div>
-      </div>
+      </section>
     </>
   );
 };

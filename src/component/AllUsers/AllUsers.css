@@ -1,116 +1,21 @@
-.box-all-user {
-    padding-top: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spline Sans', sans-serif;
 }
 
-
-.title-user {
-    color: #FF6E31;
-    margin-left: 40rem !important;
-    font-weight: bolder;
-    font-size: 30px;
-    margin-bottom: 5rem;
+.img-card-profile {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #509E2F;
 }
 
-.card-e {
-    border: 1px solid #FD841F;
-    margin-top: -1rem;
-    margin-bottom: 5rem;
+.title {
+    color: #509E2F;
 }
 
-.user-id {
-    color: #FD841F;
-    margin-bottom: 1rem;
-}
-
-.user-name {
-    color: #FD841F;
-    margin-left: 5rem;
-    text-decoration: underline;
-    font-size: larger;
-}
-
-.user-email {
-    color: #FD841F;
-    margin-left: 2rem;
-    margin-top: 1rem;
-}
-
-.button-success {
-    background-color: #285430;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    width: 4vw !important;
-    height: 6vh !important;
-    border: none;
-}
-
-.button-success:hover {
-    background-color: #285430 !important;
-}
-
-.update-button {
-    color: #fff;
-}
-
-@media (width < 768px) {
-
-    .title-user {
-        color: #FF6E31;
-        margin-left: 5rem !important;
-        font-weight: bolder;
-        font-size: 30px;
-        margin-bottom: 5rem;
-    }
-
-    .card-e {
-        border: 1px solid #FD841F;
-        margin-top: -1rem;
-        margin-bottom: 5rem;
-    }
-
-    .user-id {
-        color: #FD841F;
-        margin-bottom: 1rem;
-    }
-
-    .user-name {
-        color: #FD841F;
-        margin-left: 5rem;
-        text-decoration: underline;
-        font-size: larger;
-    }
-
-    .user-email {
-        color: #FD841F;
-        margin-left: 2rem;
-        margin-top: 1rem;
-    }
-
-    .button-success {
-        background-color: #285430;
-        margin-left: 2rem;
-        margin-top: 1rem;
-        width: 4vw !important;
-        height: 6vh !important;
-        border: none;
-    }
-
-    .button-success:hover {
-        background-color: #285430 !important;
-    }
-
-    .update-button {
-        color: #fff;
-    }
-
-    .box-user {
-        width: 15vw !important;
-        margin-left: 5rem;
-    }
-
-    .container-rs{
-        width: 95vw;
-        margin-left: -4rem;
-    }
-
+.font-12px {
+    font-size: 14px;
 }
