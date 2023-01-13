@@ -62,7 +62,7 @@ const AllUsers = () => {
 
   return (
     <>
-      <div className="bg-food box-user" style={{ backgroundColor: "#fff" }}>
+      <div className="bg-food " style={{ backgroundColor: "#fff" }}>
         <div className="title-user">User</div>
         <div className="container-rs">
           <div className="card-e">

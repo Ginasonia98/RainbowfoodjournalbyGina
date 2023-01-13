@@ -46,7 +46,7 @@ export const Foods = () => {
       })
       .catch((error) => {
         console.error(error);
-        alert("Error, try reloading the page");
+        alert("error,silahkan refresh ");
       });
   };
 
@@ -119,7 +119,7 @@ export const Foods = () => {
         <div className="container">
           <div className="row">
             <div className="d-flex">
-              <Link className="btn btn-success fw-bold" to={`/add-foods`}>
+              <Link className="btn btn-secondary fw-bold" to={`/add-foods`}>
                 <div className="create-foods">Create Foods</div>
               </Link>
             </div>
@@ -128,10 +128,10 @@ export const Foods = () => {
                 return (
                   <>
                     {/* Data-All-Foods */}
-                    <div className="col-sm-12 col-md-6 col-lg-3 mt-5 mb-5 d-flex align-self-stretch ">
-                      <div className="bg-white">
+                    <div className="col-sm-12 col-md-6 col-lg-3 mt-5 mb-4 d-flex  ">
+                      <div className="bg-white d-flex flex-column">
                         <img
-                          className="img"
+                          className="img w-100 align-self-stretch"
                           src={foods.imageUrl}
                           alt="All Foods"
                         />
@@ -139,7 +139,7 @@ export const Foods = () => {
                         <div className="ingredients ">
                           Bahan Pembuatan: {foods.ingredients.join(", ")}
                         </div>
-                        <hr class="shortLine" />
+                        <hr class="shortLine mt-auto" />
                         <div className="button-food">
                           <div className="d-flex gap-1 d-flex  justify-content-center position-relative  ">
                             <div>

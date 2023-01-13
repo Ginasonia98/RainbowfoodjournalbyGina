@@ -439,8 +439,8 @@ form.sign-in-form {
   }
 
   .input-field {
-    max-width: 380px;
-    width: 120% !important;
+    max-width: 340px;
+    width: 150% !important;
     border: 1px solid #FF7000;
     height: 45px;
     border-radius: 55px;
@@ -451,7 +451,7 @@ form.sign-in-form {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-left: -50px !important;
+    margin-left: -40px !important;
     margin-bottom: 5px !important;
     margin-top: 1px !important;
   }
@@ -505,7 +505,12 @@ form.sign-in-form {
     margin-top: -2px !important;
   }
 
-  .sign-up-form{
+  .sign-up-form {
     margin-top: -45px !important;
+  }
+
+  .button-upload {
+    margin-left: -100px !important;
+    margin-top: 60px !important;
   }
 }
