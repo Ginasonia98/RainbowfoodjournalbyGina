@@ -65,4 +65,9 @@
         margin-left: -47%;
         width: 195%;
     }
+
+    .add-input-s {
+        width: 80vw !important;
+        border: 2px solid #FD841F;
+    }
 }

@@ -218,12 +218,13 @@ const Rating = () => {
                       >
                         Rating
                       </label>
+                      <br/>
                       <input
                         value={formik.values.rating}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         type="number"
-                        className="add-input-s"
+                        className="add-input-s "
                         id="rating"
                       />
                     </div>
@@ -239,6 +240,7 @@ const Rating = () => {
                       >
                         Review
                       </label>
+                      <br/>
                       <input
                         value={formik.values.review}
                         onChange={formik.handleChange}

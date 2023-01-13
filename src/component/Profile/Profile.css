@@ -18,11 +18,18 @@
 
 .form-labell {
   color: #FF7000;
-  margin-left: -42px;
+  margin-left: -45px !important;
 }
 
 .form-labelll {
   color: #FF7000;
+  margin-left: -40px !important;
+}
+
+
+.form-labelllll {
+  color: #FF7000;
+  margin-left: -40px !important;
 }
 
 .add-input-mp {
@@ -30,28 +37,37 @@
   margin-left: -50px;
 }
 
-.form-labelll {
+.form-labellll {
   color: #FF7000;
-  margin-left: 25px;
+  margin-left: 35px !important;
 }
+
 
 @media (width < 768px) {
   .form-labell {
     color: #FF7000;
-    margin-left: 2px;
+    margin-left: 45px !important;
   }
 
   .form-labelll {
     color: #FF7000;
+    margin-left: 45px !important;
+  }
+
+
+  .form-labelllll {
+    color: #FF7000;
+    margin-left: 45px !important;
   }
 
   .add-input-mp {
     border: 2px solid #FF7000;
-    margin-left: 4px !important;
+    margin-left: 50px;
   }
 
-  .form-labelll {
+  .form-labellll {
     color: #FF7000;
-    margin-left: 75px !important;
+    margin-left: 120px !important;
   }
+
 }

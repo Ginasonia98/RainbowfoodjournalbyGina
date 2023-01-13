@@ -227,7 +227,7 @@ const Profile = () => {
                   ) : null}
                   <br />
                   <div className="col-md-6">
-                    <label for="inputAge" className="form-labell">
+                    <label for="inputAge" className="form-labelll">
                       Email
                     </label>
                     <input
@@ -244,7 +244,7 @@ const Profile = () => {
                   ) : null}
                   <br />
                   <div className="col-md-12">
-                    <label className="form-labelll">Food Image Upload</label>
+                    <label className="form-labellll">Food Image Upload</label>
                     <UploadImage
                       style={{ width: "380px" }}
                       onChange={(value) => setSavePicture(value)}
@@ -252,7 +252,7 @@ const Profile = () => {
                   </div>
 
                   <div className="col-md-6">
-                    <label for="inputAge" className="form-labell">
+                    <label for="inputAge" className="form-labelllll">
                       Phone Number
                     </label>
                     <input
