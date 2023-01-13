@@ -1,9 +1,4 @@
-.bg-addFoods {
-    background-color: #fff;
-    padding: 80px;
-}
-
-.box-addFoods {
+.box-addFoodse {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -27,6 +22,7 @@
     width: 30% !important;
     height: 8vh !important;
     border: none;
+    margin-left: 15px !important;
 }
 
 .button-warningnewss {
@@ -34,6 +30,7 @@
     width: 30% !important;
     height: 8vh !important;
     border: none;
+    margin-left: 10px !important;
 }
 
 .button-warningneww {
@@ -46,8 +43,17 @@
 .input {
     border-radius: 24px;
     height: 45px;
-    width: 300px !important;
+    width: 380px !important;
     border: 1px solid #FD841F;
+    margin-left: 30px !important;
+}
+
+.inputs {
+    border-radius: 24px;
+    height: 45px;
+    width: 370px !important;
+    border: 1px solid #FD841F;
+    margin-left: 120px !important;
 }
 
 .submit {
@@ -56,29 +62,61 @@
 
 
 @media (width < 768px) {
-    .input {
-        width: 230px !important;
-        margin-left: -80px !important;
+    .box-addFoodse {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
     }
 
+    .add {
+        color: #fff !important;
+        font-size: 15px !important;
+    }
+
+    .adds {
+        color: #FD841F !important;
+        font-size: 30px !important;
+        font-weight: bolder;
+    }
+
+
     .button-warningnews {
-        width: 15vw !important;
+        background-color: #FD841F;
+        width: 25% !important;
+        height: 8vh !important;
         margin-top: 60px !important;
+        margin-left: -80px !important;
+        border: none;
     }
 
     .button-warningnewss {
-        width: 15vw !important;
-        margin-top: 60px !important;
-        margin-left: -230px !important;
+        background-color: #FD841F;
+        width: 25% !important;
+        height: 8vh !important;
+        border: none;
     }
 
-    /* .input-field {
-        margin-left: -78px !important;
-        width: 230px !important;
-    } */
-
-
     .button-warningneww {
-        width: 100px !important;
+        background-color: #FD841F;
+        width: 50% !important;
+        height: 8vh !important;
+        border: none;
+    }
+
+    .input {
+        border-radius: 24px;
+        height: 45px;
+        width: 350px !important;
+        border: 1px solid #FD841F;
+        margin-left: 1px !important;
+    }
+
+    .inputs {
+        border-radius: 24px;
+        height: 45px;
+        border: 1px solid #FD841F;
+        margin-left: 30px !important;
+        width: 50px;
     }
 }

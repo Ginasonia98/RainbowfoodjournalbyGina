@@ -12,8 +12,15 @@
     margin-left: -10%;
 }
 
-.btn-create {
+.card-r {
+    width: 500px !important;
+}
+
+.btn-created {
     background-color: #FD841F;
+    border: none;
+    margin-top: 15px !important;
+    height: 40px !important;
 }
 
 .create-rating {
@@ -29,6 +36,16 @@
     color: #fff;
     margin-top: -15px !important;
 }
+
+.add-input-s {
+    width: 50vw !important;
+    border: 2px solid #FD841F;
+}
+
+*.add-input-t:focus {
+    outline: none;
+}
+
 
 @media (width < 768px) {
     .btn-create {

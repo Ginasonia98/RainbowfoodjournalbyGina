@@ -119,7 +119,7 @@ export const Foods = () => {
         <div className="container">
           <div className="row">
             <div className="d-flex">
-              <Link className="btn btn-secondary fw-bold" to={`/add-foods`}>
+              <Link className="btn btn-dark fw-bold" to={`/add-foods`}>
                 <div className="create-foods">Create Foods</div>
               </Link>
             </div>
@@ -128,14 +128,14 @@ export const Foods = () => {
                 return (
                   <>
                     {/* Data-All-Foods */}
-                    <div className="col-sm-12 col-md-6 col-lg-3 mt-5 mb-4 d-flex  ">
+                    <div className="col-sm-12 col-md-6 col-lg-3 mt-5 mb-4 d-flex align-self-stretch ">
                       <div className="bg-white d-flex flex-column">
                         <img
-                          className="img w-100 align-self-stretch"
+                          className="img "
                           src={foods.imageUrl}
                           alt="All Foods"
                         />
-                        <div className="names">Nama Makanan: {foods.name}</div>
+                        <div className="names ">Nama Makanan: {foods.name}</div>
                         <div className="ingredients ">
                           Bahan Pembuatan: {foods.ingredients.join(", ")}
                         </div>
@@ -145,7 +145,7 @@ export const Foods = () => {
                             <div>
                               <Link
                                 onClick={() => handleDelete(foods.id)}
-                                className="btn btn-primary"
+                                className="btn btn-secondary"
                               >
                                 Delete
                               </Link>

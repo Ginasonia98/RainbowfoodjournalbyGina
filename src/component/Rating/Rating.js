@@ -90,7 +90,7 @@ const Rating = () => {
   return (
     <>
       <div>
-        <div className="card-r mt-5 mx-auto  shadow w-50">
+        <div className="card-r mt-5 mx-auto  shadow ">
           <div className="row g-0">
             <div className="col-md-4">
               <img
@@ -167,7 +167,7 @@ const Rating = () => {
         <div className="text-center">
           <button
             type="button"
-            className="btn-create shadow fw-bold ms-5 "
+            className="btn-created shadow fw-bold ms-5  "
             data-bs-toggle="modal"
             data-bs-target={`#rating${foods && foods.id}`}
           >
@@ -223,7 +223,7 @@ const Rating = () => {
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         type="number"
-                        className="add-input-t"
+                        className="add-input-s"
                         id="rating"
                       />
                     </div>
@@ -244,7 +244,7 @@ const Rating = () => {
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         type="text"
-                        className="add-input-t"
+                        className="add-input-s"
                         id="review"
                       />
                     </div>

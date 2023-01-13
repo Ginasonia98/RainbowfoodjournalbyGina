@@ -1,10 +1,30 @@
     /* btn-allfood */
-    .btn-create {
+    .btn-dark {
         border: none;
         margin-top: 1%;
         height: 50px !important;
     }
 
+    .btn-create {
+        border: none;
+        margin-top: 1%;
+        width: 8%;
+        height: 40px;
+    }
+
+    .add-inputm {
+        border: 1px solid #FF7000;
+        width: 300px;
+    }
+
+    .add-inputmx {
+        border: 1px solid #FF7000;
+    }
+
+    .form-label{
+        color: #FD841F;
+    }
+    
     .names {
         color: #FD841F;
         margin-left: 10px;
@@ -17,9 +37,11 @@
     }
 
     .img {
-        width: 100%;
-        height: 50%;
+        max-inline-size: 100%;
+        block-size: auto;
+        aspect-ratio: 2/1;
     }
+
 
     .btn-danger {
         margin-bottom: -2px;
@@ -27,8 +49,8 @@
     }
 
     .btn-secondary {
-        margin-top: 20px !important;
-        width: 15% !important;
+        margin-top: 0px !important;
+        width: 100% !important;
         display: flex;
         justify-content: center;
     }
@@ -70,9 +92,13 @@
         }
 
         .btn-secondary {
-            margin-top: 20px !important;
-            width: 30% !important;
+            margin-top: 0px !important;
+            width: 100% !important;
             display: flex;
             justify-content: center;
+        }
+
+        .img {
+            width: 100% !important;
         }
     }

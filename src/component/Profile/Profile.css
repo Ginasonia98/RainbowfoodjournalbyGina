@@ -61,8 +61,9 @@
   font-size: 30px !important;
 }
 
-.btn-success{
-  width: 35% !important;
+.btn-primary {
+  width: 15% !important;
+  margin-left: 70px !important;
 }
 
 @media (width < 768px) {
@@ -77,43 +78,4 @@
     height: auto;
 
   }
-
-  .card-titler {
-    font-size: 20px !important;
-    text-decoration: underline;
-
-  }
-
-  .emaile {
-    color: #fff;
-    font-size: 18px;
-  }
-
-  .roless {
-    color: #fff;
-    font-size: 18px;
-  }
-
-  .phone-number {
-    color: #fff;
-    font-size: 18px;
-
-  }
-
-  .btn-success {
-    margin-left: 6rem !important;
-    width: 18vw;
-
-  }
-
-  .add-input-t {
-    width: 60vw !important;
-    border: 2px solid #FD841F;
-  }
-
-  *.add-input-t:focus {
-    outline: none;
-  }
-
-  .modal-content {}
 }

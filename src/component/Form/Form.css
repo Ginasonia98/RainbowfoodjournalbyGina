@@ -97,6 +97,7 @@ form.sign-in-form {
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin-left: 5% !important;
 }
 
 
@@ -440,7 +441,7 @@ form.sign-in-form {
 
   .input-field {
     max-width: 340px;
-    width: 150% !important;
+    width: 100% !important;
     border: 1px solid #FF7000;
     height: 45px;
     border-radius: 55px;
@@ -449,9 +450,8 @@ form.sign-in-form {
     padding: 0 0.4rem;
     position: relative;
     display: flex;
-    align-items: center;
     gap: 2rem;
-    margin-left: -40px !important;
+    margin-left: 1% !important;
     margin-bottom: 5px !important;
     margin-top: 1px !important;
   }
@@ -506,7 +506,12 @@ form.sign-in-form {
   }
 
   .sign-up-form {
-    margin-top: -45px !important;
+    margin-top: -35px !important;
+    margin-left: -15% !important;
+  }
+
+  .sign-in-form {
+    margin-top: 200px !important;
   }
 
   .button-upload {

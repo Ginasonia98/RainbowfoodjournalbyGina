@@ -66,7 +66,7 @@ export const AddFoods = () => {
 
   return (
     <>
-      <div className="bg-addFoods">
+      <div className="bg-addFoodse">
         <form onSubmit={formAddFoods.handleSubmit} className="box-addFoods">
           <div className="adds">Add Foods</div>
           <div class="">
@@ -74,7 +74,7 @@ export const AddFoods = () => {
               id="name"
               name="name"
               type="text"
-              className="input"
+              className="input mt-2 mb-3"
               onChange={formAddFoods.handleChange}
               onBlur={formAddFoods.handleBlur}
               value={formAddFoods.values.name}
@@ -101,12 +101,12 @@ export const AddFoods = () => {
           <div>
             {ingredients.map((ingredient, index) => {
               return (
-                <div class="d-flex gap-2" key={index}>
+                <div class="d-flex mt-3 mb-2 position-relative  " key={index}>
                   <input
                     id="ingredients"
                     name="ingredients"
                     type="text"
-                    className="input"
+                    className="inputs"
                     onBlur={formAddFoods.handleBlur}
                     placeholder="bahan"
                     value={ingredient}
@@ -116,7 +116,7 @@ export const AddFoods = () => {
                   />
                   <button
                     type="button"
-                    className="button-warningnewss"
+                    className="button-warningnewss "
                     onClick={() => handleAddIngredients()}
                   >
                     <div className="add">Add</div>
@@ -135,7 +135,7 @@ export const AddFoods = () => {
           <div className="input-file">
             <UploadImage onChange={(value) => setSavePicture(value)} />
           </div>
-          <button type="submit" class="button-warningneww">
+          <button type="submit" class="button-warningneww mb-5">
             <div className="submit">Submit</div>
           </button>
         </form>

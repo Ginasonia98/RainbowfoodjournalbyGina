@@ -134,7 +134,7 @@ const Profile = () => {
                 </div>
                 <div >
                   <Link
-                    className="btn btn-success"
+                    className="btn btn-primary"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >
