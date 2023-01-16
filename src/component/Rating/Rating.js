@@ -95,70 +95,14 @@ const Rating = () => {
             <div className="col-md-4">
               <img
                 src={foods && foods.imageUrl}
-                className="img-fluid  shadow"
+                className="img-fluid-shadow"
                 alt={foods && foods.name}
               />
             </div>
+            <br />
             <div className="col-md-8">
               <div className="card-body">
-                <div className="card-name">{foods && foods.name}</div>
-                <div className="d-flex gap-2 mt-4">
-                  <i
-                    class="bi bi-list"
-                    style={{
-                      color: "#FD841F",
-                      fontSize: "20px",
-                      marginLeft: "15px",
-                    }}
-                  ></i>
-                  <div
-                    className="text-desc"
-                    style={{ fontSize: "16px", color: "#FD841F" }}
-                  >
-                    <span style={{ fontWeight: "bold", fontSize: "16px" }}>
-                      Deskripsi:
-                    </span>{" "}
-                    {foods && foods.description}
-                  </div>
-                </div>
-                <div className="d-flex gap-2">
-                  <i
-                    className="bi bi-info-square"
-                    style={{
-                      fontSize: "20px",
-                      color: "#FD841F",
-                      marginLeft: "15px",
-                    }}
-                  ></i>
-                  <span
-                    style={{
-                      fontSize: "16px",
-                      fontWeight: "bold",
-                      color: "#FD841F",
-                    }}
-                  >
-                    Bahan:
-                    {foods &&
-                      foods.ingredients.map((i, index) => {
-                        return (
-                          <span
-                            style={{ fontWeight: "normal", fontSize: "16px" }}
-                            key={index}
-                          >
-                            {(index ? ", " : " ") + i}
-                          </span>
-                        );
-                      })}
-                  </span>
-                </div>
-                <br />
-                <p className="card-text">
-                  <i
-                    className="fa-solid fa-star ms-3"
-                    style={{ color: `orange` }}
-                  ></i>
-                  {foods && foods.rating}.
-                </p>
+                <div className="card-name ">{foods && foods.name}</div>
               </div>
             </div>
           </div>
@@ -214,11 +158,12 @@ const Rating = () => {
                           fontSize: "16px",
                           fontWeight: "bold",
                           color: "#FD841F",
+                          marginLeft: "25px",
                         }}
                       >
                         Rating
                       </label>
-                      <br/>
+                      <br />
                       <input
                         value={formik.values.rating}
                         onChange={formik.handleChange}
@@ -236,11 +181,12 @@ const Rating = () => {
                           fontSize: "16px",
                           fontWeight: "bold",
                           color: "#FD841F",
+                          marginLeft: "25px",
                         }}
                       >
                         Review
                       </label>
-                      <br/>
+                      <br />
                       <input
                         value={formik.values.review}
                         onChange={formik.handleChange}
@@ -267,7 +213,7 @@ const Rating = () => {
             return (
               <div key={rate.id}>
                 <div className="col-6 list-group mt-3 mx-auto mb-5 ">
-                  <li className="d-flex justify-content-between align-items-start food-card shadow list-group-item">
+                  <li className="d-flex justify-content-between align-items-start food-card-shadow list-group-item">
                     <div className="d-flex gap-3">
                       <img
                         src={rate.user.profilePictureUrl}
