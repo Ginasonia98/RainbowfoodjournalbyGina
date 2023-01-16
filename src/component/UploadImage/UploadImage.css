@@ -6,20 +6,20 @@
   background-color: #FD841F;
   color: #fff;
   border: 1px solid rgba(255, 94, 0, 0.932);
-  margin-left: 330px !important;
+  margin-left: 50px !important;
   width: 55px !important;
   height: 30px !important;
-  margin-top: -55px !important;
+  margin-bottom: 10px !important;
 }
 
 @media (width < 768px) {
   .input-upload {
-    margin-left: 70px !important;
+    margin-left: 100px !important;
   }
 
   .button-upload {
-    margin-left: 320px !important;
+    margin-left: 100px !important;
     height: 30px !important;
-    margin-top: -55px !important;
+    margin-bottom: 10px;
   }
 }

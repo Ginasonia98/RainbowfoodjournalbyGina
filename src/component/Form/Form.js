@@ -4,8 +4,6 @@ import axios from "axios";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { BASE_URL, API_KEY } from "../../Environment";
-import imgSignIn from "../../img/foodlogin.jpg";
-import imgSignUp from "../../img/foodregister.jpg";
 import UploadImage from "../UploadImage/UploadImage";
 
 const Form = () => {
@@ -95,7 +93,7 @@ const Form = () => {
         })
         .catch((error) => {
           console.log(error);
-          alert("Login Failed! Please, Check Email and Password !!");
+          alert("Login Gagal! Silahkan Cek Email dan Password !!");
         });
     },
   });
@@ -134,6 +132,7 @@ const Form = () => {
                   placeholder="Password"
                 />
               </div>
+              <br />
               <input type="submit" value="Login" class="button-login solid" />
             </form>
             {/* end-sign-in  */}
@@ -235,11 +234,11 @@ const Form = () => {
                   <div>{formik.errors.phoneNumber}</div>
                 ) : null}
               </div>
-              <div >
+              <div>
                 <UploadImage onChange={(value) => setUploadFile(value)} />
               </div>
-              <br/>
-              <button type="submit" class="button-login btn-primary mb-5 ">
+              <br />
+              <button type="submit" class="button-login btn-primary ">
                 Submit
               </button>
             </form>
@@ -250,9 +249,7 @@ const Form = () => {
           <div class="panel left-panel">
             <div class="content">
               <h3>Belum memiliki akun</h3>
-              <p>
-                Silahkan Register
-              </p>
+              <p>Silahkan Register</p>
               <button
                 class="button-login transparent"
                 id="sign-up-btn"
@@ -261,25 +258,21 @@ const Form = () => {
                 Sign up
               </button>
             </div>
-            <br/>
-            <img src={imgSignIn} class="image rounded-circle" alt="" />
+            <br />
           </div>
 
           <div class="panel right-panel">
             <div class="content">
               <h3>Sudah Memiliki Akun</h3>
-              <p>
-                Silahkan Login
-              </p>
+              <p>Silahkan Login</p>
               <button
-                class="button-login transparent"
+                class="button-login transparent2"
                 id="sign-in-btn"
                 onClick={() => handleSignIn()}
               >
                 Sign in
               </button>
             </div>
-            <img src={imgSignUp} class="image rounded-circle" alt="" />
           </div>
         </div>
       </div>
