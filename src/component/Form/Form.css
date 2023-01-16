@@ -134,7 +134,7 @@ select {
   font-weight: 600;
   margin: 10px 0;
   cursor: pointer;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 .button-login:hover {
@@ -235,11 +235,6 @@ select {
 
 /* ANIMATION */
 
-.container-form.sign-up-mode:before {
-  transform: translate(100%, -50%);
-  right: 12%;
-}
-
 .container-form.sign-up-mode .left-panel .image,
 .container-form.sign-up-mode .left-panel .content {
   transform: translateX(-800px);
@@ -282,7 +277,6 @@ select {
     width: 100%;
     top: 95%;
     transform: translate(-50%, -100%);
-    transition: 1s 0.8s ease-in-out;
   }
 
   .signin-signup,
