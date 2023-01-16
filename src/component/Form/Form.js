@@ -4,6 +4,8 @@ import axios from "axios";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { BASE_URL, API_KEY } from "../../Environment";
+import imgSignIn from "../../img/foodlogin.jpg";
+import imgSignUp from "../../img/foodregister.jpg";
 import UploadImage from "../UploadImage/UploadImage";
 
 const Form = () => {
@@ -46,11 +48,11 @@ const Form = () => {
         },
       })
         .then((Response) => {
-          alert("Registrasi Berhasil");
+          alert("Registration Successful !!");
           window.location.reload();
         })
         .catch((e) => {
-          alert("Registrasi Gagal !!");
+          alert("Registration Failed !!");
         });
     },
   });
@@ -60,6 +62,10 @@ const Form = () => {
       email: "",
       password: "",
     },
+    validationSchema: Yup.object({
+      email: Yup.string().required("Required"),
+      password: Yup.string().required("Required"),
+    }),
     onSubmit: (values) => {
       axios({
         method: "post",
@@ -73,7 +79,7 @@ const Form = () => {
         },
       })
         .then((Response) => {
-          alert("Berhasil Masuk!!");
+          alert("Login successful !!");
           const token = Response.data.token;
           localStorage.setItem("token", token);
 
@@ -89,7 +95,7 @@ const Form = () => {
         })
         .catch((error) => {
           console.log(error);
-          alert("Gagal Masuk, Silahkan Cek Email Dan Password!!");
+          alert("Login Failed! Please, Check Email and Password !!");
         });
     },
   });
@@ -101,25 +107,23 @@ const Form = () => {
           <div class="signin-signup">
             {/* sign-in  */}
             <form onSubmit={formLogin.handleSubmit} class="sign-in-form">
-              <div class="titles d-flex justify-content-center">Masuk</div>
-              <div class="input-field-new">
-                <i class="fas fa-envelope"></i>
+              <h2 class="title">Sign in</h2>
+              <div class="input-field">
                 <input
                   id="email"
                   name="email"
                   type="text"
+                  className="input-box"
                   onChange={formLogin.handleChange}
                   onBlur={formLogin.handleBlur}
                   value={formLogin.values.email}
                   placeholder="Email"
-                  className="input-box-news"
                 />
                 {formLogin.touched.email && formLogin.errors.email ? (
                   <div>{formLogin.errors.email}</div>
                 ) : null}
               </div>
-              <div class="input-field-new">
-                <i class="fas fa-lock"></i>
+              <div class="input-field">
                 <input
                   id="password"
                   name="password"
@@ -128,20 +132,16 @@ const Form = () => {
                   onBlur={formLogin.handleBlur}
                   value={formLogin.values.password}
                   placeholder="Password"
-                  className="input-box-news"
                 />
               </div>
-              <button type="submit" value="Login" class="button-login solid">
-                <div>Submit</div>
-              </button>
+              <input type="submit" value="Login" class="button-login solid" />
             </form>
             {/* end-sign-in  */}
 
             {/* sign-up  */}
             <form onSubmit={formik.handleSubmit} class="sign-up-form">
-              <div class="titles d-flex justify-content-center">Daftar</div>
-              <div class="input-field d-flex justify-content-center align-items-center">
-                <i class="fas fa-user"></i>
+              <h2 class="title">Sign up</h2>
+              <div class="input-field">
                 <input
                   id="name"
                   name="name"
@@ -150,14 +150,13 @@ const Form = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.name}
-                  className="input-box-newsss"
                 />
+
                 {formik.touched.username && formik.errors.username ? (
                   <div>{formik.errors.username}</div>
                 ) : null}
               </div>
-              <div class="input-field d-flex justify-content-center align-items-center">
-                <i class="fas fa-envelope"></i>
+              <div class="input-field">
                 <input
                   id="email"
                   name="email"
@@ -166,7 +165,6 @@ const Form = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.email}
-                  className="input-box-newsss"
                 />
 
                 {formik.touched.email && formik.errors.email ? (
@@ -174,8 +172,7 @@ const Form = () => {
                 ) : null}
               </div>
 
-              <div class="input-field d-flex justify-content-center align-items-center">
-                <i class="fas fa-lock"></i>
+              <div class="input-field">
                 <input
                   id="password"
                   name="password"
@@ -184,7 +181,6 @@ const Form = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.password}
-                  className="input-box-newsss"
                 />
 
                 {formik.touched.password && formik.errors.password ? (
@@ -192,8 +188,7 @@ const Form = () => {
                 ) : null}
               </div>
 
-              <div class="input-field d-flex justify-content-center align-items-center">
-                <i class="fas fa-lock"></i>
+              <div class="input-field">
                 <input
                   id="passwordRepeat"
                   name="passwordRepeat"
@@ -202,7 +197,6 @@ const Form = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.passwordRepeat}
-                  className="input-box-newsss"
                 />
 
                 {formik.touched.passwordRepeat &&
@@ -210,8 +204,7 @@ const Form = () => {
                   <div>{formik.errors.passwordRepeat}</div>
                 ) : null}
               </div>
-              <div class="input-field ">
-                <i class="fas fa-user"></i>
+              <div class="input-field">
                 <select
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
@@ -227,8 +220,7 @@ const Form = () => {
                   <option value="user">User</option>
                 </select>
               </div>
-              <div class="input-field d-flex justify-content-center align-items-center">
-                <i class="fa fa-phone"></i>
+              <div class="input-field">
                 <input
                   id="phoneNumber"
                   name="phoneNumber"
@@ -237,50 +229,57 @@ const Form = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.phoneNumber}
-                  className="input-box-newsss"
                 />
 
                 {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
                   <div>{formik.errors.phoneNumber}</div>
                 ) : null}
               </div>
-              <div className="input-field-i  ">
+              <div >
                 <UploadImage onChange={(value) => setUploadFile(value)} />
               </div>
-              <button type="submit" class="button-login ">
+              <br/>
+              <button type="submit" class="button-login btn-primary mb-5 ">
                 Submit
               </button>
             </form>
+            {/* end-sign-up  */}
           </div>
         </div>
-
         <div class="panels-container">
           <div class="panel left-panel">
             <div class="content">
-              <h3>Tidak Memiliki Akun</h3>
-              <p>Silahkan Gabung Sekarang</p>
+              <h3>Belum memiliki akun</h3>
+              <p>
+                Silahkan Register
+              </p>
               <button
                 class="button-login transparent"
                 id="sign-up-btn"
                 onClick={() => handleSignUp()}
               >
-                Registrasi
+                Sign up
               </button>
             </div>
+            <br/>
+            <img src={imgSignIn} class="image rounded-circle" alt="" />
           </div>
 
           <div class="panel right-panel">
             <div class="content">
-              <h3>Masuk</h3>
-              <p>Silahkan masuk dan lihat resep makanan khas nusantara</p>
+              <h3>Sudah Memiliki Akun</h3>
+              <p>
+                Silahkan Login
+              </p>
               <button
                 class="button-login transparent"
                 id="sign-in-btn"
                 onClick={() => handleSignIn()}
               >
-                Log In
+                Sign in
               </button>
             </div>
+            <img src={imgSignUp} class="image rounded-circle" alt="" />
           </div>
         </div>
       </div>

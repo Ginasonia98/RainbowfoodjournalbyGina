@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useRef, useState } from "react";
 import { BASE_URL, API_KEY } from "../../Environment";
-import "../Form/Form.css";
 import "../UploadImage/UploadImage.css";
 
 const UploadImage = ({onChange}) => {
@@ -56,16 +55,17 @@ const UploadImage = ({onChange}) => {
 
   return (
     <div className="upload ">
-      <div className="input-field ">
+      <div className="">
         <input
           type="file"
           ref={fileUpload}
           id="formFile"
           onChange={handleUploadChange}
           accepts="image/*"
-          className="add-inputnew"
+          className="input-upload mt-3"
         />
       </div>
+      <br/>
       <button
         className="button-upload d-flex "
         type="button"

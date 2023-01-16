@@ -11,12 +11,12 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
-.container-form:before {
-  height: 250vh !important;
-  width: 100% !important;
-  right: 50% !important;
-  background-color: #FF7000 !important;
-  border-radius: 0% !important;
+.container-form {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .forms-container {
@@ -60,34 +60,12 @@ form.sign-in-form {
   z-index: 2;
 }
 
-.titles {
-  font-size: 2.2rem;
-  color: #FF7000;
-}
 
-/* login */
-.input-field-new {
-  max-width: 380px;
-  width: 100%;
-  margin: 10px 0;
-  border: 1px solid #FF7000;
-  height: 45px;
-  border-radius: 55px;
-  display: grid;
-  grid-template-columns: 15% 85%;
-  padding: 0 0.4rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-/* registrasi */
 .input-field {
   max-width: 380px;
   width: 100%;
   margin: 10px 0;
-  border: 1px solid #FF7000;
+  border: 1px solid rgba(255, 94, 0, 0.932);
   height: 45px;
   border-radius: 55px;
   display: grid;
@@ -97,20 +75,15 @@ form.sign-in-form {
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin-left: 5% !important;
 }
 
+.input-box {
 
-.input-box-newsss {
-  width: 20vw !important;
-  border: none;
+  border-radius: 55px;
+
 }
 
-*.input-box-newsss:focus {
-  outline: none;
-}
-
-.select {
+select {
   margin-right: 10px;
 }
 
@@ -121,10 +94,10 @@ form.sign-in-form {
   border-radius: 55px;
   cursor: pointer;
   color: #aaa;
+
 }
 
-/* login */
-.input-field-new i {
+.input-field i {
   text-align: center;
   line-height: 55px;
   color: #acacac;
@@ -133,7 +106,7 @@ form.sign-in-form {
   margin-left: 20px;
 }
 
-.input-field-new input {
+.input-field input {
   background: none;
   outline: none;
   border: none;
@@ -141,36 +114,20 @@ form.sign-in-form {
   font-weight: 600;
   font-size: 1.1rem;
   color: #333;
+
 }
 
-.input-field-new input::placeholder {
+.input-field input::placeholder {
   color: #aaa;
   font-weight: 500;
 }
 
-.form-control[type=file]:not(:disabled):not([readonly]) {
-  border: 1px solid #FF6E31;
-  height: 30px;
-  position: relative;
-  width: 90%;
-  font-size: 16px;
-  left: 20px;
-}
-
-/* lastlogin */
-
-.social-text {
-  padding: 0.7rem 0;
-  font-size: 1rem;
-}
-
-
 .button-login {
-  width: 10vw;
-  background-color: #FF6E31 !important;
+  width: 150px;
+  background-color: #FD841F;
   border: none;
   outline: none;
-  height: 8vh;
+  height: 49px;
   border-radius: 49px;
   color: #fff;
   text-transform: uppercase;
@@ -178,11 +135,10 @@ form.sign-in-form {
   margin: 10px 0;
   cursor: pointer;
   transition: 0.5s;
-  margin-left: -10rem;
 }
 
 .button-login:hover {
-  background-color: #FF7000;
+  background-color: #FD841F;
 }
 
 .panels-container {
@@ -198,12 +154,12 @@ form.sign-in-form {
 .container-form:before {
   content: "";
   position: absolute;
-  height: 2000px;
+  height: 3000px;
   width: 100%;
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #FF7000 90%, #FF6E31 10%);
+  background-image: linear-gradient(-45deg, #fff 0%, #FD841F 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -271,6 +227,7 @@ form.sign-in-form {
 .container-form.sign-up-mode:before {
   transform: translate(100%, -50%);
   right: 52%;
+  top: 15% !important;
 }
 
 .container-form.sign-up-mode .left-panel .image,
@@ -305,7 +262,7 @@ form.sign-in-form {
   pointer-events: all;
 }
 
-@media (width < 768px) {
+@media (max-width: 870px) {
   .container-form {
     min-height: 800px;
     height: 100vh;
@@ -313,7 +270,7 @@ form.sign-in-form {
 
   .signin-signup {
     width: 100%;
-    top: 80%;
+    top: 95%;
     transform: translate(-50%, -100%);
     transition: 1s 0.8s ease-in-out;
   }
@@ -332,7 +289,7 @@ form.sign-in-form {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem 8%;
+    padding: 2.5rem 8%;
     grid-column: 1 / 2;
   }
 
@@ -363,11 +320,6 @@ form.sign-in-form {
   .panel p {
     font-size: 0.7rem;
     padding: 0.5rem 0;
-  }
-
-  .button-login {
-    width: 30vw;
-    margin-left: 1rem;
   }
 
   .button-login.transparent {
@@ -412,8 +364,10 @@ form.sign-in-form {
     top: 5%;
     transform: translate(-50%, 0);
   }
+}
 
-  .form {
+@media (max-width: 570px) {
+  form {
     padding: 0 1.5rem;
   }
 
@@ -439,83 +393,17 @@ form.sign-in-form {
     left: 50%;
   }
 
-  .input-field {
-    max-width: 340px;
-    width: 100% !important;
-    border: 1px solid #FF7000;
-    height: 45px;
-    border-radius: 55px;
-    display: grid;
-    grid-template-columns: 15% 85%;
-    padding: 0 0.4rem;
-    position: relative;
-    display: flex;
-    gap: 2rem;
-    margin-left: 1% !important;
-    margin-bottom: 5px !important;
-    margin-top: 1px !important;
-  }
-
-  .add-inputnew {
-    border: none !important;
-    display: flex;
-    justify-content: center;
-    margin-top: 7px !important;
-    margin-left: 45px !important;
-  }
-
-  .input-box-newsss {
-    width: 60vw !important;
-    border: none;
-  }
-
-  .button-login {
-    width: 25vw;
-    background-color: #FF6E31 !important;
-    border: none;
-    outline: none;
-    height: 8vh;
-    border-radius: 9px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: 0.5s;
-    margin-left: 1rem;
-    margin-top: -22px;
-  }
-
-  .input-field-new {
-    max-width: 380px;
-    width: 152%;
-    margin: 10px 0;
-    border: 1px solid #FF7000;
-    height: 45px;
-    border-radius: 55px;
-    display: grid;
-    grid-template-columns: 15% 85%;
-    padding: 0 0.4rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-left: -20px !important;
-    margin-bottom: 35px !important;
-    margin-top: -2px !important;
+  .sign-in-form {
+    margin-left: -50px;
   }
 
   .sign-up-form {
-    margin-top: -35px !important;
-    margin-left: -15% !important;
+    margin-left: -50px;
+    margin-top: -40px;
   }
 
-  .sign-in-form {
-    margin-top: 200px !important;
-  }
-
-  .button-upload {
-    margin-left: -100px !important;
-    margin-top: 60px !important;
+  .input-field {
+    max-width: 380px;
+    width: 93%;
   }
 }

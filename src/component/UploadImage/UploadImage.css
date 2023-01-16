@@ -1,35 +1,25 @@
-.uploads {
-  color: #fff;
-  margin-top: 10px;
+.input-upload {
+  margin-left: 50px !important;
 }
 
 .button-upload {
-  background-color: #FF7000;
-  border: 1px solid #FF7000;
-  border-radius: 8px;
+  background-color: #FD841F;
   color: #fff;
-  font-size: 12px;
-  height: 40px;
-  position: relative;
-  left: 400px;
-  top: -50px;
-  width: 60px;
-  display: flex;
-  justify-content: center;
+  border: 1px solid rgba(255, 94, 0, 0.932);
+  margin-left: 280px !important;
+  width: 55px !important;
+  height: 30px !important;
+  margin-top: -55px !important;
 }
 
 @media (width < 768px) {
+  .input-upload {
+    margin-left: 70px !important;
+  }
+
   .button-upload {
-    background-color: #FF7000;
-    border: 1px solid #FF7000;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 12px;
-    height: 40px;
-    position: relative;
-    left: 210px !important;
-    width: 60px;
-    display: flex;
-    justify-content: center;
+    margin-left: 305px !important;
+    height: 30px !important;
+    margin-top: -55px !important;
   }
 }
