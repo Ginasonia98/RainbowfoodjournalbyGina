@@ -226,8 +226,7 @@ select {
 
 .container-form.sign-up-mode:before {
   transform: translate(100%, -50%);
-  right: 52%;
-  top: 15% !important;
+  right: 12%;
 }
 
 .container-form.sign-up-mode .left-panel .image,
@@ -341,7 +340,7 @@ select {
 
   .container-form.sign-up-mode:before {
     transform: translate(-50%, 100%);
-    bottom: 32%;
+    bottom: 25%;
     right: initial;
   }
 
