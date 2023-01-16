@@ -29,47 +29,64 @@ const Navbar = () => {
       };
       return (
         <>
-          <div className="d-flex justify-content-center">
-            <div className="ms-5 ">
-              <button
-                type="button"
-                class="button-warningnnew dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <div className="name2">{name}</div>
-              </button>
-              <ul class="dropdown-menu position-absolute ">
-                <li>
-                  <Link to="/profile-user" className="nav-link-k bi-person-fill">
-                    <div className="my-profile">Profile Saya</div>
-                  </Link>
-                </li>
-                {localStorage.getItem("role") === "admin" ? (
-                  <li>
-                    <Link to="/all-users" class="nav-link-k bi bi-people">
-                      <div className="user-all">User</div>
-                    </Link>
-                  </li>
-                ) : null}
-                <li className="nav-item">
-                  <Link
-                    className="nav-link-k bi bi-box-arrow-right"
-                    href="#"
-                    onClick={handleLogout}
+          <span>
+            <ul className="navbar-nav me-auto  mb-lg-0 ">
+              {localStorage.getItem("token") ? (
+                <li className="nav-item dropdown">
+                  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                  <a
+                    className="nav-link fw-bold text-white dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    <div className="log-out">Keluar</div>
+                    {name}
+                  </a>
+                  <ul className="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <Link
+                        className="dropdown-item fw-bold text-dark bi-person-fill"
+                        to="/profile-user"
+                      >
+                        My Profile
+                      </Link>
+                    </li>
+                    {localStorage.getItem("role") === "admin" ? (
+                      <li>
+                        <Link
+                          className="dropdown-item fw-bold text-dark bi bi-people"
+                          to="/all-users"
+                        >
+                          All User
+                        </Link>
+                      </li>
+                    ) : null}
+                    <li>
+                      <Link
+                        className="dropdown-item fw-bold text-dark bi bi-box-arrow-right"
+                        to="#"
+                        onClick={() => handleLogout()}
+                      >
+                        Logout
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              ) : (
+                <li className="nav-item ">
+                  <Link className="nav-link fw-bold text-white" to="/login">
+                    Login
                   </Link>
                 </li>
-              </ul>
-            </div>
-          </div>
+              )}
+            </ul>
+          </span>
         </>
       );
     }
     return (
       <li className="nav-item">
-        <a className="nav-link" href="/Form">
+        <a className="nav-link text-white" href="/Form">
           Login
         </a>
       </li>
@@ -78,7 +95,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-primary navbar-container">
+      <nav class="navbar navbar-expand-lg navbar-container">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
