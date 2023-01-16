@@ -196,7 +196,7 @@ export const Foods = () => {
                             class="modal-body"
                             style={{
                               position: "relative",
-                              left: "-40px",
+                              left: "-50px",
                             }}
                           >
                             <form
@@ -204,7 +204,7 @@ export const Foods = () => {
                               onSubmit={(e) => handleSubmit(e, foods.id)}
                             >
                               <div className="col-md-6">
-                                <label for="inputName" className="form-labels">
+                                <label for="inputName" className="form-labelsr">
                                   Food Name
                                 </label>
                                 <br />
@@ -221,7 +221,7 @@ export const Foods = () => {
                                 <div>{formik.errors.name}</div>
                               ) : null}
                               <div className="col-md-6">
-                                <label for="inputAge" className="form-labels">
+                                <label for="inputAge" className="form-labelsm">
                                   Description
                                 </label>
                                 <br />

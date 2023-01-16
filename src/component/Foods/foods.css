@@ -29,13 +29,18 @@
         margin-left: -80px !important;
     }
 
-    .form-labels {
+    .form-labelsr {
         color: #FD841F;
         margin-left: -80px !important;
     }
 
     .form-labelss {
         color: #FD841F;
+    }
+
+    .form-labelsm {
+        color: #FD841F;
+        margin-left: -80px !important;
     }
 
     .form-labelst {
@@ -128,24 +133,20 @@
         }
 
         .add-inputm {
-            border: 1px solid #FF7000;
             width: 300px;
             margin-left: 40px !important;
         }
 
 
         .add-inputmc {
-            border: 1px solid #FF7000;
             margin-left: 100px !important;
         }
 
-        .form-labels {
-            color: #FD841F;
+        .form-labelsr {
             margin-left: 40px !important;
         }
 
         .form-labelss {
-            color: #FD841F;
             margin-left: 80px !important;
         }
 
@@ -153,11 +154,15 @@
             margin-left: 100px !important;
         }
 
+        .form-labelsm {
+            margin-left: 40px !important;
+        }
+
         .input-field {
             margin-left: 60px !important;
         }
 
-        .button-warnings{
+        .button-warnings {
             margin-left: 40px !important;
         }
     }
