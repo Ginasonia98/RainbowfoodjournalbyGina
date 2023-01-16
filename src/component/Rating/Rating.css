@@ -1,0 +1,73 @@
+.set-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.card-name {
+    color: #FD841F;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    margin-left: -10%;
+}
+
+.card-r {
+    width: 500px !important;
+}
+
+.btn-created {
+    background-color: #FD841F;
+    border: none;
+    margin-top: 15px !important;
+    height: 40px !important;
+}
+
+.create-rating {
+    border: 1px solid rgba(255, 94, 0, 0.932);
+    color: rgba(255, 94, 0, 0.932);
+    background-color: #FD841F;
+    width: 20%;
+    height: 200% !important;
+    margin-top: -5px;
+}
+
+.create-text {
+    color: #fff;
+    margin-top: -15px !important;
+}
+
+.add-input-s {
+    width: 20vw !important;
+    border: 2px solid #FD841F;
+}
+
+*.add-input-t:focus {
+    outline: none;
+}
+
+
+@media (width < 768px) {
+    .btn-create {
+        margin-left: -5% !important;
+        width: 30%;
+    }
+
+    .box-addFoods {
+        margin-left: -10% !important;
+    }
+
+    .create-rating {
+        width: 30%;
+    }
+
+    .food-card {
+        margin-left: -47%;
+        width: 195%;
+    }
+
+    .add-input-s {
+        width: 80vw !important;
+        border: 2px solid #FD841F;
+    }
+}

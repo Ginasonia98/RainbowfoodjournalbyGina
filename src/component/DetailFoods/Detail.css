@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+.box-container1 {
+    padding: 120px 80px 120px 80px;
+    height: 80%;
+    background: white;
+}
+
+.car {
+    margin-left: 20%;
+    margin-top: 1%;
+}
+
+.ingred {
+    margin-left: 5%;
+    font-size: 20px;
+    color: #FD841F;
+}
+
+.named {
+    color: #FD841F;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 45%;
+}
+
+.descr {
+    color: #FD841F;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.created {
+    color: #FD841F;
+    font-size: 20px;
+}
+
+.updated {
+    color: #FD841F;
+    font-size: 20px;
+}
+
+@media (width < 768px) {
+    .car {
+        margin-left: 15%;
+        margin-top: 3%;
+    }
+
+    .named {
+        font-weight: bolder;
+        font-size: 20px !important;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .descr {
+        margin-left: 10%;
+        font-size: 15px;
+    }
+
+    .ingred {
+        margin-left: 10%;
+        font-size: 15px;
+    }
+
+    .created {
+        font-size: 15px;
+    }
+
+    .updated {
+        font-size: 15px;
+    }
+}

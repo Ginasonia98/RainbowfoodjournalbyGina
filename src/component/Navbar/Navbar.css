@@ -1,0 +1,113 @@
+.navbar-container {
+    width: 100%;
+    padding: 0.625em 3.75rem;
+    background-color: #FF7000 !important;
+}
+
+
+.dropdown-menu {
+    margin-left: 85% !important;
+    width: 10vw;
+    position: relative;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+.nav-link-k {
+    color: #FF7000;
+    text-decoration: none;
+}
+
+.nav-link-k:hover {
+    color: #FF7000;
+}
+
+.my-profile {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -24px !important;
+}
+
+.bi-person-fill {
+    margin-left: 15px !important;
+}
+
+
+.user-all {
+    margin-left: 35px !important;
+    margin-top: -22px !important;
+}
+
+.bi-people {
+    margin-left: 15px !important;
+}
+
+.log-out {
+    margin-left: 35px !important;
+    margin-top: -22px !important;
+}
+
+.bi-box-arrow-right {
+    margin-left: 15px !important;
+}
+
+.button-warningnnew {
+    background-color: #FF7000;
+    width: 11vw;
+    height: 9vh;
+    border: none;
+    justify-content: flex-end;
+}
+
+
+.name1 {
+    color: white !important;
+}
+
+.name2 {
+    color: #fff !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown a {
+    color: white !important;
+}
+
+.dropdown a:hover {
+    color: white !important;
+}
+
+.dropdown.show a {
+    color: white !important;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+    color: white !important;
+}
+
+
+@media (width < 768px) {
+    .button-warningnnew {
+        margin-left: -40px;
+    }
+
+    .user-all {
+        margin-left: 35px !important;
+        margin-top: -22px !important;
+    }
+
+    .bi-people {
+        margin-left: 15px !important;
+    }
+
+    .dropdown-menu {
+        margin-left: 170px !important;
+        width: 10vw;
+    }
+}

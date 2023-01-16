@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spline Sans', sans-serif;
+}
+
+.img-card-profile {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #FD841F;
+}
+
+.title {
+    color: #FD841F;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.font-12px {
+    font-size: 14px;
+}
+
+.update-button {
+    background-color: #FD841F;
+    border: none;
+    color: #fff;
+    width: 4vw;
+    height: 4vh;
+}

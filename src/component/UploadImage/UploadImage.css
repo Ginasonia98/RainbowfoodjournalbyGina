@@ -1,0 +1,25 @@
+.input-upload {
+  margin-left: 50px !important;
+}
+
+.button-upload {
+  background-color: #FD841F;
+  color: #fff;
+  border: 1px solid rgba(255, 94, 0, 0.932);
+  margin-left: 50px !important;
+  width: 55px !important;
+  height: 30px !important;
+  margin-bottom: 10px !important;
+}
+
+@media (width < 768px) {
+  .input-upload {
+    margin-left: 100px !important;
+  }
+
+  .button-upload {
+    margin-left: 100px !important;
+    height: 30px !important;
+    margin-bottom: 10px;
+  }
+}
