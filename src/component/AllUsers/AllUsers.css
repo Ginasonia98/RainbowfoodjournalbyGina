@@ -24,8 +24,6 @@
 
 .update-button {
     background-color: #FD841F;
-    border: none;
     color: #fff;
-    width: 4vw;
-    height: 4vh;
+    width: 60px !important;
 }

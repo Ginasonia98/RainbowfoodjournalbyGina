@@ -26,6 +26,12 @@
   margin-left: -40px !important;
 }
 
+.form-labels {
+  color: #FF7000;
+  margin-left: -40px !important;
+}
+
+
 
 .form-labelllll {
   color: #FF7000;
@@ -33,6 +39,11 @@
 }
 
 .add-input-mp {
+  border: 2px solid #FF7000;
+  margin-left: -50px;
+}
+
+.add-input-mps {
   border: 2px solid #FF7000;
   margin-left: -50px;
 }
@@ -46,7 +57,7 @@
 @media (width < 768px) {
   .form-labell {
     color: #FF7000;
-    margin-left: 45px !important;
+    margin-left: -30px !important;
   }
 
   .form-labelll {
@@ -54,20 +65,29 @@
     margin-left: 45px !important;
   }
 
+  .form-labellll {
+    color: #FF7000;
+    margin-left: 85px !important;
+  }
 
   .form-labelllll {
     color: #FF7000;
-    margin-left: 45px !important;
+    margin-left: -25px !important;
   }
 
   .add-input-mp {
     border: 2px solid #FF7000;
-    margin-left: 50px;
+    margin-left: -30px !important;
   }
 
-  .form-labellll {
+  .add-input-mps {
+    border: 2px solid #FF7000;
+    margin-left: -30px;
+  }
+
+  .form-labels {
     color: #FF7000;
-    margin-left: 120px !important;
+    margin-left: -30px !important;
   }
 
 }

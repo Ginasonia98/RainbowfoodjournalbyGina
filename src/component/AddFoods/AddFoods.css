@@ -51,9 +51,9 @@
 .inputs {
     border-radius: 24px;
     height: 45px;
-    width: 370px !important;
+    width: 300px !important;
     border: 1px solid #FD841F;
-    margin-left: 120px !important;
+    margin-left: 30px !important;
 }
 
 .submit {
@@ -62,13 +62,6 @@
 
 
 @media (width < 768px) {
-    .box-addFoodse {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: flex-start;
-    }
-
     .add {
         color: #fff !important;
         font-size: 15px !important;
@@ -83,24 +76,24 @@
 
     .button-warningnews {
         background-color: #FD841F;
-        width: 25% !important;
+        width: 75px !important;
         height: 8vh !important;
         margin-top: 60px !important;
-        margin-left: -80px !important;
+        margin-left: -240px !important;
         border: none;
     }
 
     .button-warningnewss {
         background-color: #FD841F;
-        width: 25% !important;
-        height: 8vh !important;
+        width: 75px !important;
         border: none;
+        margin-top: 60px;
+        margin-left: -18px !important;
     }
 
     .button-warningneww {
         background-color: #FD841F;
-        width: 50% !important;
-        height: 8vh !important;
+        width: 75px !important;
         border: none;
     }
 
@@ -116,11 +109,12 @@
         border-radius: 24px;
         height: 45px;
         border: 1px solid #FD841F;
-        margin-left: 30px !important;
-        width: 50px;
+        margin-left: -25px !important;
+        width: 185px !important;
     }
 
-    .input-field{
+    .input-field {
         margin-left: 3px !important;
     }
+
 }

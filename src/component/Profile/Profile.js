@@ -202,7 +202,7 @@ const Profile = () => {
               </h3>
               <div
                 class="modal-body"
-                style={{ position: "relative", left: "-40px" }}
+                style={{ position: "relative" }}
               >
                 <form
                   className="box-addFoods"
@@ -227,15 +227,16 @@ const Profile = () => {
                   ) : null}
                   <br />
                   <div className="col-md-6">
-                    <label for="inputAge" className="form-labelll">
+                    <label for="inputAge" className="form-labels">
                       Email
                     </label>
+                    <br/>
                     <input
                       value={formik.values.email}
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
                       type="text"
-                      className="add-input-mp"
+                      className="add-input-mps"
                       id="email"
                     />
                   </div>
@@ -255,6 +256,7 @@ const Profile = () => {
                     <label for="inputAge" className="form-labelllll">
                       Phone Number
                     </label>
+                    <br/>
                     <input
                       value={formik.values.phoneNumber}
                       onChange={formik.handleChange}

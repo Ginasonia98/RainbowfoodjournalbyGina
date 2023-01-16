@@ -91,8 +91,8 @@
         background-color: #FD841F;
         border: none;
         color: #fff;
-        width: 6vw;
-        height: 8vh;
+        width: 18px;
+        height: 30px;
     }
 
     .button-food {
@@ -153,7 +153,11 @@
             margin-left: 100px !important;
         }
 
-        .input-field{
+        .input-field {
             margin-left: 60px !important;
+        }
+
+        .button-warnings{
+            margin-left: 40px !important;
         }
     }
