@@ -79,7 +79,7 @@
         width: 75px !important;
         height: 8vh !important;
         margin-top: 60px !important;
-        margin-left: -240px !important;
+        margin-left: -250px !important;
         border: none;
     }
 
@@ -88,7 +88,7 @@
         width: 75px !important;
         border: none;
         margin-top: 60px;
-        margin-left: -18px !important;
+        margin-left: -80px !important;
     }
 
     .button-warningneww {
@@ -110,7 +110,7 @@
         height: 45px;
         border: 1px solid #FD841F;
         margin-left: -25px !important;
-        width: 185px !important;
+        width: 270px !important;
     }
 
     .input-field {

@@ -196,7 +196,7 @@ export const Foods = () => {
                             class="modal-body"
                             style={{
                               position: "relative",
-                              left: "-50px",
+                              left: "-30px",
                             }}
                           >
                             <form
