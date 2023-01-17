@@ -107,6 +107,10 @@
         margin-left: 10px;
     }
 
+    .btn-warning {
+        margin-left: -50px;
+    }
+
 
     @media (width < 768px) {
 
