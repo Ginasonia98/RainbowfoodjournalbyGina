@@ -108,7 +108,7 @@ export const Foods = () => {
       },
     })
       .then((response) => {
-        alert("foods edit successful !!");
+        alert("Edit makanan berhasil !!");
         console.log(response);
         window.location.reload();
       })
@@ -204,7 +204,7 @@ export const Foods = () => {
                             >
                               <div className="col-md-6">
                                 <label for="inputName" className="form-labelsr">
-                                  Food Name
+                                  Nama Makanan
                                 </label>
                                 <br />
                                 <input
@@ -221,7 +221,7 @@ export const Foods = () => {
                               ) : null}
                               <div className="col-md-6">
                                 <label for="inputAge" className="form-labelsm">
-                                  Description
+                                  Deskripsi
                                 </label>
                                 <br />
                                 <input
@@ -239,7 +239,7 @@ export const Foods = () => {
                               ) : null}
                               <div className="col-md-12">
                                 <label className="form-labelss">
-                                  Food Image Upload
+                                  Upload Foto Makanan
                                 </label>
                                 <UploadImage
                                   clasName="upload"
@@ -252,7 +252,7 @@ export const Foods = () => {
                                   <div className="col-md-6">
                                     <label for="inputIngredient" className="">
                                       <div className="form-labelst">
-                                        Ingredients
+                                      Bahan Makanan
                                       </div>
                                     </label>
                                     <div className="d-flex gap-2">
