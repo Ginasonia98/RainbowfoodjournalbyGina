@@ -46,11 +46,11 @@ const Form = () => {
         },
       })
         .then((Response) => {
-          alert("Registration Successful !!");
+          alert("Registrasi Berhasil !!");
           window.location.reload();
         })
         .catch((e) => {
-          alert("Registration Failed !!");
+          alert("Registrasi Gagal !!");
         });
     },
   });
@@ -77,7 +77,7 @@ const Form = () => {
         },
       })
         .then((Response) => {
-          alert("Login successful !!");
+          alert("Login Berhasil !!");
           const token = Response.data.token;
           localStorage.setItem("token", token);
 
@@ -248,8 +248,6 @@ const Form = () => {
         <div class="panels-container">
           <div class="panel left-panel">
             <div class="content">
-              <h3>Belum memiliki akun</h3>
-              <p>Silahkan Register</p>
               <button
                 class="button-login transparent"
                 id="sign-up-btn"
@@ -263,8 +261,6 @@ const Form = () => {
 
           <div class="panel right-panel">
             <div class="content">
-              <h3>Sudah Memiliki Akun</h3>
-              <p>Silahkan Login</p>
               <button
                 class="button-login transparent2"
                 id="sign-in-btn"

@@ -27,7 +27,7 @@ const Profile = () => {
       })
       .catch((error) => {
         console.error(error);
-        alert("Error, try reloading the page");
+        alert("Error, Silahkan Refresh Halaman");
       });
   };
   useEffect(() => {
@@ -70,7 +70,7 @@ const Profile = () => {
           .then((response) => {
             console.log(response);
             localStorage.setItem("role", values.role);
-            alert("Update Profile Successful !!");
+            alert("Update Profile Berhasil !!");
             window.location.reload();
           })
           .catch((error) => {

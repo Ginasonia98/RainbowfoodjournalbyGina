@@ -26,7 +26,7 @@ const Home = () => {
       })
       .catch((error) => {
         console.error(error);
-        alert("Error, try reloading the page");
+        alert("Error, Silahkan Refresh Halaman");
       });
   };
 
@@ -122,7 +122,7 @@ const Home = () => {
                                   }
                                   on
                                   style={{
-                                    color: `${foods.isLike ? "pink" : "gray"}`,
+                                    color: `${foods.isLike ? "pink" : "red"}`,
                                     cursor: "pointer",
                                     fontSize: "25px",
                                   }}

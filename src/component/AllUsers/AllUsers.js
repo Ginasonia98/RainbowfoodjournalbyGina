@@ -25,7 +25,7 @@ const AllUsers = () => {
       })
       .catch((error) => {
         console.error(error);
-        alert("Error, silahkan reload kembali");
+        alert("Error, silahkan refresh");
       });
   }, []);
 
