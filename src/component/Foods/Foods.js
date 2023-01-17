@@ -196,7 +196,6 @@ export const Foods = () => {
                             class="modal-body"
                             style={{
                               position: "relative",
-                              left: "-30px",
                             }}
                           >
                             <form
@@ -281,7 +280,7 @@ export const Foods = () => {
                                         Add
                                       </button>
                                       <button
-                                        className="btn btn-danger w-50 me-4"
+                                        className="btn btn-danger me-5"
                                         style={{
                                           fontSize: "12px",
                                         }}
