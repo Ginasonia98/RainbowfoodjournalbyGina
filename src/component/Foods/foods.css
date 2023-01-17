@@ -1,15 +1,8 @@
-    /* btn-allfood */
+    /* btn-food */
     .btn-dark {
         border: none;
         margin-top: 1%;
         height: 50px !important;
-    }
-
-    .btn-create {
-        border: none;
-        margin-top: 1%;
-        width: 8%;
-        height: 40px;
     }
 
     .add-inputm {

@@ -77,33 +77,13 @@ form.sign-in-form {
   gap: 2rem;
 }
 
-.input-box {
-
-  border-radius: 55px;
-
-}
-
-select {
-  margin-right: 10px;
-}
-
 .select-field {
   max-width: 380px;
   border: none;
   height: 35px;
   border-radius: 55px;
   cursor: pointer;
-  color: #aaa;
-
-}
-
-.input-field i {
-  text-align: center;
-  line-height: 55px;
-  color: #acacac;
-  transition: 0.5s;
-  font-size: 1.1rem;
-  margin-left: 20px;
+  color: #FD841F;
 }
 
 .input-field input {
@@ -113,12 +93,12 @@ select {
   line-height: 1;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #333;
+  color: #FD841F;
 
 }
 
 .input-field input::placeholder {
-  color: #aaa;
+  color: #FD841F;
   font-weight: 500;
 }
 
@@ -372,9 +352,6 @@ select {
     padding: 0 1.5rem;
   }
 
-  .image {
-    display: none;
-  }
 
   .panel .content {
     padding: 0.5rem 1rem;
