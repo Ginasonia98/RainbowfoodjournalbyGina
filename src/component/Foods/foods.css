@@ -134,28 +134,28 @@
 
         .add-inputm {
             width: 300px;
-            margin-left: 40px !important;
+            margin-left: -20px !important;
         }
 
 
         .add-inputmc {
-            margin-left: 100px !important;
+            margin-left: 10px !important;
         }
 
         .form-labelsr {
-            margin-left: 40px !important;
+            margin-left: -20px !important;
         }
 
         .form-labelss {
-            margin-left: 80px !important;
+            margin-left: 50px !important;
         }
 
         .form-labelst {
-            margin-left: 100px !important;
+            margin-left: 10px !important;
         }
 
         .form-labelsm {
-            margin-left: 40px !important;
+            margin-left: -20px !important;
         }
 
         .input-field {
@@ -163,6 +163,10 @@
         }
 
         .button-warnings {
-            margin-left: 40px !important;
+            margin-left: 20px !important;
+        }
+
+        .btn-warning {
+            margin-left: -55px;
         }
     }

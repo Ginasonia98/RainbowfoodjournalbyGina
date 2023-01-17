@@ -252,7 +252,7 @@ export const Foods = () => {
                                   <div className="col-md-6">
                                     <label for="inputIngredient" className="">
                                       <div className="form-labelst">
-                                      Bahan Makanan
+                                        Bahan Makanan
                                       </div>
                                     </label>
                                     <div className="d-flex gap-2">
@@ -270,20 +270,16 @@ export const Foods = () => {
                                         }
                                       />
                                       <button
-                                        className="btn btn-success w-100"
+                                        className="btn btn-success w-50 me-5"
                                         onClick={() =>
                                           handleAddEditIngredients()
                                         }
                                         type="button"
-                                        style={{ fontSize: "12px" }}
                                       >
                                         Add
                                       </button>
                                       <button
-                                        className="btn btn-danger me-5"
-                                        style={{
-                                          fontSize: "12px",
-                                        }}
+                                        className="btn btn-warning w-50 text-white"
                                         onClick={() =>
                                           handleRemoveEditIngredients(index)
                                         }
