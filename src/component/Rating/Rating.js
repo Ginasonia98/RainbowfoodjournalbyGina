@@ -153,12 +153,12 @@ const Rating = () => {
                     <div className="col-md-6">
                       <label
                         for="inputName"
-                        className="form-label"
+                        className="form-labelo"
                         style={{
                           fontSize: "16px",
                           fontWeight: "bold",
                           color: "#FD841F",
-                          marginLeft: "25px",
+                          marginLeft: "1px",
                         }}
                       >
                         Rating
@@ -176,12 +176,12 @@ const Rating = () => {
                     <div className="col-md-6">
                       <label
                         for="inputName"
-                        className="form-label"
+                        className="form-labelo"
                         style={{
                           fontSize: "16px",
                           fontWeight: "bold",
                           color: "#FD841F",
-                          marginLeft: "25px",
+                          marginLeft: "1px",
                         }}
                       >
                         Review
