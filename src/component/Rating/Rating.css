@@ -52,9 +52,6 @@
     border: 2px solid #FD841F;
 }
 
-*.add-input-t:focus {
-    outline: none;
-}
 
 .form-labelo {
     margin-left: 0px !important;
@@ -62,11 +59,6 @@
 
 
 @media (width < 768px) {
-    .btn-create {
-        margin-left: -5% !important;
-        width: 30%;
-    }
-
     .box-addFoods {
         margin-left: -10% !important;
     }
@@ -78,7 +70,6 @@
 
     .add-input-s {
         width: 300px !important;
-        border: 2px solid #FD841F;
         margin-left: 30px !important;
     }
 

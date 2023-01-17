@@ -200,10 +200,7 @@ const Profile = () => {
               <h3 className="mt-2 text-center" style={{ color: "#FF7000 " }}>
                 Edit Profile
               </h3>
-              <div
-                class="modal-body"
-                style={{ position: "relative" }}
-              >
+              <div class="modal-body" style={{ position: "relative" }}>
                 <form
                   className="box-addFoods"
                   onSubmit={(e) => handleSubmit(e, Profile.id)}
@@ -230,7 +227,7 @@ const Profile = () => {
                     <label for="inputAge" className="form-labels">
                       Email
                     </label>
-                    <br/>
+                    <br />
                     <input
                       value={formik.values.email}
                       onChange={formik.handleChange}
@@ -256,7 +253,7 @@ const Profile = () => {
                     <label for="inputAge" className="form-labelllll">
                       Phone Number
                     </label>
-                    <br/>
+                    <br />
                     <input
                       value={formik.values.phoneNumber}
                       onChange={formik.handleChange}
