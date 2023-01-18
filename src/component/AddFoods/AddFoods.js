@@ -68,8 +68,8 @@ export const AddFoods = () => {
     <>
       <section className="container-fluid background-add-food d-flex align-items-center py-5">
         <form onSubmit={formAddFoods.handleSubmit}>
-          <div className="card mx-auto shadow sign-up-card py-3 px-2 w-100">
-            <div className="card-body">
+          <div className="carm mx-auto  sign-up-card py-3 px-2 ">
+            <div className="">
               <input
                 id="name"
                 name="name"
@@ -139,7 +139,7 @@ export const AddFoods = () => {
                 <UploadImage onChange={(value) => setSavePicture(value)} />
               </div>
               <div className="text-center mt-3">
-                <button type="submit" className="btn btn-success">
+                <button type="submit" className="btn btn-success w-50 me-5">
                   Submit
                 </button>
               </div>

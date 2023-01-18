@@ -4,14 +4,12 @@ import axios from "axios";
 import { BASE_URL, API_KEY } from "../../Environment";
 import "../Home/Home.css";
 import { Link } from "react-router-dom";
-import UploadImage from "../UploadImage/UploadImage";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import "../Foods/foods.css";
 
 export const Foods = () => {
   const [AllFoods, setAllFoods] = useState([]);
-  const [savePicture, setSavePicture] = useState("");
   const [ingredients, setEditIngredients] = useState([""]);
 
   const handleAddEditIngredients = () => {
@@ -103,7 +101,6 @@ export const Foods = () => {
       data: {
         name: values.name,
         description: values.description,
-        imageUrl: savePicture,
         ingredients: ingredients,
       },
     })
@@ -196,7 +193,7 @@ export const Foods = () => {
                             class="modal-body"
                             style={{
                               position: "relative",
-                              right:"10%",
+                              right: "10%",
                             }}
                           >
                             <form
@@ -238,16 +235,6 @@ export const Foods = () => {
                               formik.errors.description ? (
                                 <div>{formik.errors.description}</div>
                               ) : null}
-                              <div className="col-md-12">
-                                <label className="form-labelss">
-                                  Upload Foto Makanan
-                                </label>
-                                <UploadImage
-                                  clasName="upload"
-                                  style={{ width: "380px" }}
-                                  onChange={(value) => setSavePicture(value)}
-                                />
-                              </div>
                               {ingredients.map((ingredient, index) => {
                                 return (
                                   <div className="col-md-6">
