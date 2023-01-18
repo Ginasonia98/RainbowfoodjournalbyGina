@@ -100,174 +100,176 @@ const Form = () => {
 
   return (
     <>
-      <div class={`container-form ${classSignUp}`}>
-        <div class="forms-container">
-          <div class="signin-signup">
-            {/* sign-in  */}
-            <form onSubmit={formLogin.handleSubmit} class="sign-in-form">
-              <h2 class="title">Sign in</h2>
-              <div class="input-field">
-                <input
-                  id="email"
-                  name="email"
-                  type="text"
-                  className="input-box"
-                  onChange={formLogin.handleChange}
-                  onBlur={formLogin.handleBlur}
-                  value={formLogin.values.email}
-                  placeholder="Email"
-                />
-                {formLogin.touched.email && formLogin.errors.email ? (
-                  <div>{formLogin.errors.email}</div>
-                ) : null}
-              </div>
-              <div class="input-field">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  onChange={formLogin.handleChange}
-                  onBlur={formLogin.handleBlur}
-                  value={formLogin.values.password}
-                  placeholder="Password"
-                />
-              </div>
-              <br />
-              <input type="submit" value="Login" class="button-login solid" />
-            </form>
-            {/* end-sign-in  */}
+      <div className="body">
+        <div class={`container-form ${classSignUp}`}>
+          <div class="forms-container">
+            <div class="signin-signup">
+              {/* sign-in  */}
+              <form onSubmit={formLogin.handleSubmit} class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                  <input
+                    id="email"
+                    name="email"
+                    type="text"
+                    className="input-box"
+                    onChange={formLogin.handleChange}
+                    onBlur={formLogin.handleBlur}
+                    value={formLogin.values.email}
+                    placeholder="Email"
+                  />
+                  {formLogin.touched.email && formLogin.errors.email ? (
+                    <div>{formLogin.errors.email}</div>
+                  ) : null}
+                </div>
+                <div class="input-field">
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    onChange={formLogin.handleChange}
+                    onBlur={formLogin.handleBlur}
+                    value={formLogin.values.password}
+                    placeholder="Password"
+                  />
+                </div>
+                <br />
+                <input type="submit" value="Login" class="button-login solid" />
+              </form>
+              {/* end-sign-in  */}
 
-            {/* sign-up  */}
-            <form onSubmit={formik.handleSubmit} class="sign-up-form">
-              <h2 class="title">Sign up</h2>
-              <div class="input-field">
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Username"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.name}
-                />
+              {/* sign-up  */}
+              <form onSubmit={formik.handleSubmit} class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Username"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.name}
+                  />
 
-                {formik.touched.username && formik.errors.username ? (
-                  <div>{formik.errors.username}</div>
-                ) : null}
-              </div>
-              <div class="input-field">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.email}
-                />
+                  {formik.touched.username && formik.errors.username ? (
+                    <div>{formik.errors.username}</div>
+                  ) : null}
+                </div>
+                <div class="input-field">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}
+                  />
 
-                {formik.touched.email && formik.errors.email ? (
-                  <div>{formik.errors.email}</div>
-                ) : null}
-              </div>
+                  {formik.touched.email && formik.errors.email ? (
+                    <div>{formik.errors.email}</div>
+                  ) : null}
+                </div>
 
-              <div class="input-field">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  placeholder="Password"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.password}
-                />
+                <div class="input-field">
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.password}
+                  />
 
-                {formik.touched.password && formik.errors.password ? (
-                  <div>{formik.errors.password}</div>
-                ) : null}
-              </div>
+                  {formik.touched.password && formik.errors.password ? (
+                    <div>{formik.errors.password}</div>
+                  ) : null}
+                </div>
 
-              <div class="input-field">
-                <input
-                  id="passwordRepeat"
-                  name="passwordRepeat"
-                  type="password"
-                  placeholder="Confirm Password"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.passwordRepeat}
-                />
+                <div class="input-field">
+                  <input
+                    id="passwordRepeat"
+                    name="passwordRepeat"
+                    type="password"
+                    placeholder="Confirm Password"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.passwordRepeat}
+                  />
 
-                {formik.touched.passwordRepeat &&
-                formik.errors.passwordRepeat ? (
-                  <div>{formik.errors.passwordRepeat}</div>
-                ) : null}
-              </div>
-              <div class="input-field">
-                <select
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.role}
-                  component="select"
-                  id="role"
-                  name="role"
-                  multiple={false}
-                  class="select-field"
-                >
-                  <option value="">Select a Role</option>
-                  <option value="admin">Admin</option>
-                  <option value="user">User</option>
-                </select>
-              </div>
-              <div class="input-field">
-                <input
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  type="text"
-                  placeholder="Phone Number"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.phoneNumber}
-                />
+                  {formik.touched.passwordRepeat &&
+                  formik.errors.passwordRepeat ? (
+                    <div>{formik.errors.passwordRepeat}</div>
+                  ) : null}
+                </div>
+                <div class="input-field">
+                  <select
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.role}
+                    component="select"
+                    id="role"
+                    name="role"
+                    multiple={false}
+                    class="select-field"
+                  >
+                    <option value="">Select a Role</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <input
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    type="text"
+                    placeholder="Phone Number"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.phoneNumber}
+                  />
 
-                {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-                  <div>{formik.errors.phoneNumber}</div>
-                ) : null}
-              </div>
-              <div>
-                <UploadImage onChange={(value) => setUploadFile(value)} />
-              </div>
-              <br />
-              <button type="submit" class="button-login btn-primary ">
-                Submit
-              </button>
-            </form>
-            {/* end-sign-up  */}
-          </div>
-        </div>
-        <div class="panels-container">
-          <div class="panel left-panel">
-            <div class="content">
-              <button
-                class="button-login transparent"
-                id="sign-up-btn"
-                onClick={() => handleSignUp()}
-              >
-                Sign up
-              </button>
+                  {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
+                    <div>{formik.errors.phoneNumber}</div>
+                  ) : null}
+                </div>
+                <div>
+                  <UploadImage onChange={(value) => setUploadFile(value)} />
+                </div>
+                <br />
+                <button type="submit" class="button-login btn-primary ">
+                  Submit
+                </button>
+              </form>
+              {/* end-sign-up  */}
             </div>
-            <br />
           </div>
+          <div class="panels-container">
+            <div class="panel left-panel">
+              <div class="content">
+                <button
+                  class="button-login transparent"
+                  id="sign-up-btn"
+                  onClick={() => handleSignUp()}
+                >
+                  Sign up
+                </button>
+              </div>
+              <br />
+            </div>
 
-          <div class="panel right-panel">
-            <div class="content">
-              <button
-                class="button-login transparent2"
-                id="sign-in-btn"
-                onClick={() => handleSignIn()}
-              >
-                Sign in
-              </button>
+            <div class="panel right-panel">
+              <div class="content">
+                <button
+                  class="button-login transparent2"
+                  id="sign-in-btn"
+                  onClick={() => handleSignIn()}
+                >
+                  Sign in
+                </button>
+              </div>
             </div>
           </div>
         </div>

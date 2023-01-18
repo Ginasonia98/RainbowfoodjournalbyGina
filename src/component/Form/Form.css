@@ -11,10 +11,17 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
+.body {
+  background-image: url('https://i.pinimg.com/564x/dc/02/00/dc020079af95d236ac57603796790465.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Numans', sans-serif;
+  min-height: 100vh;
+}
+
 .container-form {
   position: relative;
   width: 100%;
-  background-color: #fff;
   min-height: 100vh;
   overflow: hidden;
 }

@@ -68,7 +68,7 @@ export const AddFoods = () => {
     <>
       <section className="container-fluid background-add-food d-flex align-items-center py-5">
         <form onSubmit={formAddFoods.handleSubmit}>
-          <div className="card mx-auto shadow sign-up-card py-3 px-2 ms-1 w-100">
+          <div className="card mx-auto shadow sign-up-card py-3 px-2 w-100">
             <div className="card-body">
               <input
                 id="name"

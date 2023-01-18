@@ -62,7 +62,7 @@ const UploadImage = ({onChange}) => {
           id="formFile"
           onChange={handleUploadChange}
           accepts="image/*"
-          className="input-upload mt-3 ms-4"
+          className="input-upload mt-3 "
         />
       </div>
       <br/>

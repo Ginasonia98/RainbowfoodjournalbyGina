@@ -136,7 +136,8 @@
 
 
         .add-inputmc {
-            margin-left: 60px !important;
+            margin-left: 30px !important;
+            width: 150px !important;
         }
 
         .form-labelsr {
@@ -144,11 +145,11 @@
         }
 
         .form-labelss {
-            margin-left: 80px !important;
+            margin-left: 85px !important;
         }
 
         .form-labelst {
-            margin-left: 60px !important;
+            margin-left: 30px !important;
         }
 
         .form-labelsm {
@@ -160,10 +161,11 @@
         }
 
         .button-warnings {
-            margin-left: 20px !important;
+            margin-left: 50px !important;
         }
 
         .btn-warning {
-            margin-left: -55px;
+            margin-left: -50px;
+            width: 65px;
         }
     }

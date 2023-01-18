@@ -280,7 +280,7 @@ export const Foods = () => {
                                         Add
                                       </button>
                                       <button
-                                        className="btn btn-warning w-50 text-white"
+                                        className="btn btn-warning  text-white"
                                         onClick={() =>
                                           handleRemoveEditIngredients(index)
                                         }
