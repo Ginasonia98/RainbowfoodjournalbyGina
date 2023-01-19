@@ -85,7 +85,7 @@ const Profile = () => {
     <>
       <section className="container-fluid py-5">
         <div className="mx-auto profile-detail">
-          <h1 className="title text-center">My Profile</h1>
+          <h1 className="titler text-center">My Profile</h1>
           <div className="card my-3 shadow">
             <div className="card-body">
               <div className="row g-2">
@@ -156,9 +156,7 @@ const Profile = () => {
             <div className="modal-dialog">
               <div className="modal-content">
                 <div className="modal-header">
-                  <h5 className="modal-title" >
-                    Edit Profile
-                  </h5>
+                  <h5 className="modal-title">Edit Profile</h5>
                   <button
                     type="button"
                     className="btn-close"

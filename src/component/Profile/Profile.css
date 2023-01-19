@@ -35,3 +35,27 @@
   appearance: none;
   margin-left: -100px !important;
 }
+
+.titler {
+  color: #FD841F;
+}
+
+@media (width < 768px) {
+  .titler {
+    margin-left: -200px !important;
+  }
+
+  .form-labele {
+    margin-left: -70px !important;
+  }
+
+  .form-controll {
+    margin-left: -70px !important;
+    width: 170%;
+  }
+
+  .img-profile-page {
+    margin-left: -55px;
+  }
+
+}
