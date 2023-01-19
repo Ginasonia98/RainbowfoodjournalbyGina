@@ -12,7 +12,7 @@ input {
 }
 
 .body {
-  background-image: url('https://i.pinimg.com/564x/dc/02/00/dc020079af95d236ac57603796790465.jpg');
+  background-image: url('https://i.pinimg.com/564x/d7/75/70/d77570ce3ffe1332a432a982d3f3b2e5.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Numans', sans-serif;
@@ -70,7 +70,7 @@ form.sign-in-form {
 
 .input-field {
   max-width: 380px;
-  width: 100%;
+  width: 150%;
   margin: 10px 0;
   border: 1px solid rgba(255, 94, 0, 0.932);
   height: 45px;
@@ -101,6 +101,7 @@ form.sign-in-form {
   font-weight: 600;
   font-size: 1.1rem;
   color: #FD841F;
+  width: 500px;
 
 }
 
@@ -352,6 +353,11 @@ form.sign-in-form {
     top: 5%;
     transform: translate(-50%, 0);
   }
+
+  .card {
+    width: 300px !important;
+    margin-left: -15px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -394,5 +400,10 @@ form.sign-in-form {
 
   .button-login {
     margin-top: -15px;
+  }
+
+  .card {
+    width: 300px !important;
+    margin-left: -15px;
   }
 }

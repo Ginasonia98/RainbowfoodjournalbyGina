@@ -12,72 +12,26 @@
   height: 145px;
   width: 145px;
   border-radius: 50%;
-  border: 2px solid #FF7000;
+  border: 2px solid #FD841F;
   object-fit: cover;
 }
 
-.form-labell {
-  color: #FF7000;
-  margin-left: -45px !important;
+.form-labele {
+  margin-left: -100px !important;
 }
 
-.form-labelll {
-  color: #FF7000;
-  margin-left: -40px !important;
-}
-
-.form-labels {
-  color: #FF7000;
-  margin-left: -40px !important;
-}
-
-.form-labelllll {
-  color: #FF7000;
-  margin-left: -40px !important;
-}
-
-.add-input-mp {
-  border: 2px solid #FF7000;
-  margin-left: -50px;
-}
-
-.add-input-mps {
-  border: 2px solid #FF7000;
-  margin-left: -50px;
-}
-
-.form-labellll {
-  color: #FF7000;
-  margin-left: 35px !important;
-}
-
-
-@media (width < 768px) {
-  .form-labell {
-    margin-left: -30px !important;
-  }
-
-  .form-labelll {
-    margin-left: 45px !important;
-  }
-
-  .form-labellll {
-    margin-left: 65px !important;
-  }
-
-  .form-labelllll {
-    margin-left: -25px !important;
-  }
-
-  .add-input-mp {
-    margin-left: -30px !important;
-  }
-
-  .add-input-mps {
-    margin-left: -30px;
-  }
-
-  .form-labels {
-    margin-left: -30px !important;
-  }
+.form-controll {
+  display: block;
+  width: 250%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-left: -100px !important;
 }

@@ -103,7 +103,12 @@ const Form = () => {
       <div className="body">
         <div class={`container-form ${classSignUp}`}>
           <div class="forms-container">
-            <div class="signin-signup">
+            <div
+              class="signin-signup card w-25"
+              style={{
+                backgroundImage: `url("https://i.pinimg.com/564x/d7/75/70/d77570ce3ffe1332a432a982d3f3b2e5.jpg")`,
+              }}
+            >
               {/* sign-in  */}
               <form onSubmit={formLogin.handleSubmit} class="sign-in-form">
                 <h2 class="title">Sign in</h2>

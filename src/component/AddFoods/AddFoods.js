@@ -5,11 +5,11 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 import axios from "axios";
 import { useState } from "react";
-import UploadImage from "../UploadImage/UploadImage";
+import ImageForm from "../../component/ImageForm/ImageForm";
 
 export const AddFoods = () => {
   const [ingredients, setIngredients] = useState([""]);
-  const [SavePicture, setSavePicture] = useState("");
+  const [uploadImage, setUploadImage] = useState("");
 
   const handleAddIngredients = () => {
     setIngredients([...ingredients, ""]);
@@ -50,7 +50,7 @@ export const AddFoods = () => {
         data: {
           name: values.name,
           description: values.description,
-          imageUrl: SavePicture,
+          imageUrl: uploadImage,
           ingredients: ingredients,
         },
       })
@@ -136,11 +136,11 @@ export const AddFoods = () => {
                 })}
               </div>
               <div className="input-file">
-                <UploadImage onChange={(value) => setSavePicture(value)} />
+                <ImageForm onChange={(value) => setUploadImage(value)} />
               </div>
               <div className="text-center mt-3">
-                <button type="submit" className="btn btn-success w-50 me-5">
-                  Submit
+                <button type="submit" className="btn btn-success w-100 me-5">
+                  <div className="text-submit">Submit</div>
                 </button>
               </div>
             </div>

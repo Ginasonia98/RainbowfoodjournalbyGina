@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="about-us">About Us</div>
             <div className="text-about-us">
               Rainbow Food Journal adalah website yang menyediakan berbagai
-              macam makanan nusantara termasuk resepnya. Diwebsite ini juga kita
+              macam makanan nusantara termasuk resepnya. Di website ini juga kita
               dapat membagikan menu makanan yang kita ketahui beserta resepnya.
             </div>
           </div>

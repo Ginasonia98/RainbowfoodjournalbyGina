@@ -14,12 +14,12 @@
 
 @media (width < 768px) {
   .input-upload {
-    margin-left: 50px !important;
+    margin-left: 150px !important;
     color:#FD841F !important;
   }
 
   .button-upload {
-    margin-left: 50px !important;
+    margin-left: 150px !important;
     height: 30px !important;
     margin-bottom: 10px;
   }
