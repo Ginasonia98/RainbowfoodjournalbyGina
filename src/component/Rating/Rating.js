@@ -127,7 +127,7 @@ const Rating = () => {
           </button>
         </div>
         <div
-          className="modal fade h-50"
+          className="modal fade w-100"
           id={`rating${foods && foods.id}`}
           tabIndex="-1"
           aria-labelledby="modal-title"

@@ -173,7 +173,7 @@ export const Foods = () => {
                       </div>
                     </div>
                     <div
-                      class="modal fade"
+                      class="modal fade w-100"
                       id={`exampleModal-${foods.id}`}
                       tabindex="-1"
                       aria-labelledby="exampleModalLabel"
@@ -193,7 +193,6 @@ export const Foods = () => {
                             class="modal-body"
                             style={{
                               position: "relative",
-                              right: "10%",
                             }}
                           >
                             <form

@@ -156,7 +156,7 @@ const Profile = () => {
           </div>
 
           <div
-            className="modal fade"
+            className="modal fade w-100"
             id="exampleModal"
             tabIndex="-1"
             aria-labelledby="exampleModalLabel"

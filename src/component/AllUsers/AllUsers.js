@@ -129,7 +129,7 @@ const AllUsers = () => {
                     </div>
                   </div>
                   <div
-                    class="modal fade"
+                    class="modal fade w-100"
                     id={`userRole${users.id}`}
                     tabindex="-1"
                     aria-labelledby="exampleModalLabel"
