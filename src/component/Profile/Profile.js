@@ -29,7 +29,7 @@ const Profile = () => {
       })
       .catch((error) => {
         console.log(error);
-        alert("Error, reload the page!");
+        alert("Error, silahkan refresh halaman!");
       });
   };
 
@@ -76,7 +76,7 @@ const Profile = () => {
       name: Yup.string().required("Required"),
       email: Yup.string().email("Invalid Email address").required("Required"),
       phoneNumber: Yup.string()
-        .matches(/^[0-9]{10,12}$/, "Must be in digit")
+        .matches(/^[0-9]{10,12}$/, "Harus Angka")
         .required("Required"),
     }),
   });
@@ -109,19 +109,28 @@ const Profile = () => {
                     {profile && profile.name}
                   </h2>
                   <div className="d-flex gap-2 mb-1 d-flex align-items-center">
-                    <i className="ri-mail-fill fs-5"></i>
+                    <i
+                      class="bi bi-envelope fs-2"
+                      style={{ color: "#FF7000 " }}
+                    ></i>
                     <p className="card-text" style={{ color: "#FF7000 " }}>
                       {profile && profile.email}
                     </p>
                   </div>
                   <div className="d-flex gap-2 mb-1 align-items-center">
-                    <i className="ri-phone-fill fs-5"></i>
+                    <i
+                      class="bi bi-telephone fs-2"
+                      style={{ color: "#FF7000 " }}
+                    ></i>
                     <p className="card-text" style={{ color: "#FF7000 " }}>
                       {profile && profile.phoneNumber}
                     </p>
                   </div>
                   <div className="d-flex gap-2 mb-1 align-items-center">
-                    <i className="ri-account-circle-fill fs-5"></i>
+                    <i
+                      class="bi bi-people-fill fs-2"
+                      style={{ color: "#FF7000 " }}
+                    ></i>
                     <p
                       className="card-text text-capitalize"
                       style={{ color: "#FF7000 " }}
@@ -156,10 +165,12 @@ const Profile = () => {
             <div className="modal-dialog">
               <div className="modal-content">
                 <div className="modal-header">
-                  <h5 className="modal-title">Edit Profile</h5>
+                  <h5 className="modal-title" style={{ color: "#FF7000 " }}>
+                    Edit Profile
+                  </h5>
                   <button
                     type="button"
-                    className="btn-close"
+                    className="btn-close me-4"
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   ></button>
@@ -183,6 +194,7 @@ const Profile = () => {
                         <label
                           htmlFor="inputName w-50"
                           className="form-labele fw-bold mb-1"
+                          style={{ color: "#FF7000 " }}
                         >
                           Nama Pengguna
                         </label>
@@ -194,6 +206,7 @@ const Profile = () => {
                           className="form-controll"
                           id="name"
                           placeholder="Enter username"
+                          style={{ color: "#FF7000 " }}
                         />
                       </div>
                       {formik.touched.name && formik.errors.name ? (
@@ -206,6 +219,7 @@ const Profile = () => {
                         <label
                           htmlFor="inputEmail"
                           className="form-labele fw-bold mb-1"
+                          style={{ color: "#FF7000 " }}
                         >
                           Email
                         </label>
@@ -215,6 +229,7 @@ const Profile = () => {
                           onBlur={formik.handleBlur}
                           type="text"
                           className="form-controll"
+                          style={{ color: "#FF7000 " }}
                           id="email"
                           placeholder="Enter email"
                         />
@@ -229,6 +244,7 @@ const Profile = () => {
                         <label
                           htmlFor="inputPhoneNumber"
                           className="form-labele fw-bold mb-1"
+                          style={{ color: "#FF7000 " }}
                         >
                           Nomor Hp
                         </label>
@@ -238,6 +254,7 @@ const Profile = () => {
                           onBlur={formik.handleBlur}
                           type="text"
                           className="form-controll"
+                          style={{ color: "#FF7000 " }}
                           id="phoneNumber"
                           placeholder="Enter phone number"
                         />

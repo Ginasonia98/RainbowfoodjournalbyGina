@@ -120,7 +120,7 @@ export const Foods = () => {
         <div className="container">
           <div className="row">
             <div className="d-flex">
-              <Link className="btn btn-dark fw-bold" to={`/add-foods`}>
+              <Link className="btn btn-link fw-bold mt-4 " to={`/add-foods`}>
                 <div className="create-foods">Create Foods</div>
               </Link>
             </div>
@@ -184,7 +184,7 @@ export const Foods = () => {
                           <div class="modal-header">
                             <button
                               type="button"
-                              class="btn-close"
+                              class="btn-close me-4"
                               data-bs-dismiss="modal"
                               aria-label="Close"
                             ></button>

@@ -104,14 +104,14 @@ const Form = () => {
         <div class={`container-form ${classSignUp}`}>
           <div class="forms-container">
             <div
-              class="signin-signup card w-25"
+              class="signin-signup cark"
               style={{
                 backgroundImage: `url("https://i.pinimg.com/564x/d7/75/70/d77570ce3ffe1332a432a982d3f3b2e5.jpg")`,
               }}
             >
               {/* sign-in  */}
               <form onSubmit={formLogin.handleSubmit} class="sign-in-form">
-                <h2 class="title">Sign in</h2>
+                <h2 class="titlek">Sign in</h2>
                 <div class="input-field">
                   <input
                     id="email"
@@ -145,7 +145,7 @@ const Form = () => {
 
               {/* sign-up  */}
               <form onSubmit={formik.handleSubmit} class="sign-up-form">
-                <h2 class="title">Sign up</h2>
+                <h2 class="titlem">Sign up</h2>
                 <div class="input-field">
                   <input
                     id="name"

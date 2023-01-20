@@ -44,8 +44,8 @@
 @media (width < 768px) {
     .car {
         margin-top: 10%;
-        margin-left: 15px !important;
-        width: 320px !important;
+        width: 400px !important;
+        margin-left: 0px !important;
     }
 
     .named {

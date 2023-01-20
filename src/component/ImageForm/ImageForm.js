@@ -39,7 +39,12 @@ const ImageForm = ({ onChange }) => {
     <>
       <div className="row mb-3">
         <div className="col-lg-12">
-          <label className="form-label fw-bold mb-1">Image</label>
+          <label
+            className="form-label fw-bold mb-1"
+            style={{ color: "#FF7000 " }}
+          >
+            Image
+          </label>
           <div className="d-flex">
             <input
               className="form-control file-upload"
@@ -53,7 +58,7 @@ const ImageForm = ({ onChange }) => {
               encType="multipart/form-data"
               type="button"
             >
-              <i className="ri-upload-2-line"></i>
+              <i class="bi bi-upload"></i>
             </button>
           </div>
         </div>

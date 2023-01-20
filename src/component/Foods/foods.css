@@ -1,8 +1,10 @@
-    /* btn-food */
-    .btn-dark {
-        border: none;
-        margin-top: 1%;
-        height: 50px !important;
+    .btn-link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .btn-link:hover {
+        color: #fff !important;
     }
 
     .add-inputm {

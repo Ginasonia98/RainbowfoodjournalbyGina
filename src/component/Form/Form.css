@@ -11,6 +11,25 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
+.cark {
+  width: 400px !important;
+  display: inline-block;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px;
+}
+
+.titlek {
+  color: #FD841F;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.titlem {
+  color: #FD841F;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
 .body {
   background-image: url('https://i.pinimg.com/564x/d7/75/70/d77570ce3ffe1332a432a982d3f3b2e5.jpg');
   background-size: cover;
@@ -354,9 +373,18 @@ form.sign-in-form {
     transform: translate(-50%, 0);
   }
 
-  .card {
-    width: 300px !important;
-    margin-left: -15px;
+  .cark {
+    width: 320px !important;
+    margin: 2px !important;
+  }
+
+  .titlek {
+    margin-left: 50px !important;
+  }
+
+  .titlem {
+    margin-left: 50px !important;
+    margin-top: 40px !important;
   }
 }
 
@@ -402,8 +430,13 @@ form.sign-in-form {
     margin-top: -15px;
   }
 
-  .card {
-    width: 300px !important;
-    margin-left: -15px;
+  .cark {
+    width: 320px !important;
+    margin: 2px !important;
+  }
+
+  .titlem {
+    margin-left: 50px !important;
+    margin-top: 40px !important;
   }
 }

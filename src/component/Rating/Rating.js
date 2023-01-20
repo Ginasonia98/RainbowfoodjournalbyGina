@@ -135,6 +135,14 @@ const Rating = () => {
         >
           <div className="modal-dialog modal-md">
             <div className="modal-content">
+              <div className="modal-header">
+                <button
+                  type="button"
+                  className="btn-close me-3"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
               <div className="modal-body">
                 <form
                   className="box-addFoods"
