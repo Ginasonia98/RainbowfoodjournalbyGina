@@ -173,7 +173,7 @@ export const Foods = () => {
                       </div>
                     </div>
                     <div
-                      class="modal fade "
+                      class="modal fade me-3"
                       id={`exampleModal-${foods.id}`}
                       tabindex="-1"
                       aria-labelledby="exampleModalLabel"
