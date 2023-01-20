@@ -124,7 +124,7 @@
 
         .modal-content {
             width: 400px !important;
-            margin-left: -20px !important;
+            margin-left: auto;
         }
 
         .add-inputm {
