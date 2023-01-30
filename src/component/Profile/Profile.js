@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import "../Profile/Profile.css";
-import ImageForm from "../../component/ImageForm/ImageForm";
+import "./Profile.css";
+import ImageForm from "../ImageForm/ImageForm";
 import defaultImage from "../../assets/default.webp";
 
 const Profile = () => {

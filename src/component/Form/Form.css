@@ -101,6 +101,7 @@ form.sign-in-form {
   display: flex;
   align-items: center;
   gap: 2rem;
+  background-color: #fff;
 }
 
 .select-field {
