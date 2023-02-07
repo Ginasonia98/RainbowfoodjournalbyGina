@@ -1,81 +1,91 @@
-.add {
-    color: #fff !important;
-    font-size: 15px !important;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spline Sans', sans-serif;
 }
 
-.button-warningnews {
-    background-color: #FD841F;
-    width: 30% !important;
-    height: 8vh !important;
-    border: none;
-    margin-left: 15px !important;
+.background-add-food {
+    background-image: url("../../assets/addfood.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 550px;
 }
 
-.button-warningnewss {
-    background-color: #FD841F;
-    width: 30% !important;
-    height: 8vh !important;
-    border: none;
-    margin-left: 10px !important;
+.text-danger {
+    font-size: 12px;
 }
 
-.button-warningneww {
-    background-color: #FD841F;
-    width: 10% !important;
-    height: 8vh !important;
-    border: none;
+.bahan {
+    margin-left: -5px;
 }
 
-.inputs {
-    height: 45px;
-    width: 500px !important;
-    border: 1px solid #FD841F;
-    margin-left: -1px !important;
+
+.form-controly {
+    display: block;
+    width: 280px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-left: -5px;
 }
 
-.carm {
-    width: 600px;
-    box-shadow: 2px 2px 20px black;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-bottom: 20px;
+.form-controlt {
+    display: block;
+    width: 320px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-left: -5px;
 }
 
+
+.col-lg-12 {
+    margin-top: -20px;
+}
+
+.input-text {
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 @media (width < 768px) {
-    .button-warningnews {
-        width: 75px !important;
-        height: 8vh !important;
-        margin-top: 60px !important;
-        margin-left: -250px !important;
-        border: none;
+    .form-controly {
+        width: 230px;
+        margin-left: 15px;
     }
 
-    .button-warningnewss {
-        width: 75px !important;
-        border: none;
-        margin-top: 60px;
-        margin-left: -80px !important;
+    .bahan {
+        margin-left: 15px;
     }
 
-    .button-warningneww {
-        width: 75px !important;
-        border: none;
+    .form-controlt {
+        width: 270px;
     }
 
-    .inputs {
-        height: 45px;
-        margin-left: -1px !important;
-        width: 270px !important;
+    .foody{
+        margin-left: 30px !important;
     }
-
-    .text-submit {
-        margin-left: -10px;
-    }
-
-    .carm {
-        width: 380px;
-        margin-left: -20px !important;
-    }
-
 }

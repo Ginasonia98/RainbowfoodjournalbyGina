@@ -5,10 +5,15 @@ import { BASE_URL, API_KEY } from "../../Environment";
 import "../Home/Home.css";
 import "../AllUsers/AllUsers.css";
 import * as Yup from "yup";
-import { useFormik } from "formik";
+import { useField, Formik, Form } from "formik";
+import defaultImage from "../../assets/default.webp";
 
 const AllUsers = () => {
   const [AllUsers, setAllUsers] = useState([]);
+
+  const onImageError = (e) => {
+    e.target.src = defaultImage;
+  };
 
   useEffect(() => {
     axios({
@@ -29,12 +34,10 @@ const AllUsers = () => {
       });
   }, []);
 
-  const handleSubmit = (e, id) => {
-    e.preventDefault();
-    const values = formik.values;
+  const handleSubmit = (values) => {
     axios({
       method: "post",
-      url: `${BASE_URL}/api/v1/update-user-role/${id}`,
+      url: `${BASE_URL}/api/v1/update-user-role/${values.id}`,
       headers: {
         apiKey: `${API_KEY}`,
         Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -50,20 +53,34 @@ const AllUsers = () => {
       })
       .catch((error) => {
         console.log(error);
+        alert("Silahkan Pilih Peran");
       });
   };
 
-  const formik = useFormik({
-    initialValues: {
-      role: "",
-    },
-    validationSchema: Yup.object({}),
-  });
+  const SelectRole = ({ label, ...props }) => {
+    const [field, meta] = useField(props);
+    return (
+      <div className="row mb-3">
+        <div className="col-lg-12">
+          <label
+            className="form-label fw-bold mb-1"
+            htmlFor={props.id || props.name}
+          >
+            {label}
+          </label>
+          <select className="form-select" {...field} {...props} />
+          {meta.touched && meta.error ? (
+            <div className="text-danger">{meta.error}</div>
+          ) : null}
+        </div>
+      </div>
+    );
+  };
 
   return (
     <>
       <section className="container-fluid py-5 min-vh-100 ">
-        <div className="title text-center">User</div>
+        <div className="title text-center"> Semua Pengguna </div>
         <div className="row row-cols row-cols-md-3 row-cols-lg-5 g-4 mt-3 mx-lg-5 mx-4 ">
           {AllUsers &&
             AllUsers.map((users) => {
@@ -129,60 +146,82 @@ const AllUsers = () => {
                     </div>
                   </div>
                   <div
-                    class="modal fade "
+                    className="modal fade"
                     id={`userRole${users.id}`}
-                    tabindex="-1"
+                    tabIndex="-1"
                     aria-labelledby="exampleModalLabel"
                     aria-hidden="true"
                   >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
+                    <div className="modal-dialog">
+                      <div className="modal-content">
+                        <div className="modal-header">
+                          <h5 className="modal-title">Edit Role</h5>
                           <button
                             type="button"
-                            class="btn-close"
+                            className="btn-close me-2"
                             data-bs-dismiss="modal"
                             aria-label="Close"
                           ></button>
                         </div>
-                        <div class="modal-body p-4">
-                          <form
-                            className="box-addFood"
-                            onSubmit={(e) => handleSubmit(e, users.id)}
+                        <div className="modal-body p-4">
+                          <div className="text-center mb-3">
+                            <img
+                              src={
+                                users.profilePictureUrl
+                                  ? users.profilePictureUrl
+                                  : defaultImage
+                              }
+                              className="img-card-profile mx-auto mb-3"
+                              alt={users.name}
+                              onError={onImageError}
+                            />
+                            <h5 className="card-title text-center fs-5 mb-2">
+                              {users.name}
+                            </h5>
+                            <div className="d-flex gap-2 align-items-center justify-content-center">
+                              <i class="bi bi-envelope "></i>
+                              <p className="card-text font-12px text-truncate">
+                                {users.email}
+                              </p>
+                            </div>
+                            <div className="d-flex gap-2 align-items-center justify-content-center">
+                              <i className="bi bi-telephone "></i>
+                              <p className="card-text font-12px">
+                                {users.phoneNumber}
+                              </p>
+                            </div>
+                          </div>
+                          <Formik
+                            initialValues={{
+                              role: users.role,
+                              id: users.id,
+                            }}
+                            enableReinitialize={true}
+                            validationSchema={Yup.object({
+                              role: Yup.string().oneOf(
+                                ["admin", "user"],
+                                "Select Role"
+                              ),
+                            })}
+                            onSubmit={handleSubmit}
                           >
-                            <div className="col-md-6">
-                              <label
-                                for="inputAge"
-                                className="form-label "
-                                style={{
-                                  color: "#FF7000",
-                                }}
-                              >
-                                Role
-                              </label>
-                              <select
-                                label="Role"
-                                name="role"
-                                className="add-input"
-                                style={{
-                                  color: "#FF7000",
-                                }}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                value={formik.values.role}
-                              >
-                                <option value="">Select a Role</option>
+                            <Form>
+                              <br />
+                              <SelectRole label="Change Role" name="role">
+                                <option value="">Select Role</option>
                                 <option value="admin">Admin</option>
                                 <option value="user">User</option>
-                              </select>
-                            </div>
-                            <br />
-                            <div className="col-12 ms-5">
-                              <button type="submit" className="btn btn-success">
-                                Edit Role
-                              </button>
-                            </div>
-                          </form>
+                              </SelectRole>
+                              <div className="text-center mt-3">
+                                <button
+                                  type="submit"
+                                  className="btn btn-success"
+                                >
+                                  Save Change
+                                </button>
+                              </div>
+                            </Form>
+                          </Formik>
                         </div>
                       </div>
                     </div>

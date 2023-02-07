@@ -4,16 +4,16 @@
   font-family: 'Spline Sans', sans-serif;
 }
 
-.file-upload {
-  border-bottom-right-radius: 0%;
-  border-top-right-radius: 0%;
-}
-
 .btn-upload {
   border-top-left-radius: 0%;
   border-bottom-left-radius: 0%;
   font-size: 12px;
 }
+
+.file-upload {
+  width: 300px !important;
+}
+
 
 .btn-success {
   --bs-btn-color: #fff;
@@ -30,4 +30,10 @@
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #FD841F;
   --bs-btn-disabled-border-color: #FD841F;
+}
+
+@media (max-width: 767px) {
+  .file-upload {
+    width: 250px !important;
+  }
 }

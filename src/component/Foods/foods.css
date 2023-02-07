@@ -52,12 +52,19 @@
     }
 
     /* important */
-    .img {
+    .card-image {
+        object-fit: cover;
+        height: 200px !important;
         max-inline-size: 100%;
         block-size: auto;
         aspect-ratio: 2/1;
     }
 
+    .text-card {
+        font-size: 13px;
+    }
+
+    /* important */
 
     .btn-danger {
         margin-bottom: -2px;

@@ -40,14 +40,14 @@ const ImageForm = ({ onChange }) => {
       <div className="row mb-3">
         <div className="col-lg-12">
           <label
-            className="form-label fw-bold mb-1"
+            className="form-label fw-bold mb-1 upimage"
             style={{ color: "#FF7000 " }}
           >
-            Image
+            Upload Image
           </label>
           <div className="d-flex">
             <input
-              className="form-control file-upload"
+              className="form-control file-upload "
               type="file"
               onChange={handleChange}
               accepts="image/*"
@@ -55,6 +55,7 @@ const ImageForm = ({ onChange }) => {
             <button
               onClick={handleApi}
               className="btn btn-success btn-upload"
+              style={{marginLeft:"-15px"}}
               encType="multipart/form-data"
               type="button"
             >

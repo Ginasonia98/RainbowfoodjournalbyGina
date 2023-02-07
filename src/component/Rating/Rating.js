@@ -133,12 +133,12 @@ const Rating = () => {
           aria-labelledby="modal-title"
           aria-hidden="true"
         >
-          <div className="modal-dialog modal-md">
+          <div className="modal-dialog modal-md w-50">
             <div className="modal-content">
               <div className="modal-header">
                 <button
                   type="button"
-                  className="btn-close me-3"
+                  className="btn-close me-5"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -231,21 +231,19 @@ const Rating = () => {
                       <div className="namee">
                         <div
                           style={{
-                            fontSize: "20px",
                             fontWeight: "bold",
                             color: "#FD841F",
                           }}
                         >
-                          {rate.user.name}
+                          <div className="fs-6">{rate.user.name}</div>
                         </div>
                         <div
                           style={{
-                            fontSize: "15px",
                             fontWeight: "bold",
                             color: "#FD841F",
                           }}
                         >
-                          {rate.review}
+                          <div className="fs-6">{rate.review}</div>
                         </div>
                       </div>
                     </div>

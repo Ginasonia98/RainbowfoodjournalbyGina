@@ -4,11 +4,12 @@ import axios from "axios";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { BASE_URL, API_KEY } from "../../Environment";
-import UploadImage from "../UploadImage/UploadImage";
+import ImageForm from "../../component/ImageForm/ImageForm";
+
 
 const Form = () => {
   const [classSignUp, setClassSignUp] = useState("");
-  const [UploadFile, setUploadFile] = useState("");
+  const [uploadImage, setUploadImage] = useState("");
   const [password, setPasswordValue] = React.useState("password");
   const [passwordInput, setPasswordInput] = React.useState("");
 
@@ -55,7 +56,7 @@ const Form = () => {
           passwordRepeat: values.passwordRepeat,
           role: values.role,
           phoneNumber: values.phoneNumber,
-          profilePictureUrl: UploadFile,
+          imageUrl: uploadImage,
         },
       })
         .then((Response) => {
@@ -111,6 +112,11 @@ const Form = () => {
     },
   });
 
+  function showPassword() {
+    toggle();
+    return false;
+  }
+
   return (
     <>
       <div className="body">
@@ -119,18 +125,30 @@ const Form = () => {
             <div
               class="signin-signup cark"
               style={{
-                backgroundImage: `url("https://i.pinimg.com/564x/d7/75/70/d77570ce3ffe1332a432a982d3f3b2e5.jpg")`,
+                backgroundColor: "white",
               }}
             >
               {/* sign-in  */}
               <form onSubmit={formLogin.handleSubmit} class="sign-in-form">
-                <h2 class="titlek">Sign in</h2>
+                <h2 className="title">Sign In</h2>
+                <img
+                  className="image"
+                  src="https://i.pinimg.com/564x/fb/7b/e0/fb7be013dddc99d1dd010723fd52312e.jpg"
+                  alt="All Foods"
+                />
+                <div
+                  className="fw-bold fs-10 text-container  "
+                  style={{
+                    color: "#FF7000 ",
+                  }}
+                >
+                  Email
+                </div>
                 <div class="input-field">
                   <input
                     id="email"
                     name="email"
                     type="text"
-                    className="input-box"
                     onChange={formLogin.handleChange}
                     onBlur={formLogin.handleBlur}
                     value={formLogin.values.email}
@@ -139,6 +157,14 @@ const Form = () => {
                   {formLogin.touched.email && formLogin.errors.email ? (
                     <div>{formLogin.errors.email}</div>
                   ) : null}
+                </div>
+                <div
+                  className="fw-bold fs-10 text-container  "
+                  style={{
+                    color: "#FF7000 ",
+                  }}
+                >
+                  Password
                 </div>
                 <div class="input-field">
                   <input
@@ -152,12 +178,13 @@ const Form = () => {
                   />
                   <button
                     className="btn btn-primary"
+                    type="button"
                     style={{
                       backgroundColor: "transparent",
                       border: "white",
                       marginLeft: "-15px",
                     }}
-                    onClick={toggle}
+                    onClick={showPassword}
                   >
                     {password === "password" ? (
                       <svg
@@ -187,7 +214,7 @@ const Form = () => {
                 <br />
                 <input type="submit" value="Login" class="button-login solid" />
                 <br />
-                <div style={{ color: "black", fontWeight: "bold" }}>
+                <div style={{ color: "#FF7000", fontWeight: "bold" }}>
                   Tidak Memiliki Akun
                   <div
                     style={{ textDecoration: "underline" }}
@@ -200,8 +227,16 @@ const Form = () => {
               {/* end-sign-in  */}
 
               {/* sign-up  */}
-              <form onSubmit={formik.handleSubmit} class="sign-up-form">
-                <h2 class="titlem">Sign up</h2>
+              <form onSubmit={formik.handleSubmit} class="sign-up-form mt-3">
+                <h2 className="title">Sign Up</h2>
+                <div
+                  className="fw-bold fs-10 text-container  "
+                  style={{
+                    color: "#FF7000 ",
+                  }}
+                >
+                  Username
+                </div>
                 <div class="input-field">
                   <input
                     id="name"
@@ -216,6 +251,14 @@ const Form = () => {
                   {formik.touched.username && formik.errors.username ? (
                     <div>{formik.errors.username}</div>
                   ) : null}
+                </div>
+                <div
+                  className="fw-bold mb-0 fs-10 text-container  "
+                  style={{
+                    color: "#FF7000 ",
+                  }}
+                >
+                  Email
                 </div>
                 <div class="input-field">
                   <input
@@ -232,7 +275,14 @@ const Form = () => {
                     <div>{formik.errors.email}</div>
                   ) : null}
                 </div>
-
+                <div
+                  className="fw-bold fs-10 text-container  "
+                  style={{
+                    color: "#FF7000 ",
+                  }}
+                >
+                  Password
+                </div>
                 <div class="input-field">
                   <input
                     id="password"
@@ -245,12 +295,13 @@ const Form = () => {
                   />
                   <button
                     className="btn btn-primary"
+                    type="button"
                     style={{
                       backgroundColor: "transparent",
                       border: "white",
-                      marginLeft: "-15px",
+                      marginLeft: "10px",
                     }}
-                    onClick={toggle}
+                    onClick={showPassword}
                   >
                     {password === "password" ? (
                       <svg
@@ -280,7 +331,14 @@ const Form = () => {
                     <div>{formik.errors.password}</div>
                   ) : null}
                 </div>
-
+                <div
+                  className="fw-bold fs-10 text-container  "
+                  style={{
+                    color: "#FF7000 ",
+                  }}
+                >
+                  Confirm Password
+                </div>
                 <div class="input-field">
                   <input
                     id="passwordRepeat"
@@ -293,13 +351,14 @@ const Form = () => {
                   />
                   <button
                     className="btn btn-primary"
+                    type="button"
                     style={{
                       backgroundColor: "transparent",
                       border: "white",
                       marginLeft: "-15px",
                       pointerEvents: "",
                     }}
-                    onClick={toggle}
+                    onClick={showPassword}
                   >
                     {password === "password" ? (
                       <svg
@@ -339,12 +398,22 @@ const Form = () => {
                     id="role"
                     name="role"
                     multiple={false}
-                    class="select-field"
+                    className="select-container fw-bold fs-10  "
                   >
-                    <option value="">Select a Role</option>
+                    <option value="" className="fs-10">
+                      Select a Role
+                    </option>
                     <option value="admin">Admin</option>
                     <option value="user">User</option>
                   </select>
+                </div>
+                <div
+                  className="fw-bold fs-10 text-container  "
+                  style={{
+                    color: "#FF7000 ",
+                  }}
+                >
+                  Phone Number
                 </div>
                 <div class="input-field">
                   <input
@@ -361,14 +430,14 @@ const Form = () => {
                     <div>{formik.errors.phoneNumber}</div>
                   ) : null}
                 </div>
-                <div>
-                  <UploadImage onChange={(value) => setUploadFile(value)} />
+                <div className="input-file text-container  ">
+                  <ImageForm onChange={(value) => setUploadImage(value)} />
                 </div>
                 <br />
                 <button type="submit" class="button-login btn-primary ">
                   Submit
                 </button>
-                <div style={{ color: "black", fontWeight: "bold" }}>
+                <div style={{ color: "#FD841F", fontWeight: "bold" }}>
                   Memiliki Akun
                   <div
                     style={{ textDecoration: "underline" }}

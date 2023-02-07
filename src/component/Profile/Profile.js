@@ -193,7 +193,7 @@ const Profile = () => {
                       <div className="col-lg-12">
                         <label
                           htmlFor="inputName w-50"
-                          className="form-labele fw-bold mb-1"
+                          className="form-labele fw-bold mt-5"
                           style={{ color: "#FF7000 " }}
                         >
                           Nama Pengguna
@@ -213,7 +213,7 @@ const Profile = () => {
                         <div className="text-danger">{formik.errors.name}</div>
                       ) : null}
                     </div>
-
+                    <br />
                     <div className="row mb-3">
                       <div className="col-lg-12">
                         <label
@@ -238,7 +238,7 @@ const Profile = () => {
                         <div className="text-danger">{formik.errors.email}</div>
                       ) : null}
                     </div>
-
+                    <br />
                     <div className="row mb-3">
                       <div className="col-lg-12">
                         <label
@@ -266,9 +266,8 @@ const Profile = () => {
                         </div>
                       ) : null}
                     </div>
-
+                    <br />
                     <ImageForm onChange={(value) => setUploadImage(value)} />
-
                     <div className="text-start mt-3">
                       <button
                         type="submit"

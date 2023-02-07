@@ -116,12 +116,14 @@ export const Foods = () => {
 
   return (
     <>
-      <div className="bg-food">
+      <div className="bg-food" style={{ backgroundColor: "#FCF9BE" }}>
         <div className="container">
           <div className="row">
             <div className="d-flex">
               <Link className="btn btn-link fw-bold mt-4 " to={`/add-foods`}>
-                <div className="create-foods">Create Foods</div>
+                <div className="create-foods" style={{ color: "#F7A4A4" }}>
+                  Create Foods
+                </div>
               </Link>
             </div>
             {AllFoods &&
@@ -132,7 +134,7 @@ export const Foods = () => {
                     <div className="col-sm-12 col-md-6 col-lg-3 mt-5 mb-4 d-flex align-self-stretch ">
                       <div className="bg-white d-flex flex-column">
                         <img
-                          className="img "
+                          className="card-image"
                           src={foods.imageUrl}
                           alt="All Foods"
                         />
@@ -140,6 +142,7 @@ export const Foods = () => {
                         <div className="ingredients ">
                           Bahan Pembuatan: {foods.ingredients.join(", ")}
                         </div>
+                        <br/>
                         <hr class="shortLine mt-auto" />
                         <div className="button-food">
                           <div className="d-flex gap-1 d-flex  justify-content-center position-relative  ">
@@ -161,9 +164,9 @@ export const Foods = () => {
                             </div>
                             <div>
                               <Link
-                                className="btn btn-danger justify-content-center"
+                                className="btn btn-danger justify-content-center mb-3"
                                 data-bs-toggle="modal"
-                                data-bs-target={`#exampleModal-${foods.id}`}
+                                data-bs-target={`#`}
                               >
                                 Edit
                               </Link>

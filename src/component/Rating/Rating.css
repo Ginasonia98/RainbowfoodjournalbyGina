@@ -5,9 +5,9 @@
 }
 
 .img-fluid-shadow {
-    width: 350px;
     margin-top: 50px;
     height: 250px;
+    margin-left: 5px;
 }
 
 
@@ -22,7 +22,7 @@
 }
 
 .card-r {
-    width: 350px !important;
+    width: 300px !important;
     height: 300px !important;
 }
 
@@ -85,12 +85,12 @@
     }
 
     .img-fluid-shadow {
-        width: 300px;
+        width: 290px;
     }
 
     .food-card-shadow {
-        margin-left: -100px !important;
-        width: 400px !important;
+        margin-left: -70px !important;
+        width: 320px !important;
     }
 
     .form-labelo {
