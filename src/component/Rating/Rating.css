@@ -4,35 +4,6 @@
     height: 50px;
 }
 
-.img-fluid-shadow {
-    margin-top: 50px;
-    height: 250px;
-    margin-left: 5px;
-}
-
-
-.card-name {
-    color: #FD841F;
-    font-weight: bolder;
-    font-size: 25px;
-    text-align: center;
-    text-decoration: underline;
-    margin-left: -70px;
-    font-weight: bold;
-}
-
-.card-r {
-    width: 300px !important;
-    height: 300px !important;
-}
-
-.btn-created {
-    background-color: #FD841F;
-    border: none;
-    margin-top: 15px !important;
-    height: 40px !important;
-}
-
 .create-rating {
     border: 1px solid rgba(255, 94, 0, 0.932);
     color: rgba(255, 94, 0, 0.932);
@@ -57,6 +28,33 @@
     margin-left: 0px !important;
 }
 
+.short-line-container {
+    position: relative;
+    height: 100px;
+    text-align: center;
+}
+
+.short-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 50%;
+    background-color: white;
+    border-top: 5px solid white;
+}
+
+.care {
+    padding-bottom: 35px;
+}
+
+
+@media (max-width: 767px) {
+    .short-line {
+        width: 85%;
+    }
+}
 
 @media (width < 768px) {
     .box-addFoods {

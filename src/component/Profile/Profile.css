@@ -16,6 +16,36 @@
   object-fit: cover;
 }
 
+.profile-button {
+  background-color: blue;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #f0e5cf;
+  font-family: General Sans, sans-serif;
+  font-weight: 600;
+  width: 100% !important;
+}
+
+.btn-primary {
+  --bs-btn-border-color: none;
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  /* Tinggi yang dikehendaki */
+}
+
+.center-image img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .form-labele {
   margin-left: -100px !important;
 }
@@ -41,9 +71,10 @@
   color: #FD841F;
 }
 
+
 @media (width < 768px) {
   .titler {
-    margin-left: -200px !important;
+    margin-left: 5px !important;
   }
 
   .form-labele {
@@ -59,4 +90,7 @@
     margin-left: -55px;
   }
 
+  .card-bodys {
+    margin-left: 150px !important;
+  }
 }

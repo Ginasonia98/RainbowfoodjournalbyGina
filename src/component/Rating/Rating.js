@@ -89,41 +89,75 @@ const Rating = () => {
   });
   return (
     <>
-      <div>
-        <div className="card-r mt-5 mx-auto  shadow ">
-          <div className="row g-0">
-            <div className="col-md-4">
-              <img
-                src={foods && foods.imageUrl}
-                className="img-fluid-shadow"
-                alt={foods && foods.name}
-              />
-            </div>
-            <br />
-            <div className="col-md-8">
+      <div
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundBlendMode: "lighten",
+        }}
+      >
+        <section className="container-fluid py-5">
+          <div className="mx-auto food-detail">
+            <h1
+              className="title text-center text-capitalize fw-bold fs-2"
+            >
+              <div
+                className="text-white textt"
+                style={{ textDecoration: "underline" }}
+              >
+                Rating {foods && foods.name}
+              </div>
+            </h1>
+            <div className="card my-3 shadow">
               <div className="card-body">
-                <div className="card-name ">{foods && foods.name}</div>
+                <div className="row g-2">
+                  <div className="col-lg-4 col-md-4 col-sm-4">
+                    <img
+                      src={foods && foods.imageUrl}
+                      className="img-fluid m-0 img-food"
+                      alt={foods && foods.name}
+                    />
+                  </div>
+                  <div className="col-lg-8 col-md-8 col-sm-8">
+                    <h2 className="card-title text-center text-sm-start text-capitalize fs-4 mb-3 fw-bold">
+                      {foods && foods.name}
+                    </h2>
+                    <div className="d-flex gap-2 mb-1">
+                      <i className="bi bi-card-text"></i>
+                      <p className="card-text">
+                        <span className="fw-bold">Deskripsi: </span>
+                        {foods && foods.description}
+                      </p>
+                    </div>
+                    <div className="d-flex gap-2 mb-1">
+                      <i className="bi bi-card-checklist"></i>
+                      <p className="card-text">
+                        <span className="fw-bold">Bahan: </span>
+                        {foods &&
+                          foods.ingredients.map((m, index) => {
+                            return (
+                              <span key={index}>{(index ? ", " : "") + m}</span>
+                            );
+                          })}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="text-center">
+        </section>
+        <div className="text-center" style={{ marginTop: "-35px" }}>
           <button
             type="button"
-            className="btn-created shadow fw-bold ms-5  "
+            className="btn btn-primary h-50"
             data-bs-toggle="modal"
             data-bs-target={`#rating${foods && foods.id}`}
           >
-            <div
-              style={{
-                fontSize: "16px",
-                fontWeight: "bold",
-                color: "#fff",
-              }}
-            >
-              Create Rating
-            </div>
+            <i class="bi bi-bookmark-star icon-button me-2"></i>
+            Create Rating
           </button>
         </div>
         <div
@@ -138,7 +172,7 @@ const Rating = () => {
               <div className="modal-header">
                 <button
                   type="button"
-                  className="btn-close me-5"
+                  className="btn-close me-3"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -215,12 +249,14 @@ const Rating = () => {
             </div>
           </div>
         </div>
-
+        <div class="short-line-container">
+          <div class="short-line"></div>
+        </div>
         {rating &&
           rating.map((rate) => {
             return (
               <div key={rate.id}>
-                <div className="col-6 list-group mt-3 mx-auto mb-5 ">
+                <div className="col-6 list-group mt-2 mx-auto care">
                   <li className="d-flex justify-content-between align-items-start food-card-shadow list-group-item">
                     <div className="d-flex gap-3">
                       <img

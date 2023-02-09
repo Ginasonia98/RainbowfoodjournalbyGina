@@ -40,7 +40,7 @@ const ImageForm = ({ onChange }) => {
       <div className="row mb-3">
         <div className="col-lg-12">
           <label
-            className="form-label fw-bold mb-1 upimage"
+            className="form-label fw-bold mb-1"
             style={{ color: "#FF7000 " }}
           >
             Upload Image

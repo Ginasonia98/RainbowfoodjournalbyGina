@@ -31,10 +31,21 @@ const DetailFoods = () => {
 
   return (
     <>
-      <section className="container-fluid py-5">
+      <section
+        className="container-fluid py-5"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundBlendMode: "lighten",
+        }}
+      >
         <div className="mx-auto food-detail">
-          <h1 className="title text-center text-capitalize" style={{color:"#FD841F"}}>
-            {AllFoods.name} details
+          <h1
+            className="title text-center text-capitalize text-bold"
+          >
+            <div className="text-white textt" style={{textDecoration:"underline"}}> Detail {AllFoods.name} </div>
           </h1>
           <div className="card my-3 shadow">
             <div className="card-body">

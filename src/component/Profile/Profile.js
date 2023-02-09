@@ -83,32 +83,31 @@ const Profile = () => {
 
   return (
     <>
-      <section className="container-fluid py-5">
+      <section className="container-fluid py-5" style={{width:"350px", padding:"10px"}}>
         <div className="mx-auto profile-detail">
           <h1 className="titler text-center">My Profile</h1>
-          <div className="card my-3 shadow">
-            <div className="card-body">
+          <div className="card my-3 shadow center-image">
+            <img
+              src={
+                profile && profile.profilePictureUrl
+                  ? profile && profile.profilePictureUrl
+                  : defaultImage
+              }
+              className="img-fluid m-0 img-profile-page mt-2"
+              alt={profile && profile.name}
+              onError={onImageError}
+            />
+            <div className="card-bodys" style={{textAlign:"left",margin:"10px",marginLeft:"-60px", width:"100%", marginTop:"20px"}}>
               <div className="row g-2">
-                <div className="col-lg-4 col-md-4 col-sm-4 d-flex justify-content-center">
-                  <img
-                    src={
-                      profile && profile.profilePictureUrl
-                        ? profile && profile.profilePictureUrl
-                        : defaultImage
-                    }
-                    className="img-fluid m-0 img-profile-page"
-                    alt={profile && profile.name}
-                    onError={onImageError}
-                  />
-                </div>
+                <div className="col-lg-4 col-md-4 col-sm-4 d-flex justify-content-center"></div>
                 <div className="col-lg-8 col-md-8 col-sm-8">
                   <h2
-                    className="card-title text-center text-sm-start fs-4 mb-3"
+                    className="card-title text-start text-sm-start fs-4 mb-3 mt-2 "
                     style={{ color: "#FF7000 " }}
                   >
                     {profile && profile.name}
                   </h2>
-                  <div className="d-flex gap-2 mb-1 d-flex align-items-center">
+                  <div className=" gap-2 mb-1 d-flex align-items-center">
                     <i
                       class="bi bi-envelope fs-2"
                       style={{ color: "#FF7000 " }}
@@ -141,18 +140,18 @@ const Profile = () => {
                 </div>
               </div>
             </div>
-            <div className="card-footer ">
-              <div className="d-flex justify-content-end align-items-center">
-                <button
-                  type="button"
-                  className="btn text-light btn-success shadow d-flex align-items-center py-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Edit Profile
-                </button>
-              </div>
+            <hr className="shortLine mt-auto" />
+            <div className="d-flex justify-content-end align-items-center">
+              <button
+                type="button"
+                className="btn text-light btn-primary d-flex align-items-center py-1 profile-button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Edit Profile
+              </button>
             </div>
+            <br />
           </div>
 
           <div
@@ -183,7 +182,7 @@ const Profile = () => {
                           ? profile && profile.profilePictureUrl
                           : defaultImage
                       }
-                      className="img-fluid img-profile-page mb-3"
+                      className="img-fluid img-profile-page mb-3 ms-3"
                       alt={profile && profile.name}
                       onError={onImageError}
                     />
@@ -267,7 +266,10 @@ const Profile = () => {
                       ) : null}
                     </div>
                     <br />
-                    <ImageForm onChange={(value) => setUploadImage(value)} />
+                    <div className="form-label" style={{ color: "#FD841F" }}>
+                      <ImageForm onChange={(value) => setUploadImage(value)} />
+                      Upload Picture (JPG/PNG/JPEG)
+                    </div>
                     <div className="text-start mt-3">
                       <button
                         type="submit"

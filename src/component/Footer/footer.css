@@ -6,3 +6,59 @@
     font-family: 'Lobster Two', cursive;
     color: #fff;
 }
+
+.button-50 {
+    align-items: center;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: "Codec cold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    justify-content: center;
+    letter-spacing: .4px;
+    line-height: 1;
+    max-width: 50% !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-50:active {
+    outline: 0;
+}
+
+.button-50:hover {
+    outline: 0;
+}
+
+.button-50 span {
+    transition: all 200ms;
+}
+
+.button-50:hover span {
+    transform: scale(.9);
+    opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+    .button-50 {
+        font-size: 15px;
+        height: 50px;
+    }
+
+    .button-50 span {
+        line-height: 50px;
+    }
+}

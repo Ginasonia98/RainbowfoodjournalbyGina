@@ -441,8 +441,7 @@ const Form = () => {
                 <div className="input-file text-container  ">
                   <ImageForm onChange={(value) => setUploadImage(value)} />
                 </div>
-                <br/>
-                <button type="submit" class="button-login btn-primary ">
+                <button type="submit" class="button-login btn-primary mt-2">
                   Submit
                 </button>
                 <div style={{ color: "#FD841F", fontWeight: "bold" }}>

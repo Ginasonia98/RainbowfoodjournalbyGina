@@ -19,6 +19,9 @@
     font-size: 13px;
 }
 
+.textt {
+    text-shadow: 2px 2px #000000;
+}
 
 @media (max-width: 576px) {
     .img-food {

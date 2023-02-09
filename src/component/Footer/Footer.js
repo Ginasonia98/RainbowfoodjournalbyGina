@@ -107,7 +107,7 @@ const Footer = () => {
                   className="form-control"
                   placeholder="Email"
                 />
-                <button className="btn btn-danger mt-3 w">Subscribe</button>
+                <button className="button-50 mt-1">Subscribe</button>
               </div>
             </div>
           </div>
