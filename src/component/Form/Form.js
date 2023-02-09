@@ -441,6 +441,7 @@ const Form = () => {
                 <div className="input-file text-container  ">
                   <ImageForm onChange={(value) => setUploadImage(value)} />
                 </div>
+                <br/>
                 <button type="submit" class="button-login btn-primary ">
                   Submit
                 </button>
