@@ -1,19 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Spline Sans', sans-serif;
+.footer {
+    background-color: #FFB100;
 }
 
-.social-icon span i {
-    height: 20px;
-    width: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-
-@media (max-width: 767px) {
-    .form-controlf{
-        width: 153px !important;
-        margin-left: -21px !important;
-    }
+.logo-color {
+    font-family: 'Lobster Two', cursive;
+    color: #fff;
 }

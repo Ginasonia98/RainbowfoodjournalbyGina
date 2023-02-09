@@ -6,7 +6,6 @@ import { useFormik } from "formik";
 import { BASE_URL, API_KEY } from "../../Environment";
 import ImageForm from "../../component/ImageForm/ImageForm";
 
-
 const Form = () => {
   const [classSignUp, setClassSignUp] = useState("");
   const [uploadImage, setUploadImage] = useState("");
@@ -228,7 +227,7 @@ const Form = () => {
 
               {/* sign-up  */}
               <form onSubmit={formik.handleSubmit} class="sign-up-form mt-3">
-                <h2 className="title">Sign Up</h2>
+                <h2 className="title mt-3">Sign Up</h2>
                 <div
                   className="fw-bold fs-10 text-container  "
                   style={{
@@ -389,6 +388,14 @@ const Form = () => {
                     <div>{formik.errors.passwordRepeat}</div>
                   ) : null}
                 </div>
+                <div
+                  className="fw-bold fs-10 text-container  "
+                  style={{
+                    color: "#FF7000 ",
+                  }}
+                >
+                  Select Role
+                </div>
                 <div class="input-field">
                   <select
                     onChange={formik.handleChange}
@@ -430,10 +437,10 @@ const Form = () => {
                     <div>{formik.errors.phoneNumber}</div>
                   ) : null}
                 </div>
+                <br />
                 <div className="input-file text-container  ">
                   <ImageForm onChange={(value) => setUploadImage(value)} />
                 </div>
-                <br />
                 <button type="submit" class="button-login btn-primary ">
                   Submit
                 </button>

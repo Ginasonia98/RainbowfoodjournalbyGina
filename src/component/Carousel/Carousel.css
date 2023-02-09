@@ -8,6 +8,12 @@
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+  background-blend-mode: lighten;
+}
+
+.box-shadow {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-color: #ffffff;
 }
 
 /* Slider */
@@ -17,6 +23,10 @@
 
 .slide-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/cover2.webp");
+}
+
+.slide-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/cover3.webp");
 }
 
 #heroSlider h6::after,

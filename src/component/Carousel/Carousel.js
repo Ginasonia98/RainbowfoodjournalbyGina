@@ -8,14 +8,13 @@ const Carousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item text-center bg-cover vh-100 active slide-1">
             <div className="container h-100 d-flex align-items-center justify-content-center">
-              <div className="row justify-content-center">
-                <div className="col-lg-8">
-                  <h6 className="text-white">
-                    Selamat Datang Di Rainbow Food Journal
-                  </h6>
-                  <h1 className="display-1 my-3 fw-bold text-white">
-                    Temukan Resep Makananmu Disini
-                  </h1>
+              <div className="box-shadow">
+                <div className="row justify-content-center">
+                  <h3 className="text-black fs-1">Grilled Steak</h3>
+                  <p className="text-black">
+                    Makanan yang dibuat dari daging sapi yang diolah bersama
+                    racikan bumbu
+                  </p>
                 </div>
               </div>
             </div>
@@ -23,14 +22,27 @@ const Carousel = () => {
 
           <div className="carousel-item text-center bg-cover vh-100 slide-2">
             <div className="container h-100 d-flex align-items-center justify-content-center">
-              <div className="row justify-content-center">
-                <div className="col-lg-8">
-                  <h6 className="text-white">
-                    Selamat Datang Di Rainbow Food Journal
-                  </h6>
-                  <h1 className="display-1 my-3 fw-bold text-white">
-                    Kami Menyediakanmu Makanan Lezat & Bergizi
-                  </h1>
+              <div className="box-shadow">
+                <div className="row justify-content-center">
+                  <h3 className="text-black fs-1">
+                    Cooked Noodles With Shrimps
+                  </h3>
+                  <p className="text-black">
+                    Mie Goreng yang dipadukan dengan udang
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="carousel-item text-center bg-cover vh-100 active slide-3">
+            <div className="container h-100 d-flex align-items-center justify-content-center">
+              <div className="box-shadow">
+                <div className="row justify-content-center">
+                  <h3 className="text-black fs-1">
+                    Poached egg with vegetables and tomatoes
+                  </h3>
+                  <p className="text-black">Telur yang dipadukan sayuran</p>
                 </div>
               </div>
             </div>
