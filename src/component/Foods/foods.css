@@ -108,64 +108,63 @@
         margin-left: -50px;
     }
 
+        @media (width < 768px) {
 
-    @media (width < 768px) {
+            /* btn-allfood */
+            .btn-create {
+                border: none;
+                margin-top: 5%;
+            }
 
-        /* btn-allfood */
-        .btn-create {
-            border: none;
-            margin-top: 5%;
+            .btn-secondary {
+                margin-top: 0px !important;
+                width: 100% !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            .img {
+                width: 100% !important;
+            }
+
+            .modal-content {
+                width: 400px !important;
+                margin-left: auto;
+            }
+
+            .add-inputm {
+                width: 300px;
+                margin-left: 40px !important;
+            }
+
+
+            .add-inputmc {
+                margin-left: 30px !important;
+                width: 150px !important;
+            }
+
+            .form-labelsr {
+                margin-left: 40px !important;
+            }
+
+            .form-labelst {
+                margin-left: 30px !important;
+            }
+
+            .form-labelsm {
+                margin-left: 40px !important;
+            }
+
+            .input-field {
+                margin-left: 60px !important;
+            }
+
+            .button-warnings {
+                margin-left: 50px !important;
+            }
+
+            .btn-warning {
+                margin-left: -50px;
+                width: 65px;
+            }
         }
-
-        .btn-secondary {
-            margin-top: 0px !important;
-            width: 100% !important;
-            display: flex;
-            justify-content: center;
-        }
-
-        .img {
-            width: 100% !important;
-        }
-
-        .modal-content {
-            width: 400px !important;
-            margin-left: auto;
-        }
-
-        .add-inputm {
-            width: 300px;
-            margin-left: 40px !important;
-        }
-
-
-        .add-inputmc {
-            margin-left: 30px !important;
-            width: 150px !important;
-        }
-
-        .form-labelsr {
-            margin-left: 40px !important;
-        }
-
-        .form-labelst {
-            margin-left: 30px !important;
-        }
-
-        .form-labelsm {
-            margin-left: 40px !important;
-        }
-
-        .input-field {
-            margin-left: 60px !important;
-        }
-
-        .button-warnings {
-            margin-left: 50px !important;
-        }
-
-        .btn-warning {
-            margin-left: -50px;
-            width: 65px;
-        }
-    }

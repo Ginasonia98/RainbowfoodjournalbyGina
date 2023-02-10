@@ -70,7 +70,8 @@
 
 @media (width < 768px) {
     .form-controly {
-        margin-left: 15px;
+        margin-left: 10px;
+        width: 150px !important;
     }
 
     .bahan {

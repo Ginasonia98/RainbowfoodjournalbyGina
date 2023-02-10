@@ -120,8 +120,15 @@ export const Foods = () => {
         <div className="container">
           <div className="row">
             <div className="d-flex">
-              <Link className="btn btn-link fw-bold mt-4 " to={`/add-foods`}>
-                <div className="create-foods" style={{ color: "#F7A4A4" }}>
+              <Link
+                className="btn btn-link fw-bold mt-5 "
+                style={{ backgroundColor: "#FAAB78" }}
+                to={`/add-foods`}
+              >
+                <div
+                  className="create-foods text "
+                  style={{ fontSize: "24px", fontWeight: "bolder" }}
+                >
                   Create Foods
                 </div>
               </Link>
@@ -142,7 +149,7 @@ export const Foods = () => {
                         <div className="ingredients ">
                           Bahan Pembuatan: {foods.ingredients.join(", ")}
                         </div>
-                        <br/>
+                        <br />
                         <hr class="shortLine mt-auto" />
                         <div className="button-food">
                           <div className="d-flex gap-1 d-flex  justify-content-center position-relative  ">
