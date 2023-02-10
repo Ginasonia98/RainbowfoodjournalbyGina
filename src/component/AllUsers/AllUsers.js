@@ -80,7 +80,10 @@ const AllUsers = () => {
   return (
     <>
       <section className="container-fluid py-5 min-vh-100 ">
-        <div className="title text-center"> Semua Pengguna </div>
+        <div className="title text-center text-decoration-underline">
+          {" "}
+          Semua Pengguna{" "}
+        </div>
         <div className="row row-cols row-cols-md-3 row-cols-lg-5 g-4 mt-3 mx-lg-5 mx-4 ">
           {AllUsers &&
             AllUsers.map((users) => {
